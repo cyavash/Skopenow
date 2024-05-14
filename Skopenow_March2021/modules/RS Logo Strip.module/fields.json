@@ -1,0 +1,28 @@
+[ {
+  "id" : "f4b16772-07cf-a653-5f98-f93f3309b63f",
+  "name" : "logo_image",
+  "display_width" : null,
+  "label" : "Logo Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/integrations__github.04a9a443@2x.png",
+    "alt" : "integrations__github.04a9a443@2x",
+    "loading" : "lazy",
+    "width" : 180,
+    "height" : 150,
+    "max_width" : 180,
+    "max_height" : 150
+  } ]
+} ]

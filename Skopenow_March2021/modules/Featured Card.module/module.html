@@ -1,0 +1,28 @@
+<div class="featured-card">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span5">
+        {% if module.image_field.src %}
+          {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+          {% if module.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="span7">
+        <h3>
+          {{ module.subheading }}
+        </h3> 
+        <h2>
+          {{ module.heading }}
+        </h2>
+        {% inline_rich_text field="content" value="{{ module.content }}" %}
+        <a href="{{ module.button_link }}" class="btn">{{ module.button_text }}</a>
+      </div>
+    </div><!-- end row-fluid -->
+  </div><!-- end container -->
+</div><!-- end featured-card -->

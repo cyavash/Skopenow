@@ -1,0 +1,104 @@
+.comparison-section {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.comparison-table th, .comparison-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  vertical-align: baseline;
+}
+.table-image {
+  max-width: 100%; /* Adjust this value based on your requirement */
+  height: auto;
+}
+thead th, thead td {
+  background: transparent; 
+}
+.comparison-table th {
+  border: 0!important; 
+}
+.comparison-table td:first-child {
+  border-left: 0; 
+}
+.comparison-table td:last-child {
+  border-right: 0; 
+}
+.comparison-table tr:first-child td {
+  border-top: 1px solid #212529;
+}
+.comparison-table tr:last-child td {
+  border-bottom: 1px solid #212529;
+}
+.comparison-table td {
+  font-size: 21px; 
+  color: #425466;
+}
+.comparison-table td:first-child {
+  font-weight: bold;
+  color: #212529;
+  font-size: 20px;
+  font-family: "DM Sans";
+}
+p.content1,
+p.content2 
+{
+  padding-left: 45px;
+  padding-right: 5px;
+  margin-top: 15px; 
+  font-size: 16px;
+  font-family: "Poppins";
+}
+p.content1 {
+  background: url('https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Checkmark-3.svg') 10px 5px no-repeat;
+}
+p.content2 {
+  background: url('https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/cross.svg') 10px 5px no-repeat;
+}
+.comparison-table th {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Responsive settings */
+@media (max-width: 767px) {
+  .table-image {
+    max-width: 100%; 
+    padding: 0!important;
+  }
+  .table-image img {
+    max-width: 100%!important; 
+  }
+  .comparison-table th, .comparison-table td {
+    padding: 5px;
+  }
+  .comparison-table td:first-child { 
+    font-size: 16px; 
+  }
+} 
+@media screen and (max-width: 420px) {
+  .comparison-table td:first-child { 
+    font-size: 13px; 
+  } 
+  .comparison-table td {
+    font-size: 13px; 
+  }
+  p.content1,
+  p.content2 
+  {
+    padding-left: 23px;
+    padding-right: 2px;
+    background-position: 0px 0px;
+  }
+
+}
+@media screen and (min-width: 768px) {
+  .comparison-table td:first-child {
+    min-width: 210px; 
+  }
+}

@@ -1,0 +1,19 @@
+.section1 {
+  text-align: center;
+  padding: 60px 0;
+}
+.section1 p {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 16px;
+  color: #0680FB;
+  text-transform: uppercase;
+  margin: 0;
+}
+.section1 h2 {
+  font-family: "DM Sans";
+  font-weight: bold;
+  font-size: 36px;
+  margin-top: 10px;
+  padding-bottom: 6px;
+}

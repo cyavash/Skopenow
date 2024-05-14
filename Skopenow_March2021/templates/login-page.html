@@ -1,0 +1,39 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Login Page
+-->
+{% extends "./layouts/base.html" %}
+{% block header %}
+<div class="hs-contact-page login-layout">
+  {% endblock header %}
+  {% block body %}
+  <div class="main-content-wrapper">
+    <main class="body-container-wrapper">
+      <div class="contact-top-row">
+        {% dnd_area "row_1" class='hs-contact-page-content row-1', label='Row 1' %}
+        {% end_dnd_area %}
+      </div>
+      <div class="contact-bottom-row">
+        {% dnd_area "row_2" class='hs-contact-page-content row-2', label='Row 2' %}
+        {% end_dnd_area %}
+      </div>
+    </main>
+  </div>
+  {% endblock body %}
+  {% block footer %}
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+

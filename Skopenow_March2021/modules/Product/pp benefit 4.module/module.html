@@ -1,0 +1,20 @@
+<div class="pp_benefits1">
+  <div class="container">
+    <h2>
+      {{ module.title }}
+    </h2>
+    <div class="content">
+      {% for item in module.block %}
+      <div class="block">
+        <img src="{{ item.icon.src }}">
+        <h3>
+          {{ item.sub_title }}
+        </h3>
+        <p>
+          {{ item.sub_content }}
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,96 @@
+[ {
+  "id" : "db8c67df-de5c-aa1e-16b1-5e3086c27b59",
+  "name" : "icon_items",
+  "display_width" : null,
+  "label" : "Icon Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "3214682e-0326-37cc-8223-082f44447ece",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "3214682e-0326-37cc-8223-082f44447ece",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "b938c20c-61b1-1170-1aef-f7f67cc0a4f1",
+    "name" : "icon_type",
+    "display_width" : null,
+    "label" : "Icon Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "code", "HTML Code" ], [ "image", "Image" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice"
+  }, {
+    "id" : "f1fcd7ce-37df-7199-86ff-69baa4ac02a3",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon Code",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "b938c20c-61b1-1170-1aef-f7f67cc0a4f1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "code",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "richtext",
+    "default" : "<i class=\"icon-global-environment\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span><span class=\"path4\"></span><span class=\"path5\"></span><span class=\"path6\"></span><span class=\"path7\"></span><span class=\"path8\"></span><span class=\"path9\"></span><span class=\"path10\"></span></i>"
+  }, {
+    "id" : "e1419986-561e-e26e-32d0-aa2a4c992962",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "b938c20c-61b1-1170-1aef-f7f67cc0a4f1",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "image",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "Title",
+    "icon" : "<i class=\"icon-global-environment\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span><span class=\"path4\"></span><span class=\"path5\"></span><span class=\"path6\"></span><span class=\"path7\"></span><span class=\"path8\"></span><span class=\"path9\"></span><span class=\"path10\"></span></i>",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+} ]

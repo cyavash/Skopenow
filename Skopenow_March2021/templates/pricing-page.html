@@ -1,0 +1,57 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Pricing Page
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="hs-pricing-page has-footer-only">
+
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    {% module "banner" path="../modules/Banner", label="Banner" %}
+    <main class="body-container-wrapper">
+      {% dnd_area "pricing" class='hs-pricing-page-content hs-pricing', label='Pricing' %}
+      {% end_dnd_area %}
+      
+      {% dnd_area "transactional_upgrades" class='hs-pricing-page-content hs-upgrades', label='Transactional Upgrades' %}
+      {% end_dnd_area %}
+      
+      {% dnd_area "features" class='hs-pricing-page-content hs-features', label='Included Features' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "questions" class='hs-pricing-page-content hs-questions', label='FAQs' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "book_demo" class='hs-pricing-page-content hs-book-demo', label='Book a Demo' %}
+      {% end_dnd_area %}
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

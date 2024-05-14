@@ -1,0 +1,26 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+<div class="mobile_view">
+  {% module "module_16746853342265" path="/Skopenow_March2021/templates/partials/Skopenow_Header_2023-Dark", label="Header" %}  
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    $('.new_header .navigation ul li').on('click', function() {
+      $(this).toggleClass("active");
+      $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+    });
+    $('.new_header .navigation ul li').has('div').addClass('pointer');
+    $('.custom-menu-primary.desktop ul li.has-submenu:first > a:not(:has(i))').append($('<i class="icon-down-arrow"></i>'));
+     $('.new_header li a').each(function() {
+        if ($(this).attr('href') == undefined || $(this).attr('href') == '') {
+          $(this).on('click', function(event) {
+            event.preventDefault();
+          });
+        }
+      });
+   });  
+</script>

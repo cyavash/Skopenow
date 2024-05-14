@@ -1,0 +1,233 @@
+<div class="free_trial_banner" >
+  <div class="content">
+    <div class="text_part">
+      <div class="text_content">
+        <a href="https://www.skopenow.com"><img src="{{ module.top_logo.src }}" class="logo"></a>
+        <h1>
+          {{ module.title }} 
+        </h1>
+        <h3>
+          {{ module.sub_title }}
+        </h3>
+        <div>
+          {{ module.content }}
+        </div>
+        <p>
+          {{ module.logo_title }}
+        </p>
+        <div class="logos">
+          {% for item in module.logo %}
+          <img alt="{{ item.alt }}" src="{{ item.src }}"> 
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="form_part" style="background-image: url({{ module.background.src }});">
+      <div style="margin:auto;min-height: calc(100vh-120px);display:flex;flex-direction:column;justify-content: center;">
+        <div class="actualform">
+          <h3>
+            {{ module.form_title }}
+          </h3>
+          <div class="form">
+            <div class="alert alert-success" style="display: none;">&nbsp;</div>
+            <div class="alert alert-danger" style="display: none;">&nbsp;</div>
+            <form id="register" method="post">
+              <div class="form-row">
+                <div class="half"><div class="form_label">
+                  Company Name</div><input id="companyName" class="form-control" name="company_name" type="text" placeholder="ABC Corp">
+                </div>
+                <div class="half"><div class="form_label">
+                  Role</div><input class="form-control" name="role1" type="text" placeholder="Regional Manager"></div>
+              </div>
+              <div class="form-row">
+                <div class="single"><div class="form_label">
+                  First and Last Name</div>
+                  <input id="firstAndLastName" class="form-control" name="firstAndLastName" type="text" placeholder="John Smith">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="half"><div class="form_label">
+                  Email</div>
+                  <input id="email" class="form-control" name="email" type="email" placeholder="Example@example.com">
+                </div>
+                <div class="half"><div class="form_label">
+                  Contact Phone</div>
+                  <input id="contactPhone" class="form-control" name="phone" type="text" placeholder="###-###-####">
+                </div>
+              </div>
+       
+              <div class="form-row">
+                <div class="single">
+                  <div class="form_label">
+                  Company Website</div>
+                  <input id="companyWebsite" class="form-control" name="company_website" type="text" placeholder="Example.com">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="single">
+                  <div class="form_label">
+                  Company Size</div>
+                  <select id="companySize" class="form-control" name="company_size" placeholder="0-5">
+                    <option selected disabled>Number of Employees</option>
+                    <option value="0-5">0-5</option>
+                    <option value="5-20">5-20</option>
+                    <option value="20-100">20-100</option>
+                    <option value="100-500">100-500</option>
+                    <option value="500-1000">500-1000</option>
+                    <option value="+1000">+1000</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="single">
+                  <div class="form_label">
+                  Industry</div>
+                  <select id="industryId" class="form-control" name="industryId" placeholder="Select Industry">
+                    <option selected="selected" value="" disabled>Select Industry</option>
+                    <option value="1">Insurance</option>
+                    <option value="2">Global Security</option>
+                    <option value="3">Legal</option>
+                    <option value="4">Law Enforcement</option>
+                    <option value="5">Government (Federal)</option>
+                    <option value="6">Government (State &amp; Local)</option>
+                    <option value="7">Private Investigation</option>
+                    <option value="8">Media</option>
+                    <option value="9">Technology</option>
+                    <option value="10">Retail</option>
+                    <option value="11">Financial Services</option>
+                    <option value="99">Other</option>
+                  </select>
+                </div>
+              </div>
+              <div style="display: none;">
+                <div class="form-row">
+                  <div class="form-group col-md-6"><label for="UTMCampaign">UTM Campaign</label> <input id="UTMCampaign" class="form-control" type="text" placeholder="UTM Campaign"></div>
+                  <div class="form-group col-md-6"><label for="UTMSource">UTM Source</label> <input id="UTMSource" class="form-control" type="text" placeholder="UTM Source"></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6"><label for="UTMMedium">UTM Medium</label> <input id="UTMMedium" class="form-control" type="text" placeholder="UTM Medium"></div>
+                  <div class="form-group col-md-6"><label for="UTMContent">UTM Content</label> <input id="UTMContent" class="form-control" type="text" placeholder="UTM Content"></div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12"><label for="UTMTerm">UTM Term</label> <input id="UTMTerm" class="form-control" type="text" placeholder="UTM Term"></div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="single"><button type="submit" class="button12" style="min-width: 110px; border-radius: 100px;">Request a Trial</button></div>
+              </div>
+            </form>
+          </div>
+        </div>
+                  <div style="margin-top:15px;text-align:center;font-family:'Poppins';font-size:16px;color:#ffffff;background:transparent;">
+            Already have an account? <a href="https://app.skopenow.com/login" style="color:#ffffff;text-decoration:underline;">Sign in</a> 
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script>
+$.validator.addMethod("checkPasswordRole", function (ev) {
+    var passwordPattern = /^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*(){}<>,;|+=`~_:?.\\\/'"\[\]\-]).{8,}$/;
+    if (passwordPattern.test(ev)) {
+      return true;
+    }
+    return false;
+});
+$("#register").validate({
+  rules: {
+    company_name: "required",
+    name: "required",
+    phone: "required",
+    firstAndLastName:"required",
+       role1:"required",
+    industryId: "required",
+    email: {
+      required: true,
+      email: true
+    }
+  },
+  messages: {
+    company_name: "Please enter the name of your company/corporation, this field can not be blank.",
+    name: "Please enter a first and last name.",
+        firstAndLastName: "Please enter a first and last name.",
+        role1: "Please enter your job title.",
+    phone: "Please enter a phone number.",
+    password: "Please make sure it is at least 8 characters, at least one Upper case letter, one lower case letter, one special characters and one number.",
+    confirm_password: "The passwords you've entered do not match.",
+    company_website: "Please enter a valid URL.",
+    industryId: "Please choose an industry.",
+    email: {
+      required: "Please enter a valid email in the format of example@example.com.",
+      email: "Please enter a valid email in the format of example@example.com."
+    }
+  }
+});
+$(document).ready(function () {
+  $("#register").submit(function(e) {
+    e.preventDefault();
+    if ($('#register button').hasClass('disable')) {
+      return false;
+    }
+    if (!($("#register").valid())) {
+      return false;
+    }
+    var bodyData = {body:{
+    company: $("#companyName").val(),
+    role: $("#role").val(),
+    role_id: null,
+    name: $("#firstAndLastName").val(),
+    email: $("#email").val(),
+    phone: $("#contactPhone").val(),
+    password: $("#password").val(),
+    cPassword: $("#confirm_password").val(),
+    website: $("#companyWebsite").val(),
+    industryId: $("#industryId").val(),
+    cSize: $("#companySize").val(),
+    utm_campaign: $("#UTMCampaign").val(),
+    utm_source: $("#UTMSource").val(),
+    utm_medium: $("#UTMMedium").val(),
+    utm_content: $("#UTMContent").val(),
+    utm_term: $("#UTMTerm").val()
+  }};
+  $.ajax({
+    type: "POST",
+    crossDomain: true,
+    url: "https://front.app.skopenow.com/account/add/try",
+    async: false,
+    dataType: "json",
+    contentType: "application/json",
+    data: JSON.stringify(bodyData),
+    beforeSend: function() {
+      $('#register button').addClass('disable');
+    },
+    success: function(data)
+    {
+      document.getElementById("register").reset();
+      $(".alert-success").css("display", "block");
+      $(".alert-success").text("You have successfully created a new account.");
+      location.href = "https://www.skopenow.com/trial-thank-you";
+      $('#register button').removeClass('disable');
+    },
+    error: function(error)
+    {
+      $(".alert-danger").css("display", "block");
+      $(".alert-danger").text(error.responseJSON.msg);
+      $('#register button').removeClass('disable');
+        $('html,body').animate({
+            scrollTop: $('#register').offset().top - 200
+        }, 200);
+      },
+    });
+  });
+  
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  $("#UTMCampaign").val(urlSearchParams.get('utm_campaign'));
+  $("#UTMSource").val(urlSearchParams.get('utm_source'));
+  $("#UTMMedium").val(urlSearchParams.get('utm_medium'));
+  $("#UTMContent").val(urlSearchParams.get('utm_content'));
+  $("#UTMTerm").val(urlSearchParams.get('utm_term'));
+});
+</script>

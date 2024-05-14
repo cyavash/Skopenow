@@ -1,0 +1,30 @@
+<section class="news_section" style="margin-top:{{ module.news_top_margin }}px;">
+  <div class="container news_title_section page-center">
+    <h3 class="text-center news_title">{{ module.section_title }}</h3>
+    <div class="text-center news_subtitle">{{ module.section_sub_title }}</div>
+  </div>
+  {% set rec_posts = blog_recent_posts(module.select_blog, module.post_count) %}
+  <div class="container page-center">
+    <div class="row">
+      {% for rec_post in rec_posts %}
+      <div class="column col-lg-4 col-md-12 col-sm-12 col-xs-12">
+        <a class="ng-tns-c1-0" href="{{ rec_post.absolute_url }}">
+          <div class="news_article" style="background-image: url({{ rec_post.Guide-Download-banner.homeimage }});">
+            <div class="news_data">
+              <div class="news_des">{{ rec_post.name|striptags }}</div>
+                {% if rec_post.blog_post_author %}
+              <div class="author">{{ rec_post.blog_post_author.display_name }}</div>
+              {% endif %}
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    {% if module.button_enabled %}
+    <div class="bottom_btn">
+      <a href="{{ module.button_url.href }}">{{ module.button_text }}</a>
+    </div>
+    {% endif %}
+  </div>
+</section>

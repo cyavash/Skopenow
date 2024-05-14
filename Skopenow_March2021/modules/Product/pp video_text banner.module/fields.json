@@ -1,0 +1,57 @@
+[ {
+  "id" : "a0f6806a-e2cc-43fa-1e11-0d5fcc46a202",
+  "name" : "top_text",
+  "display_width" : null,
+  "label" : "Top text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Enhanced INVESTIGATIVE PROCESS"
+}, {
+  "id" : "1d81e7eb-9487-b8c7-10fd-7688fe07d697",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Respond to threat actors and risks with a single click"
+}, {
+  "id" : "8f9f416e-c578-447e-f5ac-5efbaba381a0",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Skopenow’s Workbench solution replaces disparate OSINT tools and manual techniques by automatically surfacing public data on people and businesses. Unlike other OSINT products, Workbench is fully automated, delivering faster, more accurate results compared to legacy methods. With Workbench, your team can scale their decisioning processes, freeing up time to focus on other mission-critical objectives."
+}, {
+  "id" : "b58386ca-306a-b418-9417-0c1c91bebd65",
+  "name" : "position",
+  "display_width" : null,
+  "label" : "Switch content position ",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "02d807cb-830e-4dd7-a870-1a80ca35e6e4",
+  "name" : "reveal",
+  "display_width" : null,
+  "label" : "Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

@@ -1,0 +1,134 @@
+[ {
+  "id" : "22e86709-399f-2283-7427-7899d69c1051",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "What will be covered"
+}, {
+  "id" : "a12450f8-90db-6e4b-da44-d7b272134896",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+}, {
+  "id" : "92727a68-66e7-557a-0f18-8a89dd27c98e",
+  "name" : "field_group",
+  "display_width" : null,
+  "label" : "Field group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 3,
+    "max" : 6,
+    "sorting_label_field" : "53fc59ed-2a1d-88f7-4905-53e8d4b51908",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "6048b4ec-b1fa-19b1-1136-f4d6956ee16d",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201383.svg",
+      "alt" : "Group 1383",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    }
+  }, {
+    "id" : "53fc59ed-2a1d-88f7-4905-53e8d4b51908",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Topic Heading"
+  }, {
+    "id" : "e0bee63f-47d5-edda-981e-14994bb1a148",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201383.svg",
+      "alt" : "Group 1383",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "title" : "Topic Heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201383.svg",
+      "alt" : "Group 1383",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "title" : "Topic Heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod</p>"
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201383.svg",
+      "alt" : "Group 1383",
+      "loading" : "lazy",
+      "width" : 78,
+      "height" : 60,
+      "max_width" : 78,
+      "max_height" : 60
+    },
+    "title" : "Topic Heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod</p>"
+  } ]
+}, {
+  "id" : "3214a566-5558-0c24-ccc0-23ae6ca14b8c",
+  "name" : "book_a_demo_cta",
+  "display_width" : null,
+  "label" : "Book A Demo CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "cd9eff34-7281-484a-a7b1-b000030b2278"
+} ]

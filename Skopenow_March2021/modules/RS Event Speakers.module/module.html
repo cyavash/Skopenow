@@ -1,0 +1,22 @@
+<div class="speaker_wrapper">
+  <div class="speaker_inner page-center">
+    <h2>
+      {{ module.heading }}
+    </h2>
+    {% for item in module.speaker_group %}
+    <div class="content-with-icon event_speaker col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="speaker_bg_image" style="background-image:url('{{ item.icon.src }}')"></div>
+      <div class="ques_data">
+        <h3>{{ item.title }}</h3>
+        <h4>
+          {{ item.title_field }}
+        </h4>
+        {{ item.description }}
+        <a href="{{ item.linkedin_profile.url.href }}">
+          <img src="https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/iconmonstr-linkedin-4-1.svg" class="speaker_social">
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>  

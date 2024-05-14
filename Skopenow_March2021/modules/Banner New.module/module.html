@@ -1,0 +1,33 @@
+<div class="banner">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6">
+        <h1>
+          {{ module.heading }}
+        </h1>
+        <p>
+          {{ module.content }}
+        </p>
+      </div>
+      <div class="span6">
+        {% if module.banner_image.src %}
+          {% set sizeAttrs = 'width="{{ module.banner_image.width }}" height="{{ module.banner_image.height }}"' %}
+          {% if module.banner_image.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.banner_image.width }}" height="{{ module.banner_image.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.banner_image.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.banner_image.max_width }}" height="{{ module.banner_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.banner_image.loading != 'disabled' ? 'loading="{{ module.banner_image.loading }}"' : '' %}
+          <img src="{{ module.banner_image.src }}" alt="{{ module.banner_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+    </div><!-- end row-fluid -->
+  </div><!-- end container -->
+</div><!-- end banner -->
+
+<style>
+  .banner {
+    background: {{ module.background_gradient }};
+    padding: {{ module.padding }};
+  } 
+</style>

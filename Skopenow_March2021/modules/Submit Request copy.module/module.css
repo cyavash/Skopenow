@@ -1,0 +1,90 @@
+
+.submit_request .tracing_sections {
+  padding: 100px 0;
+}
+
+.submit_request .tracing_sections h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.submit_request .tracing_sections p {
+  font-size: 18px;
+  color: #a2c3d4;
+  padding-right: 180px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.submit_request .tracing_sections p span {
+  color: #fff;
+}
+
+.submit_request .tracing_sections .analyst_assistancebg2 {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 hsl(0deg 0% 48% / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  position: absolute;
+  top: -185px;
+  left: 100px;
+  background-color: #fff;
+  transform: rotate( -30deg );
+  display: flex;
+  justify-content: space-around;
+}
+
+.submit_request .tracing_sections .row > div[class*="col-"] {
+  position: relative;
+  padding: 0 15px;
+}
+
+.submit_request .tracing_sections img.charc {
+  width: 50px;
+}
+
+.submit_request .tracing_sections img.charc.charc1 {
+  width: 60px;
+}
+
+.submit_request .row.tracing_sections {
+  margin: 0;
+}
+
+.submit_request .tracing_sections .analyst_assistancebg3 {
+  width: 200px!important;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 hsl(0deg 0% 48% / 10%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  position: absolute;
+  top: -30px;
+  left: 230px;
+  background-color: #fff;
+  transform: rotate( 20deg );
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 160px;
+}
+
+@media(max-width:1200px){
+  .submit_request .tracing_sections p {
+    padding: 0;
+  }
+}
+@media(max-width:960px){
+  .submit_request .tracing_sections .analyst_assistancebg3 {
+    left: 140px;
+  }
+}
+@media(max-width:767px){
+  .submit_request .row.tracing_sections {
+    padding: 50px 0;
+  }
+
+  .submit_request .tracing_sections .analyst_assistancebg2,
+  .submit_request .tracing_sections .analyst_assistancebg3 {
+    display: none;
+  }
+}

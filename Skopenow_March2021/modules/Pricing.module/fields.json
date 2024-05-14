@@ -1,0 +1,201 @@
+[ {
+  "id" : "7fba923c-5511-8454-9604-286f772cc52d",
+  "name" : "pricing_item",
+  "display_width" : null,
+  "label" : "Pricing Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "71b0c6c5-7d4b-3562-def9-3c116868969c",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "71b0c6c5-7d4b-3562-def9-3c116868969c",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Pay As You Go <span>SKP</span>"
+  }, {
+    "id" : "75f73b14-e032-be77-45e4-3e5a3a33c49e",
+    "name" : "feature_items",
+    "display_width" : null,
+    "label" : "Feature Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "89af59c0-e14e-d303-895d-985d935b34a0",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "43810229-6901-aad7-0522-5eb2edea8777",
+      "name" : "select_icon",
+      "display_width" : null,
+      "label" : "Select Icon",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "icon-check", "Check" ], [ "icon-cancel", "Cancel" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "icon-check"
+    }, {
+      "id" : "89af59c0-e14e-d303-895d-985d935b34a0",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Feature 1"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "select_icon" : "icon-check",
+      "title" : "Feature 1"
+    }
+  }, {
+    "id" : "1f3f7cf4-868c-c791-a18d-f8419bde20c0",
+    "name" : "button",
+    "display_width" : null,
+    "label" : "Button",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "bbb8b737-9a2e-da36-44fb-ae2bff651454",
+      "name" : "button_type",
+      "display_width" : null,
+      "label" : "Button Type",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "std", "Stabdard" ], [ "cta", "CTA" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice",
+      "default" : "std"
+    }, {
+      "id" : "35bb9238-94bf-8310-0916-2973b6eb8e68",
+      "name" : "text_field",
+      "display_width" : null,
+      "label" : "Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "visibility" : {
+        "controlling_field" : "bbb8b737-9a2e-da36-44fb-ae2bff651454",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Button Text"
+    }, {
+      "id" : "091b9c5a-238f-112d-a2dc-e041b5a20553",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "bbb8b737-9a2e-da36-44fb-ae2bff651454",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "std",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "d240eb1d-e49a-8fc8-49ab-f81eb126d03f",
+      "name" : "cta_field",
+      "display_width" : null,
+      "label" : "CTA",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "bbb8b737-9a2e-da36-44fb-ae2bff651454",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "cta",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "type" : "cta"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "button_type" : "std",
+      "text_field" : "Button Text",
+      "link_field" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "heading" : "Pay As You Go <span>SKP</span>",
+    "feature_items" : {
+      "select_icon" : "icon-check",
+      "title" : "Feature 1"
+    },
+    "button" : {
+      "button_type" : "std",
+      "text_field" : "Button Text",
+      "link_field" : {
+        "url" : {
+          "type" : "EXTERNAL",
+          "href" : "#",
+          "content_id" : null
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

@@ -1,0 +1,155 @@
+[ {
+  "id" : "704d2317-e08d-6208-94f2-265e105e6969",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Workbench Product Benefits"
+}, {
+  "id" : "8fc9a502-3c63-3cc5-063f-3739f8b25c44",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "e8a50d3a-cde1-7f3b-9a4e-be83ca52de2e",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    }
+  }, {
+    "id" : "fa23fc93-141a-4d28-c1a3-3ad784547d87",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Accuracy"
+  }, {
+    "id" : "df8d62ef-4ec0-30d9-4de9-cba73cb77469",
+    "name" : "sub_content",
+    "display_width" : null,
+    "label" : "Sub content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "sub_title" : "Accuracy",
+    "sub_content" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "sub_title" : "Accuracy",
+    "sub_content" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "sub_title" : "Accuracy",
+    "sub_content" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "sub_title" : "Accuracy",
+    "sub_content" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "sub_title" : "Accuracy",
+    "sub_content" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Union.svg",
+      "alt" : "Union",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    },
+    "sub_title" : "Accuracy",
+    "sub_content" : "Tap into identity resolution algorithms that cross-check millions of data points in real time to return only the most relevant and reliable results."
+  } ]
+} ]

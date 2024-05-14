@@ -1,0 +1,195 @@
+/* ******************************************************************************
+*********************************************************************************
+This file contains all the neccessary styles to control how your
+system pages look. These pages include the error pages (404 and 500),
+password protected content and search listing results.
+*********************************************************************************
+****************************************************************************** */
+
+.error-page {
+  padding: 10rem 20px;
+  text-align: center;
+  position: relative;
+}
+
+.error-page:before {
+  content: attr(data-error);
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: {{ secondary_font_family }};
+  font-size: 40vw;
+  font-weight: bold;
+  color: #F3F6F9;
+  z-index: -1;
+}
+.not_found_page .body-content {
+  text-align: center;
+}
+.not_found_page .custom_header {
+  box-shadow: none !important;
+}
+.not_found_page .body-content h4 {
+  color: #007bff;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.not_found_page .body-content h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 35px;
+  color: #212529;
+}
+
+.not_found_page .body-content p {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.not_found_page .body-content img {
+  width: 80px;
+  margin: 10px 0 40px;
+}
+
+.not_found_page .body-content p.go_back {
+  font-size: 14px;
+  font-family: Avenir;
+}
+
+.not_found_page .body-content p.still_lost {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: Avenir;
+}
+
+.not_found_page .header_container_wrapper {
+  height: auto;
+}
+
+.not_found_page .body-content {
+  text-align: center;
+  font-family: Avenir;
+}
+
+.not_found_page > .page-center{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (min-width: 1100px) {
+
+  .error-page:before {
+    font-size: 20rem;
+  }
+
+}
+
+.error-page_heading {
+  margin-bottom: 1rem;
+}
+
+.systems-page {
+  padding: 3rem 0px;
+}
+
+.systems-page .success {
+  display: inline-block;
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 650px;
+  background-color: #cde3cc;
+  border: 1.5px solid #4f7d24;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #4f7d24;
+  padding: .1rem .75rem;
+}
+
+.hs-search-results {
+  margin-top: 2rem;
+}
+ul.hs-search-results__listing li {
+  margin-bottom: 2rem;
+}
+.hs-search-results__title {
+  font-family: {{ headings_font_family }};
+  font-size: 1.25rem;
+  color: {{ body_color }};
+  text-decoration: underline;
+  margin-bottom: .25rem;
+}
+.hs-search-results__title:hover {
+  text-decoration: none;
+}
+.hs-search-results__description {
+  padding-top: .5rem;
+}
+.hs-search-highlight {
+  font-weight: bold;
+}
+.hs-search-results__pagination a {
+  color: {{ body_color }};
+}
+
+.email-prefs .item.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.email-prefs .item.disabled input:disabled {
+  cursor: not-allowed;
+}
+
+.hs_cos_wrapper_type_password_prompt input[type="password"] {
+  height: auto !important;
+  margin: 0 !important;
+}
+
+.hs_cos_wrapper_type_email_simple_subscription input[type="email"] {
+  width: 100% !important;
+}
+
+.hs_cos_wrapper_type_email_subscriptions h1,
+.hs_cos_wrapper_type_email_subscriptions h2 {
+  font-size: 30px;
+}
+
+label[for="hs-login-widget-remember"] {
+  display: inline-block;
+}
+
+.hs_cos_wrapper_type_member_login .hs-form-field label,
+.hs_cos_wrapper_type_member_register .hs-form-field label,
+.hs_cos_wrapper_type_password_reset .hs-form-field label {
+  padding: 5px 0;
+}
+
+
+@media (max-width: 479px) {
+
+  .hs_cos_wrapper_type_email_subscriptions_confirmation h2 {
+    font-size: 28px;
+  }
+
+  .hs_cos_wrapper_type_email_subscriptions h1,
+  .hs_cos_wrapper_type_email_subscriptions h2 {
+    font-size: 25px;
+  }
+
+}
+
+@media(max-width:425px){
+  .has-footer-only .footer_v2-menu .hs-menu-wrapper>ul>li {
+    text-align: center;
+  }
+}

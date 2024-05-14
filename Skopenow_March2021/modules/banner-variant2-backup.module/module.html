@@ -1,0 +1,52 @@
+<link rel="preload" href="{{ module.animation_image.src }}" as="image">
+
+<div class="banner-variant" style="background: url('{{ module.background_image.src }}') bottom center no-repeat;">
+  <div class="page-center">
+    <div class="banner-content">
+      <h1>
+        {{ module.heading }}
+      </h1> 
+      {% inline_rich_text field="content" value="{{ module.content }}" %}
+      <a href="{{ module.cta_link }}" class="cta_button">{{ module.cta_text }}</a>
+    
+      {% if module.image_field.src %}
+      <div style="display: {{ module.image_toggle }};">
+        {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+          {% if module.image_field.size_type == 'auto' %}
+            {% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+          {% elif module.image_field.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+          {% endif %}
+           {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+          <img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+      {% endif %}    
+      </div>  
+      <div class="animation-holder" style="background: url('{{ module.animation_image.src }}') no-repeat center center; background-size: 78.5%; background-position: bottom center ">
+        <div class="animation-holder-inner" style="opacity: 0;">
+          {{ module.animation }}
+        </div>  
+      </div>  
+      
+    </div>    
+  </div><!-- end page-center -->
+</div><!-- end banner-variant -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+    var animationInner = document.querySelector('.animation-holder-inner');
+    
+    // After custom delay in seconds, make the inner animation visible by changing opacity
+    if(animationInner) {
+      animationInner.style.opacity = '1';
+      
+      //Remove the background from the outer div as well
+      var animationHolder = animationInner.parentElement;
+      if (animationHolder) {
+        animationHolder.style.background = 'none';
+      }
+    }
+  }, {{ module.animation_delay }}); // Wait for 3 seconds
+});
+</script>

@@ -1,0 +1,46 @@
+[ {
+  "id" : "1d2433a0-fbf1-6df9-c4b4-058b3983d295",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Video heading goes here"
+}, {
+  "id" : "0ca35812-69af-cf4e-2c80-15980022ba1f",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+}, {
+  "id" : "d8b02d6e-93b3-9b22-9818-431dc9f4561a",
+  "name" : "video_yt_embed",
+  "display_width" : null,
+  "label" : "Video YT Embed",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<iframe width=\"1180\" height=\"664\" src=\"https://www.youtube.com/embed/j9tBHStfLJA\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+}, {
+  "id" : "1ca6533d-a6c7-5d2b-25fa-7a62968a731d",
+  "name" : "book_a_demo_cta",
+  "display_width" : null,
+  "label" : "Book A demo CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "5a820421-4490-4a72-8c67-64617b7cff84"
+} ]

@@ -1,0 +1,29 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: Guide Download
+-->
+
+{% extends './layouts/base.html' %}
+
+{% block header %}
+  {% global_partial path="./partials/Header_New.html" %}
+{% endblock header %}
+
+{% block body %}
+
+{% module "module_167534789947813" path="/Skopenow_March2021/modules/Guide-Download-banner", label="Guide-Download-banner" %}
+
+{% module "module_16933952199632" path="/rich_text_blank", label="rich_text_blank" %}
+<div style="max-width:1090px; margin:auto; padding-top:74px;padding-bottom:50px;text-align:center;">
+<h2 style="font-family:'DM Sans';font-size:36px;font-weight:700;color:#000000;">
+  Download Other Guides 
+  </h2>  
+{% module "module_16759449358716" path="/guide_image_slider_gallery", label="guide_image_slider_gallery" %}
+</div>
+
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+{% endblock footer%}

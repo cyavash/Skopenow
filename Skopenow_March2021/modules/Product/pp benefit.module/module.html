@@ -1,0 +1,36 @@
+<div class="pp_benefits pp_benefits1 {% if module.reveal == true %} reveal{% endif %}">
+  <div class="page-center">
+    <h2>
+      {{ module.title }}
+    </h2>
+    <div class="content">
+      {% for item in module.block %}
+       <div class="block" style="
+        {% if module.no_of_columns == 'two' %}
+          width: calc(50% - 30px;
+        {% elif module.no_of_columns == 'three' %}
+          width: calc(33.33% - 30px);
+        {% elif module.no_of_columns == 'four' %}
+          width: calc(25% - 30px);
+        {% elif module.no_of_columns == 'five' %}
+          width: calc(20% - 30px);
+        {% elif module.no_of_columns == 'six' %}
+          width: calc(16.66% - 30px);
+        {% endif %}">
+        <img src="{{ item.icon.src }}">
+        <h3>
+          {{ item.sub_title }}
+        </h3>
+        <p>
+          {{ item.sub_content }}
+        </p>
+         {% if item.button_text %}
+           <p class="pp-button-holder">
+              <a href="{{ item.button_link }}">{{ item.button_text }}</a>  
+           </p>
+         {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

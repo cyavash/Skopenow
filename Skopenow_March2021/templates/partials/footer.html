@@ -1,0 +1,35 @@
+<!--
+templateType: global_partial
+label: Page Footer
+-->
+
+<footer class="custom_footer">
+  <div class="page-center footer_container">
+    <div class="footer_row">
+      <div class="footer_col col_1">
+        {% module "footer_contact" path="../../modules/Footer Contact", label="Footer Contact" %}
+      </div>
+      <div class="footer_col col_2 has-navigation">
+        {% menu "Products_menu" id=42874589250, label='Products Menu' %}
+      </div>
+      <div class="footer_col col_3 has-navigation">
+        {% menu "Developers_menu" id=42874589312, label='Developers Menu' %}
+      </div>
+      <div class="footer_col col_4 has-navigation">
+        {% menu "Company_menu" id=42874555739, label='Company Menu' %}
+      </div>
+      <div class="footer_col col_5 has-navigation">
+        {% menu "Resources_menu" id=42874558259, label='Resources Menu' %}
+      </div>
+      <div class="footer_copyright">
+        {% module_block module "copyright" label="Copyright" path="@hubspot/rich_text" %}
+        {% module_attribute "html" %}
+        <p>
+          © Skopenow, Inc. 
+        </p>
+        {% end_module_attribute %}
+        {% end_module_block %}
+      </div>
+    </div>
+  </div>
+</footer>

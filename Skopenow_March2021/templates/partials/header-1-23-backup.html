@@ -1,0 +1,46 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+
+<div class="header_container_wrapper">
+  <header class="custom_header custom_header_lp">
+    <div class="header__container">
+      <div class="header_logo">
+        {% module "header_logo" path="../../modules/Advanced Logo", label="Header Logo" %}
+      </div>
+      <div class="custom-menu-primary desktop">
+        {% module "navigation-primary" path="../../modules/menu-section", label="Primary Menu" %}
+      </div>
+      <div class="globalNav custom-mobile-menu">
+        <div class="mobile-trigger">
+          <i class="icon-menu1"></i>
+        </div>
+        <div class="popup">
+          <div class="popupContainer">
+            <a class="popupCloseButton">Close</a>
+            <div class="mobileProducts">
+              {% menu "products_menu" id=42898641028, label='Products Menu' %}
+            </div>
+            <div class="mobileSecondaryNav">
+              {% menu "secondary_menu" id=42898641061, label='Secondary Menu' %}
+            </div>
+            <div class="footBtns">
+              {% menu "menu_buttons" id=42898712707, label='Menu Buttons' %}
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="dropdownRoot">
+      <div class="dropdownBackground">
+        <div class="alternateBackground"></div>
+      </div>
+      <div class="dropdownArrow"></div>
+      <div class="dropdownContainer">
+
+      </div>
+    </div>
+  </header>
+</div>

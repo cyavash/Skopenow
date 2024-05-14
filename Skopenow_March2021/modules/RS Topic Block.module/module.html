@@ -1,0 +1,21 @@
+<div class="topic_wrapper" style="background: transparent linear-gradient(90deg, #314A68 0%, #16293A 100%) 0% 0% no-repeat padding-box;">
+  <div class="skew_skopenow_help top_left_right"></div>
+  <div class="topic_inner page-center">
+    <h2>
+      {{ module.heading }}
+    </h2>
+    {% for item in module.field_group %}
+    <div class="content-with-icon topic_block col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="topic_bg_image" style="background-image:url('{{ item.icon.src }}')"></div>
+      <div class="ques_data">
+        <h4>{{ item.title }}</h4>
+        {{ item.description }}
+      </div>
+    </div>
+    {% endfor %}
+    <div class="cta_wrapper">
+      {% cta guid="{{ module.book_a_demo_cta }}" %}
+    </div>
+  </div>
+  <div class="skew_skopenow_help bottom_left_right"></div>
+</div>

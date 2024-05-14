@@ -1,0 +1,99 @@
+.skopenow_help_links_section {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.skopenow_help_links_section .skopenow_help_links a {
+  border: 1px solid #8a8b8b;
+  color: #333;
+  padding: 20px 0;
+  font-size: 1.25rem;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+  transition: all .5s ease;
+  font-family: 'DM Sans';
+}
+
+.skopenow_help_links_section .skopenow_help_links a.green_link {
+  border-left-color: #49bf70;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.green_link:hover {
+  transition: all .3s ease;
+  color: #49bf70;
+  border-color: #49bf70;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.blue_link {
+  border-left-color: #3175d3;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.blue_link:hover {
+  transition: all .3s ease;
+  color: #3175d3;
+  border-color: #3175d3;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.red_link {
+  border-left-color: #e9374f;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.red_link:hover {
+  transition: all .3s ease;
+  color: #e9374f;
+  border-color: #e9374f;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.red_ber {
+  border-left-color: #7968ec;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.red_ber:hover {
+  transition: all .3s ease;
+  color: #7968ec;
+  border-color: #7968ec;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.blue_gray {
+  border-left-color: #74909b;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.blue_gray:hover {
+  transition: all .3s ease;
+  color: #74909b;
+  border-color: #74909b;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.yellow_link {
+  border-left-color: #fc9e01;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.yellow_link:hover {
+  transition: all .3s ease;
+  color: #fc9e01;
+  border-color: #fc9e01;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.mov_link {
+  border-left-color: #885369;
+}
+
+.skopenow_help_links_section .skopenow_help_links a.mov_link:hover {
+  transition: all .3s ease;
+  color: #885369;
+  border-color: #885369;
+}
+.skopenow_help_links_section .new_section_separator {
+  width: 100%;
+  height: 1px;
+  background-color: #212529;
+  margin-bottom: 60px;
+  display: flex;
+}
+.skopenow_help_links_section h3 {
+  margin-bottom: 19px;
+  font-family: 'DM Sans';
+  font-size: 27px;
+  font-weight:700;
+}

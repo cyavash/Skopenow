@@ -1,0 +1,42 @@
+.faq-section form {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.faq-section form input#faq_search_input {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  padding-right: 80px;
+  background: #fff;
+  width: 500px;
+  border-radius: 0;
+  border: 1px solid #dedede;
+  margin-bottom: 20px;
+  max-width: 90%;
+  height: 50px;
+}
+
+.faq-section {
+  font-size: 14px;
+}
+
+.faq-section form input#faq_search_input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.faq-section form input#faq_search_input::placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+.faq-section .faq-items h2 {
+  margin: 20px 0;
+  font-size: 22px;
+  color: #3e94e2;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: Avenir;
+}

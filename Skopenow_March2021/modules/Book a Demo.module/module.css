@@ -1,0 +1,76 @@
+.live_demo_section {
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: center;
+}
+.live_demo_section .demo-btn{
+  color: #fff;
+  border-radius:100px;
+}
+.live_demo_section .live_demo > div {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  padding: 25px 0px;
+  color: #707a80;
+  margin: 20px 0 50px 0;
+}
+
+.live_demo_section .live_demo {
+  display: flex;
+}
+
+.live_demo_section .live_demo > div:first-child {
+  border-right: none;
+  padding-left: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.live_demo_section .live_demo > div:last-child {
+  border-left: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.live_demo_section .live_demo > div > span > span {
+  font-size: 14px;
+  color: #707a80;
+}
+
+.live_demo_section .live_demo > div span {
+  font-weight: normal;
+  color: #2e3234;
+  font-size: 14px;
+}
+
+@media(max-width:767px){
+  .live_demo_section .live_demo {
+    flex-direction: column;
+  }
+
+  .live_demo_section .live_demo > div:first-child {
+    border: 1px solid #ccc;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  .live_demo_section .live_demo > div:last-child {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .live_demo_section .live_demo div .demo-btn {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media(max-width:600px){
+  .live_demo_section {
+    max-width: calc(80% + 24px);
+    margin: 0 auto;
+  }
+}

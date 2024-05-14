@@ -1,0 +1,128 @@
+[ {
+  "id" : "ed2890b4-f194-bfc1-7ca3-95d0a3b2a053",
+  "name" : "logo_1",
+  "display_width" : null,
+  "label" : "Logo 1",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Logo.svg",
+    "alt" : "Skopenow-Logo",
+    "loading" : "lazy",
+    "width" : 140,
+    "height" : 17,
+    "max_width" : 140,
+    "max_height" : 17
+  }
+}, {
+  "id" : "faef3337-cb22-53c3-4a46-b428e033a387",
+  "name" : "logo_2",
+  "display_width" : null,
+  "label" : "Logo 2",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/LegacyTools.svg",
+    "alt" : "LegacyTools",
+    "loading" : "lazy",
+    "width" : 141,
+    "height" : 24,
+    "max_width" : 141,
+    "max_height" : 24
+  }
+}, {
+  "id" : "9de649c1-888e-ee8a-0af9-43821b4773fd",
+  "name" : "comparison_item",
+  "display_width" : null,
+  "label" : "Comparison Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 9
+  },
+  "children" : [ {
+    "id" : "cc0fb573-345c-ea55-6e5b-b9c61c285cbe",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Data Coverage"
+  }, {
+    "id" : "5d002f8c-5914-d039-8da5-c447a69f690e",
+    "name" : "content_1",
+    "display_width" : null,
+    "label" : "Content 1",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>"
+  }, {
+    "id" : "74668520-c254-a1b3-1d4e-4506787ce833",
+    "name" : "content_2",
+    "display_width" : null,
+    "label" : "Content 2",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  }, {
+    "heading" : "Data Coverage",
+    "content_1" : "<p class=\"content1\">Thousands of data sources including high-quality consumer records and social media content, public records, vehicle records, dark web data- all in one solution.</p>",
+    "content_2" : "<p class=\"content2\">Focus on social media sources. Can include unlawful data capture methods including the&nbsp; invasive befriending of social media accounts.</p>"
+  } ]
+} ]

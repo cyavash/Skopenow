@@ -1,0 +1,35 @@
+<div class="webinar_register">
+  <img src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Images/circle-dots-2.svg" class="overlay">
+  <div class="container">
+    
+    <div class="content">
+      <div class="text_part">
+        <div class="logo">
+          <img src="{{ module.logo.src }}">
+        </div>
+        <h4>
+          {{ module.date_time }}
+        </h4>
+        <h2>
+          {{ module.title }}
+        </h2>
+        <div>
+          {{ module.content }}
+        </div>
+      </div>
+      <div class="form_part">
+        <p>
+          {{ module.form_sub_title }}
+        </p>
+        {% form
+            form_to_use="{{ module.form.form_id }}"
+            response_response_type="{{ module.form.response_type }}"
+            response_message="{{ module.form.message }}"
+            response_redirect_id="{{ module.form.redirect_id }}"
+            response_redirect_url="{{module.form.redirect_url}}"
+            gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+          %}
+      </div>
+    </div>
+  </div>
+</div>

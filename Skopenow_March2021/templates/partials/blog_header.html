@@ -1,0 +1,35 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+
+<div class="header_container_wrapper cus_blog_header">
+  <header class="custom_header blog_page">
+    <div class="header_container">
+      <div class="header_row">
+        <div class="blog_header_logo header_logo">
+          {% module "header_logo" path="/Skopenow_March2021/modules/Advanced Logo", label="Header Logo" %}
+        </div>
+        <div class="blog-header-menu">
+          <div class="blog-mobile-trigger">
+            <span class="navbar-toggler-icon"><i class="icon-menu1" aria-hidden="true"></i></span>
+          </div>
+          {% module "navigation-primary" path="../../modules/menu-section", label="Primary Menu" primary_menu_field="43098521016" %}
+        </div>
+        <div class="custom-google-search1">
+          <div class="hs-search-field">
+            <div class="hs-search-field__bar">
+              <form action="/{{ site_settings.content_search_results_page_path }}">
+                <i class="icon-search bold" aria-hidden="true"></i>
+                <input type="text" class="hs-search-field__input" name="term" autocomplete="off" placeholder="Search">
+              </form>
+            </div>
+            <ul class="hs-search-field__suggestions"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+

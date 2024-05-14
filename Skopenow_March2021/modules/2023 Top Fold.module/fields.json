@@ -1,0 +1,185 @@
+[ {
+  "id" : "683f3090-a016-1eb2-6b2d-a507e148c235",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "inline_help_text" : "Leave empty to display gradient background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/24915.png",
+    "alt" : "24915",
+    "loading" : "lazy",
+    "width" : 2191,
+    "height" : 1252,
+    "max_width" : 2191,
+    "max_height" : 1252
+  }
+}, {
+  "id" : "5cac312b-5d24-1ce3-9522-0ee083e1f28f",
+  "name" : "background_gradient_start_color",
+  "display_width" : null,
+  "label" : "Background Gradient Start Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#427bc8",
+    "opacity" : 100
+  }
+}, {
+  "id" : "2e8646de-701a-e392-daf3-b5f98dab6f4c",
+  "name" : "background_gradient_end_color",
+  "display_width" : null,
+  "label" : "Background Gradient End Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#2c3f5d",
+    "opacity" : 100
+  }
+}, {
+  "id" : "ee9ff873-1e8c-a24e-a6de-8e0e89e9921c",
+  "name" : "gradient_direction",
+  "display_width" : null,
+  "label" : "Gradient Direction",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "90deg"
+}, {
+  "id" : "95ef2454-f343-a19a-e28d-bd0a7ec4d7a7",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your Value Proposition Heading goes here"
+}, {
+  "id" : "b145e1f4-4c08-e059-c506-dfea9f771f34",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et"
+}, {
+  "id" : "5d37fd66-ace6-b722-2952-4d12f7c2b088",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "5b501ac9-36b8-5b1d-b589-19a014f3bf15",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button Type",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "std", "Standard" ], [ "cta", "CTA" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "std"
+  }, {
+    "id" : "a0050c8f-c284-24e8-0cb7-ba07647166a4",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : "5b501ac9-36b8-5b1d-b589-19a014f3bf15",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "std",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Book a Demo"
+  }, {
+    "id" : "b9f5a4a7-7aa3-7ca8-1022-efb3854780db",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "5b501ac9-36b8-5b1d-b589-19a014f3bf15",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "std",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "2dd66423-6991-b363-2791-b433a311208f",
+    "name" : "cta_field",
+    "display_width" : null,
+    "label" : "CTA",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : "5b501ac9-36b8-5b1d-b589-19a014f3bf15",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "cta",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "type" : "cta"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "button_type" : "std",
+    "text_field" : "Book a Demo",
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

@@ -1,0 +1,89 @@
+[ {
+  "id" : "35bc4944-4a85-cb0f-305b-e0376c68beb4",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Serving"
+}, {
+  "id" : "b2b9714d-acb4-52ef-8a09-94069f1a1b5c",
+  "name" : "serving_button_items",
+  "display_width" : null,
+  "label" : "Serving Button Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "60b79da2-a5e0-4857-a020-9e3fc892e508",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "60b79da2-a5e0-4857-a020-9e3fc892e508",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Button Text"
+  }, {
+    "id" : "e21d314f-bbaf-62bf-3514-83066fda23a2",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "0ef894cc-b40d-7939-aee1-262bf21890b7",
+    "name" : "border_color",
+    "display_width" : null,
+    "label" : "Border Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "green_link", "Green" ], [ "blue_link", "Blue" ], [ "red_link", "Red" ], [ "red_ber", "Voilet" ], [ "blue_gray", "Blue Grey" ], [ "yellow_link", "Yellow" ], [ "mov_link", "Midnight Blue" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "green_link"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "text" : "Button Text",
+    "link_field" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    },
+    "border_color" : "green_link"
+  }
+} ]

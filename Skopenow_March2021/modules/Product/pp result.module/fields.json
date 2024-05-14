@@ -1,0 +1,87 @@
+[ {
+  "id" : "3d7408f2-911e-848c-9272-b0b0c0eb75ca",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Results that speak for themselves"
+}, {
+  "id" : "20451f51-a3b5-9add-eb5f-d8e8665510da",
+  "name" : "summary",
+  "display_width" : null,
+  "label" : "summary",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our approach has been validated by the most innovative technology companies, top banks, top insurance carriers, and large government agencies."
+}, {
+  "id" : "1fa6d085-251a-4de4-6cb4-7ac60c0e1781",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "6287d12b-079a-bd81-5312-0ff25221fad7",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "36x"
+  }, {
+    "id" : "0dae1801-948f-1a01-30d5-8747d43b4136",
+    "name" : "sub_text",
+    "display_width" : null,
+    "label" : "Sub text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "faster to produce reports than investigators using legacy, manual processes"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "36x",
+    "sub_text" : "faster to produce reports than investigators using legacy, manual processes"
+  }, {
+    "sub_title" : "36x",
+    "sub_text" : "faster to produce reports than investigators using legacy, manual processes"
+  }, {
+    "sub_title" : "36x",
+    "sub_text" : "faster to produce reports than investigators using legacy, manual processes"
+  } ]
+}, {
+  "id" : "e7723810-c074-01f2-e0c2-3c5281b181d6",
+  "name" : "center_alignment",
+  "display_width" : null,
+  "label" : "Center alignment",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+} ]

@@ -1,0 +1,36 @@
+<div class="footer_form_wrapper" style="background: transparent linear-gradient(90deg, #102334 0%, #102334 100%) 0% 0% no-repeat padding-box;">
+  <div class="skew_skopenow_help top_left_right"></div>
+  <div class="footer_form_inner page-center">
+    <div class="footer_form form_wrapper">
+      <div class="form_wrapper_inner">             
+      <h3>
+        {{ module.form_heading }}
+      </h3>
+        <div class="new_form_contain>
+      {% form
+        form_to_use="{{ module.form.form_id }}"
+        response_response_type="{{ module.form.response_type }}"
+        response_message="{{ module.form.message }}"
+        response_redirect_id="{{ module.form.redirect_id }}"
+        response_redirect_url="{{module.form.redirect_url}}"
+        gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+      %}
+                    </div>
+    </div>
+      </div>
+    <div class="share_box">
+        <h4>
+          {{ module.share_heading }}
+        </h4>
+        {% if module.share_facebook %}
+        <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}" target="_blank"><img src="https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/iconmonstr-facebook-4.svg" alt="facebook"></a></li>
+        {% endif %}
+        {% if module.share_linkedin %}
+        <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source={{ content.absolute_url }}" target="_blank"><img src="https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/iconmonstr-linkedin.svg" alt="linkedin"></a></li>
+        {% endif %}
+        {% if module.share_twitter %}
+        <li><a href="https://twitter.com/intent/tweet?text={{ content.absolute_url }}" target="_blank"><img src="https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/iconmonstr-twitter-4.svg" alt="twitter"></a></li>
+        {% endif %}
+      </div>
+  </div>
+</div>

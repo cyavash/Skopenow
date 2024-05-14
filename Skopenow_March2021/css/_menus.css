@@ -1,0 +1,12 @@
+/* ******************************************************************************
+*********************************************************************************
+This file contains all the neccessary styles to control how your
+menu items appear, including the link and hover effects.
+*********************************************************************************
+****************************************************************************** */
+
+
+
+header .custom-menu-primary .navigation-primary>ul.submenu>li:nth-last-child(3):before {
+  background-color: ##e6e6e6 !important;
+}

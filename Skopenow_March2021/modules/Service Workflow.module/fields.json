@@ -1,0 +1,199 @@
+[ {
+  "id" : "e1e065ea-31df-462f-bbb6-8a04da7ca5a5",
+  "name" : "workflow_items",
+  "display_width" : null,
+  "label" : "Workflow Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "d38941cf-8c5c-3e88-63db-b5dbd460e4d2",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "d38941cf-8c5c-3e88-63db-b5dbd460e4d2",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Left Column Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "98480ed1-e350-858f-7292-e82bae26defb",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Left Column Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "5c391097-6d00-c2ec-5b01-d0151a23ed1c",
+    "name" : "right_column",
+    "display_width" : null,
+    "label" : "Right Column",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "dd0c8c3f-783c-6486-76ec-e08e765fdbee",
+      "name" : "chart_title_items",
+      "display_width" : null,
+      "label" : "Chart Title Items",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : null
+      },
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Title"
+    }, {
+      "id" : "1a7b4a35-7239-e8bd-bab4-38e957f8bee1",
+      "name" : "chart_type",
+      "display_width" : null,
+      "label" : "Chart Type",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "circle", "Circle" ], [ "rectangle", "Rectangle" ] ],
+      "multiple" : false,
+      "reordering_enabled" : true,
+      "preset" : null,
+      "type" : "choice"
+    }, {
+      "id" : "9723a7e8-1681-5d24-02ca-6b47635a178d",
+      "name" : "chart_items_background_color",
+      "display_width" : null,
+      "label" : "Chart Items Background Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#a986fc",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "56f70b42-a331-98a2-d809-8baf2fd8340f",
+      "name" : "top_line",
+      "display_width" : null,
+      "label" : "Top Line",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "1a7b4a35-7239-e8bd-bab4-38e957f8bee1",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "circle",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "b4f9c88b-e363-42ea-bf9e-3f6da5d1d393",
+      "name" : "vertical_line",
+      "display_width" : null,
+      "label" : "Vertical Line",
+      "required" : false,
+      "locked" : false,
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "30dccd57-d815-b23b-1788-9e02eb367602",
+      "name" : "bottom_line",
+      "display_width" : null,
+      "label" : "Bottom Line ",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "1a7b4a35-7239-e8bd-bab4-38e957f8bee1",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "circle",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    }, {
+      "id" : "7cd8bcfa-ecfc-5dae-d3fc-993b1ab8d287",
+      "name" : "bottom_wide_line",
+      "display_width" : null,
+      "label" : "Bottom Wide Line",
+      "required" : false,
+      "locked" : false,
+      "visibility" : {
+        "controlling_field" : "1a7b4a35-7239-e8bd-bab4-38e957f8bee1",
+        "controlling_field_path" : null,
+        "controlling_value_regex" : "circle",
+        "property" : null,
+        "operator" : "EQUAL",
+        "access" : null
+      },
+      "display" : "checkbox",
+      "type" : "boolean",
+      "default" : false
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "chart_title_items" : "Title",
+      "chart_items_background_color" : {
+        "color" : "#a986fc",
+        "opacity" : 100
+      },
+      "top_line" : false,
+      "vertical_line" : false,
+      "bottom_line" : false,
+      "bottom_wide_line" : false
+    }
+  }, {
+    "id" : "007e0b67-1185-48b8-55de-18f7a38869e6",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#373866",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "Title",
+    "right_column" : {
+      "chart_title_items" : "Title",
+      "chart_items_background_color" : {
+        "color" : "#a986fc",
+        "opacity" : 100
+      },
+      "top_line" : false,
+      "vertical_line" : false,
+      "bottom_line" : false,
+      "bottom_wide_line" : false
+    },
+    "background_color" : {
+      "color" : "#373866",
+      "opacity" : 100
+    }
+  }
+} ]

@@ -1,0 +1,115 @@
+[ {
+  "id" : "9ca57fdf-69e6-61a2-e5f5-2830f01393eb",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Transactional Upgrades"
+}, {
+  "id" : "c9ef6148-cddb-a674-5a90-1aa8a5ec3582",
+  "name" : "upgrade_items",
+  "display_width" : null,
+  "label" : "Upgrade Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "be0280f2-abd8-dea0-168b-914175323eec",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "be0280f2-abd8-dea0-168b-914175323eec",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "329f4507-181a-c44d-10c1-f303aa7c892e",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Sub title"
+  }, {
+    "id" : "9ffc4984-9580-8c13-8687-da688da65184",
+    "name" : "price",
+    "display_width" : null,
+    "label" : "Price",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : 50
+  }, {
+    "id" : "08d80ada-1d81-b7ea-5551-c402e638b8ea",
+    "name" : "price_sub_title",
+    "display_width" : null,
+    "label" : "Price Sub Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Price subtitle"
+  }, {
+    "id" : "caced00f-0423-5cb3-6b28-5bbee97161a9",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/search.svg",
+      "alt" : "search",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "Title",
+    "sub_title" : "Sub title",
+    "price" : 50,
+    "price_sub_title" : "Price subtitle",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/search.svg",
+      "alt" : "search",
+      "loading" : "lazy",
+      "width" : 400,
+      "height" : 400,
+      "max_width" : 400,
+      "max_height" : 400
+    }
+  }
+} ]

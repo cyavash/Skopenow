@@ -1,0 +1,22 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+
+<div class="header_container_wrapper">
+  <header class="custom_header custom-header_v2">
+    <div class="header__container">
+      <div class="header_logo">
+        {% module "header_logo" path="../../modules/Advanced Logo", label="Header Logo" %}
+      </div>
+      <button id="toggle_btn" type="button" class="header_v2_trigger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="header_v2_menu">
+        {% module "navigation-primary" path="../../modules/menu-section", label="Primary Menu" primary_menu_field="42947116674" %}
+      </div>
+    </div>
+  </header>
+</div>

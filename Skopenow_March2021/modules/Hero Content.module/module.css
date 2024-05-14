@@ -1,0 +1,207 @@
+.hero_content {
+  padding: 50px 0;
+  margin-top: 108px;
+  margin-bottom:39px;
+  min-height: calc(100vh - 148px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_content .content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+/*   background-image: url('https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Grid.svg'); */
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.hero_content .text_part {
+  width: 51%;
+}
+.hero_content .text_part h1 {
+  font-family: DM Sans;
+  font-size: 60px;
+  line-height: 70px;
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-weight: bold;
+  color: #202020;
+  text-decoration: underline;
+  text-decoration-color: #BBDBFB;
+  text-decoration-thickness: 5px;
+   text-underline-offset:6px;
+  
+  max-width: 550px;
+}
+.hero_content .text_part p {
+  color: #535166;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+.hero_content .text_part a {
+  background: #0680FB;
+  color: #fff;
+  padding: 9px 24px;
+  display: inline-block;
+  border-radius: 30px;
+  font-family:'DM Sans';
+  font-size: 16px;
+  line-height: 30px;
+  transition: all 0.3s;
+}
+.hero_content .text_part a:hover {
+  opacity: 0.8;
+  
+}
+.hero_content .img_part {
+  width: 49%;
+/*   padding-left: 50px; */
+
+}
+.hero_content .img_part img {
+}
+
+*,
+:before,
+:after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / .5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia:
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / .5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia:
+}
+.md\:scale-150 {
+    --tw-scale-x: 1.15;
+    --tw-scale-y: 1.15;
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.hero_content .img_part svg {
+  width: 90%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .hero_content {
+        padding: 50px 0;
+  }
+  .hero_content .content {
+    background: none;
+  }
+  .hero_content .text_part {
+    width: 100%;
+/*     margin-bottom: 47px; */
+  }
+  .hero_content .text_part h1 {
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 30px;
+  }
+  .hero_content .text_part p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .hero_content .img_part {
+    width: 100%;
+    padding: 0;
+/*     background-image: url('https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Grid.svg'); */
+    background-position: center;
+    background-size: cover;
+    display: none;
+  }
+  
+}
+
+

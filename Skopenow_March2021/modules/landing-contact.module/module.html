@@ -1,0 +1,48 @@
+<div class="free_trial_banner" >
+  <div class="content">
+    <div class="text_part">
+      <div class="text_content">
+        <a href="https://www.skopenow.com"><img src="{{ module.top_logo.src }}" class="logo"></a>
+        <h1>
+          {{ module.title }} 
+        </h1>
+        <h3>
+          {{ module.sub_title }}
+        </h3>
+        <div>
+          {{ module.content }}
+        </div>
+        <p>
+          {{ module.logo_title }}
+        </p>
+        <div class="logos">
+          {% for item in module.logo %}
+          <img alt="{{ item.alt }}" src="{{ item.src }}"> 
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="form_part" style="background-image: url({{ module.background.src }});">
+      <div style="margin:auto;min-height: calc(100vh-120px);display:flex;flex-direction:column;justify-content: center;">
+        <div class="actualform">
+          <h3>
+            {{ module.form_title }}
+          </h3>
+          <div class="form">
+          {% form
+	form_to_use="{{ module.form_field.form_id }}"
+	response_response_type="{{ module.form_field.response_type }}"
+	response_message="{{ module.form_field.message }}"
+	response_redirect_id="{{ module.form_field.redirect_id }}"
+	response_redirect_url="{{module.form_field.redirect_url}}"
+	gotowebinar_webinar_key="{{ module.form_field.gotowebinar_webinar_key }}"
+%}
+          </div>
+        </div>
+                  <div class="ready" style="margin-top:15px;text-align:center;font-family:'Poppins';font-size:16px;color:#ffffff;background:transparent;">
+            Want to get started? <a href="https://www.skopenow.com/try" style="color:#ffffff;text-decoration:underline;">Request a free trial.</a> 
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

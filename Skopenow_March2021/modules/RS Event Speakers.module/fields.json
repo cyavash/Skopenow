@@ -1,0 +1,138 @@
+[ {
+  "id" : "c8283b3f-7793-26bc-7810-163f7d7950c7",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Event Speakers"
+}, {
+  "id" : "b279ff99-cb15-1de2-b87a-d1ef1372b13e",
+  "name" : "speaker_group",
+  "display_width" : null,
+  "label" : "Speaker_group",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 2,
+    "max" : 6,
+    "sorting_label_field" : "53fc59ed-2a1d-88f7-4905-53e8d4b51908",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "6048b4ec-b1fa-19b1-1136-f4d6956ee16d",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Speaker Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/smiling-man.png",
+      "alt" : "smiling-man",
+      "loading" : "lazy",
+      "width" : 189,
+      "height" : 126,
+      "max_width" : 189,
+      "max_height" : 126
+    }
+  }, {
+    "id" : "53fc59ed-2a1d-88f7-4905-53e8d4b51908",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Name",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Joe Soap"
+  }, {
+    "id" : "2e8ceb1c-d102-42d6-f832-fe0006f321d7",
+    "name" : "title_field",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "VP of Soap Industries"
+  }, {
+    "id" : "e0bee63f-47d5-edda-981e-14994bb1a148",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cum</p>"
+  }, {
+    "id" : "4713e505-7f28-7d30-5ee8-46cb141404e6",
+    "name" : "linkedin_profile",
+    "display_width" : null,
+    "label" : "Linkedin Profile",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "BLOG", "EMAIL_ADDRESS", "FILE" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.linkedin.com",
+      "content_id" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/smiling-man.png",
+      "alt" : "smiling-man",
+      "loading" : "lazy",
+      "width" : 189,
+      "height" : 126,
+      "max_width" : 189,
+      "max_height" : 126
+    },
+    "title" : "Joe Soap",
+    "title_field" : "VP of Soap Industries",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cum</p>",
+    "linkedin_profile" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.linkedin.com",
+      "content_id" : null
+    }
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/smiling-man.png",
+      "alt" : "smiling-man",
+      "loading" : "lazy",
+      "width" : 189,
+      "height" : 126,
+      "max_width" : 189,
+      "max_height" : 126
+    },
+    "title" : "Joe Soap",
+    "title_field" : "VP of Soap Industries",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Cum</p>",
+    "linkedin_profile" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.linkedin.com",
+      "content_id" : null
+    }
+  } ]
+} ]

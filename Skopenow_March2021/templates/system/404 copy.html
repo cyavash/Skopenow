@@ -1,0 +1,23 @@
+<!--
+  templateType: error_page
+  isAvailableForNewContent: true
+  label: 404 Error Page
+-->
+{% extends "../layouts/base.html" %}
+
+
+{% block body %}
+<div class="content-wrapper">
+  <div class="errorPage">
+					<h4>404</h4>
+            <h3>We can't find what you are looking for.</h3>
+            <p>It appears you are looking for a page that either does not exist or has been removed from our server.</p>
+            <img src="https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/404.jpeg" />
+            <p class="go_back">Go back from whence you came. JK. <a href="#" class="hover_t open_chat">Drop us a line</a></p>
+            <p class="still_lost">STILL LOST? TRY THESE LINKS INSTEAD</p>
+					<!-- <div>
+			<img onload="errorPageLoad()" src="/themes/skopenow2/images/404.jpg" />
+		</div> -->
+	</div>
+</div>
+{% endblock body %}

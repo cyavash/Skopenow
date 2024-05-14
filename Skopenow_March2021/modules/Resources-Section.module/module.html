@@ -1,0 +1,118 @@
+{% set blog_one_posts = [] %}
+{% set blog_two_posts = [] %}
+{% set blog_three_posts = [] %}
+{% set blog_four_posts = [] %}
+{% set blog_five_posts = [] %}
+{% set blog_six_posts = [] %}
+
+{% if module.blogs_to_show.skopenow_news %}
+  {% set blog_one_posts = blog_recent_posts('43346309737', limit=50) %}
+{% endif %}
+{% if module.blogs_to_show.skopenow_resource_center %}
+  {% set blog_two_posts = blog_recent_posts('44445551234', limit=50) %}
+{% endif %}
+{% if module.blogs_to_show.skopenow_osint_guides %}
+  {% set blog_three_posts = blog_recent_posts('100845982313', limit=50) %}
+{% endif %}
+{% if module.blogs_to_show.skopenow_osint_webinars %}
+  {% set blog_four_posts = blog_recent_posts('100851400313', limit=50) %}
+{% endif %}
+{% if module.blogs_to_show.skopenow_presents %}
+  {% set blog_five_posts = blog_recent_posts('57455137678', limit=50) %}
+{% endif %}
+{% if module.blogs_to_show.opensource_intelligence_glossary %}
+  {% set blog_six_posts = blog_recent_posts('105022286381', limit=50) %}
+{% endif %}
+{% if module.blogs_to_show.data_sheets %}
+  {% set blog_six_posts = blog_recent_posts('124781926181', limit=50) %}
+{% endif %}
+
+{% set allBlogs = (blog_one_posts + blog_two_posts + blog_three_posts + blog_four_posts + blog_five_posts + blog_six_posts) | sort(true, false, 'publish_date')  %}
+
+<div class="resources-module">
+  <div class="container">
+    <div class="row">
+      <div class="column resources-header">
+        <h2>{{ module.title }}</h2>
+      </div>
+      <!--<div class="column filter-column">
+        <label for="filter-select">Filter by:</label>
+        <select id="filter-select">
+          <option value="all">All</option>
+          {% if module.blogs_to_show.skopenow_news %}
+           <option value="43346309737">Skopenow News</option>
+          {% endif %}
+          {% if module.blogs_to_show.skopenow_resource_center %}
+            <option value="44445551234">Skopenow Resource Center</option>
+          {% endif %}
+          {% if module.blogs_to_show.skopenow_presents %}
+            <option value="57455137678">Skopenow Presents</option>
+          {% endif %}
+          {% if module.blogs_to_show.skopenow_osint_guides %}
+           <option value="100845982313">Skopenow OSINT Guides</option>
+          {% endif %}
+          {% if module.blogs_to_show.skopenow_osint_webinars %}
+           <option value="100851400313">OSINT Webinars</option>
+          {% endif %}
+          {% if module.blogs_to_show.opensource_intelligence_glossary %}
+            <option value="105022286381">OpenSource Intelligence Glossary</option>
+          {% endif %}
+          {% if module.blogs_to_show.data_sheets %}
+            <option value="124781926181">Data Sheets</option>
+          {% endif %}
+        </select>
+      </div>-->
+      <div class="column filter-column">
+      </div>
+    {%if module.search_box=='true' %}
+      <div class="column">
+        <div class="search">
+          <input type="text" id="search-input" placeholder="Search...">
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+
+    <div class="blog-content">
+      <div class="row" id="blog-content-row">
+        {% for blog in allBlogs %}
+          <div class="column blog-item-main" data-blog-id="{% if blog.id in blog_one_posts|map('id') %}43346309737{% endif %}{% if blog.id in blog_two_posts|map('id') %}44445551234{% endif %}{% if blog.id in blog_three_posts|map('id') %}100845982313{% endif %}{% if blog.id in blog_four_posts|map('id') %}100851400313{% endif %}{% if blog.id in blog_four_posts|map('id') %}124781926181{% endif %}">
+            <div class="blog-item">
+              <div class="blog-link">
+                <a href="{{ blog.absolute_url }}"></a>
+              </div>
+              <div class="img-holder">
+              <img src="{{ blog.featured_image }}" alt="{{ blog.name }}">
+              </div>
+              <div class="blog-info">
+               <!-- <div class="tag"> 
+                  {% if blog.tag_list %}
+                     <p id="taglink">  
+                       {% for tag in blog.tag_list %}  
+                           <a class="TopicLink" href="{{ blog_tag_url(group.id, tag.slug) }}">{{ tag.name }}</a>{% if not loop.last %}{% endif %} 
+                       {% endfor %}
+                     </p>
+                  {% endif %}
+                </div> -->
+                <h4>{{ blog.name }}</h4>
+                      {%if module.author=='true' %}
+               <div class="author">
+                  <span class="name">{{ blog.blog_post_author.display_name }}</span>   ·   
+                  <span class="date">{{ blog.publish_date.strftime('%m/%d/%Y') }}</span>
+                </div>
+                      {%endif%}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      {%if module.button=='true' %}
+     <div id="bspoke-load-more" class="btn-lblue">
+        <span>See More</span>
+      </div>
+      {%endif%}
+      <p class="no-results">No results for the search term.</p>
+    </div>
+  </div><!-- end container -->  
+</div><!-- end resources-module -->

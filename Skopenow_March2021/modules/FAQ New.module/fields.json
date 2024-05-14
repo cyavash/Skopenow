@@ -1,0 +1,105 @@
+[ {
+  "id" : "e731c711-63ad-a0f6-b7e5-3c4809debfca",
+  "name" : "faq_items",
+  "display_width" : null,
+  "label" : "FAQ Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "1308e526-5fbf-9260-b621-35d33e841c14",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1308e526-5fbf-9260-b621-35d33e841c14",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "afb35760-4d0a-48be-2052-db7eb2d3eaca",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+}, {
+  "id" : "98a44d8c-69d2-4dfe-89e2-1b7f4dbe5a4a",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "inline_help_text" : "Leave empty to display gradient background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "293a50ab-7a1a-d27e-6b90-7b01fc42a67a",
+  "name" : "background_gradient_start_color",
+  "display_width" : null,
+  "label" : "Background Gradient Start Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#427bc8",
+    "opacity" : 100
+  }
+}, {
+  "id" : "4c419aa8-96ca-456e-ff77-d55dca8e70a1",
+  "name" : "background_gradient_end_color",
+  "display_width" : null,
+  "label" : "Background Gradient End Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#2c3f5d",
+    "opacity" : 100
+  }
+}, {
+  "id" : "b371d3e8-2345-4033-4281-3d86a69e84fe",
+  "name" : "gradient_direction",
+  "display_width" : null,
+  "label" : "Gradient Direction",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "90deg"
+}, {
+  "id" : "72c48cc5-bf43-7744-eea7-3923548cbdad",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Your Value Proposition Heading goes here"
+} ]

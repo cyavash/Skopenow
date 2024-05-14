@@ -1,0 +1,57 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Services Page
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="hs-services-page">
+
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    {% module "banner" path="../modules/Banner", label="Banner" %}
+    <main class="body-container-wrapper">
+      <div class="cardbox">
+        <div class="page-center">
+          {% dnd_area "card_box" class='hs-services-page-content hs-services', label='Services' %}
+          {% end_dnd_area %}
+        </div>
+      </div>
+      {% dnd_area "features" class='hs-services-page-content hs-features', label='Included Features' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "questions" class='hs-services-page-content hs-questions', label='FAQs' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "book_demo" class='hs-services-page-content hs-book-demo', label='Book a Demo' %}
+      {% end_dnd_area %}
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

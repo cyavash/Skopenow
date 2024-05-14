@@ -1,0 +1,397 @@
+[ {
+  "id" : "2b05a04f-fec1-cf92-7c23-54a7f793ec6e",
+  "name" : "banner",
+  "display_width" : null,
+  "label" : "Banner",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d6b30668-68fb-602c-df79-ad946a000cce",
+    "name" : "date",
+    "display_width" : null,
+    "label" : "Date",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "10.5.2023 // virtual"
+  }, {
+    "id" : "c301267c-6c4d-0b8e-1d0a-4395a8d6c1a8",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "OSINT Live<br> 2023"
+  }, {
+    "id" : "90ef9ce1-7bd2-c89e-6534-de2150a26b25",
+    "name" : "cta_text",
+    "display_width" : null,
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Register Now"
+  }, {
+    "id" : "39ffa74a-f202-bb70-2b22-cdbd10bb808e",
+    "name" : "cta_link",
+    "display_width" : null,
+    "label" : "CTA Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#register-form"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "date" : "10.5.2023 // virtual",
+    "heading" : "OSINT Live<br> 2023",
+    "cta_text" : "Register Now",
+    "cta_link" : "#register-form"
+  }
+}, {
+  "id" : "f4243a5a-ab00-c0f3-9f3d-8037ebbea23a",
+  "name" : "speakers_section",
+  "display_width" : null,
+  "label" : "Speakers Section",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "7565425a-08d2-5ef2-5850-56e42277f1b2",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Meet the Speakers"
+  }, {
+    "id" : "650d27a1-6c11-33c3-6258-1ebf625d96b8",
+    "name" : "speaker",
+    "display_width" : null,
+    "label" : "Speaker",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 9
+    },
+    "children" : [ {
+      "id" : "e02334b6-3231-e58e-db93-68eac484dc81",
+      "name" : "heading",
+      "display_width" : null,
+      "label" : "Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Full Name"
+    }, {
+      "id" : "59f4d549-8e65-96ea-74cb-4d8919804dfc",
+      "name" : "company",
+      "display_width" : null,
+      "label" : "Company",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Company"
+    }, {
+      "id" : "188f8bd0-03d1-b8c3-ea5f-10d51b6cfdd9",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Title"
+    }, {
+      "id" : "12f5e8f1-1538-6d15-d080-e38c8b9baa5d",
+      "name" : "presentation_name",
+      "display_width" : null,
+      "label" : "Presentation PDF",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Presentation Name"
+    }, {
+      "id" : "644e8e65-6f82-05b2-21ed-de6b011ed7e2",
+      "name" : "share_url",
+      "display_width" : null,
+      "label" : "Share URL",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "6cd68ba4-087d-60c6-0f77-51ac6dd0a99c",
+      "name" : "cta_link",
+      "display_width" : null,
+      "label" : "CTA_Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+      "type" : "url",
+      "default" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      }
+    }, {
+      "id" : "644e6fa5-5d5c-5ebd-febf-d0e7a62ea1fb",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Download Slides"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "heading" : "Meet the Speakers",
+    "speaker" : [ {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    }, {
+      "heading" : "Full Name",
+      "company" : "Company",
+      "title" : "Title",
+      "presentation_name" : "Presentation Name",
+      "cta_link" : {
+        "content_id" : null,
+        "href" : "",
+        "type" : "EXTERNAL"
+      },
+      "button_text" : "Download Slides"
+    } ]
+  }
+} ]

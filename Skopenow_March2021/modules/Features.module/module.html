@@ -1,0 +1,37 @@
+{% if module.icon_title or module.icon_code or module.icon_title or module.include_action %}
+<div class="container-fluid included features" id="{{name}}">
+  <div class="page-center">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="included_con">
+          {% if module.icon_title or module.icon_code %}
+          <div class="title_icon">
+            {% if module.icon_code %}
+            <div class="includ_icon">
+              {{ module.icon_code }}
+            </div>
+            {% endif %}
+            {% if module.icon_title %}
+            <div class="include_title">{{ module.icon_title }}</div>
+            {% endif %}
+          </div>
+          {% endif %}
+          <div class="include_des">
+            {{ module.description }}
+          </div>
+          <div class="include_action"> {{ module.include_action }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<style>
+  #{{name}}.features{
+    background: rgba({{ module.gradient_start_color.color|convert_rgb }},{{ module.gradient_start_color.opacity * 0.01 }});
+    background: -moz-linear-gradient(top, rgba({{ module.gradient_start_color.color|convert_rgb }},{{ module.gradient_start_color.opacity * 0.01 }}) 0%, rgba({{ module.gradient_end_color.color|convert_rgb }},{{ module.gradient_end_color.opacity * 0.01 }}) 100%);
+    background: -webkit-linear-gradient(top, rgba({{ module.gradient_start_color.color|convert_rgb }},{{ module.gradient_start_color.opacity * 0.01 }}) 0%, rgba({{ module.gradient_end_color.color|convert_rgb }},{{ module.gradient_end_color.opacity * 0.01 }}) 100%);
+    background: linear-gradient(to bottom, rgba({{ module.gradient_start_color.color|convert_rgb }},{{ module.gradient_start_color.opacity * 0.01 }}) 0%, rgba({{ module.gradient_end_color.color|convert_rgb }},{{ module.gradient_end_color.opacity * 0.01 }}) 100%);
+  }
+</style>

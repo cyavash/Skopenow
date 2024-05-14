@@ -1,0 +1,34 @@
+[ {
+  "id" : "3c79aa22-da61-97d7-7fbe-0b45e2b26c61",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#F7F9FD"
+}, {
+  "id" : "4851a06f-2047-8c0e-0b75-3d0b1f13a9d4",
+  "name" : "quote",
+  "display_width" : null,
+  "label" : "Quote",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<blockquote>Skopenow's platform provides us with a comprehensive understanding of our threat landscape by surfacing and assessing potential risks. The platform also allows us to efficiently investigate individuals and organizations connected to these risks, delivering the intelligence we need to make better decisions - without hiring additional analysts.\"</blockquote>"
+}, {
+  "id" : "53a8ca03-0fc5-d89e-e93f-9eae9b8a8705",
+  "name" : "quote_description",
+  "display_width" : null,
+  "label" : "Quote Description",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Director of Security, Fortune 500 Company"
+} ]

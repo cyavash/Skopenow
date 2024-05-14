@@ -1,0 +1,277 @@
+[ {
+  "id" : "be0be8aa-4564-740e-8240-c427b1daec1a",
+  "name" : "top_decoration_text",
+  "display_width" : null,
+  "label" : "Top Heading Decoration Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "NEW"
+}, {
+  "id" : "794e4ef6-67ec-5222-b8b7-83a4855a3dac",
+  "name" : "top_heading",
+  "display_width" : null,
+  "label" : "Top Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Skopenow 3.0 includes court records, heat maps, and AI analytics."
+}, {
+  "id" : "1ed3e2a2-2422-b5f4-c39a-a8ca2f3ed6ad",
+  "name" : "main_heading",
+  "display_width" : null,
+  "label" : "Main Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Skopenow is free to try and includes all of our core features."
+}, {
+  "id" : "d1b80ae7-3abd-bdec-f397-314a4ca22482",
+  "name" : "feature_list_items",
+  "display_width" : null,
+  "label" : "Feature List Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Feature 1"
+}, {
+  "id" : "9ccd235e-ab60-af13-5ed9-0a1102649a37",
+  "name" : "feature_image_items",
+  "display_width" : null,
+  "label" : "Feature Image Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "0c243543-2b91-bfd2-c219-c59a3a740411",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Get Started"
+}, {
+  "id" : "383c5d99-257d-7af1-b924-d89409ba6330",
+  "name" : "enable_popup",
+  "display_width" : null,
+  "label" : "Enable Popup",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "d316d395-ec73-8fdb-cbbe-d67754b904f0",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "383c5d99-257d-7af1-b924-d89409ba6330",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "false",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "02c20feb-5c7d-1ce4-4156-16e9caf2d225",
+  "name" : "popup_content",
+  "display_width" : null,
+  "label" : "Popup Content",
+  "required" : false,
+  "locked" : false,
+  "visibility" : {
+    "controlling_field" : "383c5d99-257d-7af1-b924-d89409ba6330",
+    "controlling_field_path" : null,
+    "controlling_value_regex" : "true",
+    "property" : null,
+    "operator" : "EQUAL",
+    "access" : null
+  },
+  "children" : [ {
+    "id" : "d9224b21-e60e-adb6-a87c-da121d0e1dfe",
+    "name" : "explore_items",
+    "display_width" : null,
+    "label" : "Explore Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "501251f5-4a5d-085c-7e51-09f0dcb6bb50",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "501251f5-4a5d-085c-7e51-09f0dcb6bb50",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "eb0c6641-97e4-7069-5294-5dfb18c238b3",
+      "name" : "sub_title",
+      "display_width" : null,
+      "label" : "Sub Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "b2c65247-f76e-6190-0928-8853b409f71f",
+      "name" : "link_field",
+      "display_width" : null,
+      "label" : "Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }, {
+      "id" : "6286e5a2-fb8a-3261-54ab-b989c43c1060",
+      "name" : "icon",
+      "display_width" : null,
+      "label" : "Icon",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }, {
+    "id" : "c8912cd5-45e4-9f8e-bd14-6ffcaa387090",
+    "name" : "text_field",
+    "display_width" : null,
+    "label" : "Button Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "bd14a44a-7d80-001b-ccb0-68fba2b6bec1",
+    "name" : "button_link",
+    "display_width" : null,
+    "label" : "Button Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "explore_items" : {
+      "link_field" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    },
+    "button_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

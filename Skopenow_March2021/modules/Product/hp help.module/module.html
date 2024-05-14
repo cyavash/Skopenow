@@ -1,0 +1,13 @@
+<div class="pp_benefits1">
+  <div class="container">
+    <h2>
+      {{ module.title }}
+    </h2>
+    <div class="content">
+      {% for item in module.block %}
+<div class="v3_68">
+    <span class="v3_37">{{ item.sub_content }}</span><span class="v3_38">{{ item.sub_title }}</span><div class="v5_23"><div class="v3_39" style="background-image:url({{ item.icon.src }})"></div><div class="name"></div></div></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,116 @@
+.pricing-table {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 50px 0;
+}
+.heading-row {
+  display: flex;
+  font-weight: bold;
+  padding: 8px;
+}
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 8px;
+  font-family: "Poppins";
+  color: #425466;
+  font-size: 16px;
+}
+.column:first-child,
+.heading-row .column:first-child
+{
+  text-align: left;
+} 
+.data-row {
+  display: flex;
+  padding: 8px;
+  border-top: 1px solid #D9D9D9;
+}
+.data-row:first-child {
+  border-top: 1px solid #212529; 
+}
+.data-row:last-child {
+  border-bottom: 1px solid #D9D9D9;
+}
+.heading-row .column {
+  font-family: "DM Sans";
+  font-weight: bold;
+  font-size: 24px;
+  color: #212529;
+}
+.data-row .column {
+  border-right: 1px solid #D9D9D9; 
+}
+.data-row .column:last-child {
+  border-right: none; 
+}
+.data-row, .heading-row {
+  padding: 0; 
+}
+.data-row > .column,
+.heading-row > .column
+{
+  margin: 0;
+  padding: 22px 10px 22px 10px!important;
+}
+.data-row > .column:first-child,
+.heading-row > .column:first-child
+{
+  padding-left: 0!important; 
+}
+.data-row-head {
+  border-top: 1px solid #212529!important;
+} 
+.column-heading {
+  font-size: 20px;
+  font-family: "DM Sans";
+  font-weight: bold;
+  color: #212529;
+} 
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 767px) {
+  .data-row > .column {
+    padding: 15px 0!important;    
+  }
+  .heading-row > .column {
+    padding: 15px 0!important; 
+  }
+  .column-heading {
+    font-size: 16px!important;
+  }
+  .heading-row .column {
+    font-size: 17px!important; 
+  }
+  .column {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .column-heading {
+    font-size: 14px!important;
+  }
+  .heading-row .column {
+    font-size: 15px!important; 
+  }
+  .column {
+    font-size: 13px;
+  }
+  html body .data-row > .column {
+    padding: 8px 0!important;    
+  }
+  html body .heading-row > .column {
+    padding: 8px 0!important; 
+  }
+}
+@media screen and (max-width: 400px) {
+  .column-heading {
+    font-size: 13px!important;
+  }
+  .heading-row .column {
+    font-size: 13px!important; 
+  }
+  .column {
+    font-size: 12px;
+  }
+}

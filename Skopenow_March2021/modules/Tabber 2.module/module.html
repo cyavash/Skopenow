@@ -1,0 +1,129 @@
+<section class="container-fluid search_web font-avenir ng-tns-c1-0 ng-star-inserted">
+  <div class="row">
+    <div class="search_web_bg">
+      <div class="skew_div_search_web"></div>
+      <div class="container page-center">
+        <div class="col-lg-12 skey_back column">
+          <div class="search_web_title">
+            <h3 >{{ module.section_heading }}</h3></div>
+          <div class="search_web_taps d-flex justify-content-between flex-wrap">
+            {% for item in module.tabber_items %}
+            <a class="{% if loop.first %}active{% endif %}">{{ item.title }}</a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container search_web_taps_con page-center">
+    {% for item in module.tabber_items %}
+    <div class="tab-content" style="{% if loop.first %}display:block{% endif %}">
+      <div class="row" >
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-2 column">
+          {% if item.select_work_group_ == 'find' %}
+          <div class="fixed_component" lazy-load-images="">
+            <div class="top_comp social">Social Media</div>
+            <div class="top_comp public">Open Web</div>
+            <div class="top_comp open">Public Records</div>
+            <div class="circle_icon" style="background-image: url({{ module.filter_icon.src }});"></div>
+            <div class="filtered">filtered Report</div>
+            <div class="arrow1_con"></div>
+            <div class="arrow2_con"></div>
+            <div class="arrow2_con_vir"></div>
+            <div class="arrow3_con"></div>
+            <div class="arrow3_con_vir"></div>
+            <div class="arrowgreen_con"></div>
+          </div>
+          {% endif %}
+          {% if item.select_work_group_ == 'link' %}
+          <div class="fixed_component">
+            <div class="top_comp name1">Robert James</div>
+            <div class="top_comp name2">Lauren James</div>
+            <div class="top_comp Person_img1" style="background-image:url({{ module.manager_image.src }})"></div>
+            <div class="top_comp Person_img2" style="background-image:url({{ module.secretary_image.src }})"></div>
+            <div class="top_comp Subject1">Subject identified</div>
+            <div class="top_comp Subject2">Subject identified</div>
+            <div class="top_comp public_link">Public Link</div>
+            <div class="top_comp connection_made">Connection Made</div>
+            <div class="name1_line"></div>
+            <div class="name2_line"></div>
+            <div class="img1_line"></div>
+            <div class="img2_line"></div>
+            <div class="public_line1"></div>
+            <div class="public_line2"></div>
+            <div class="public_line3"></div>
+            <div class="public_line"></div>
+          </div>
+          {% endif %}
+          {% if item.select_work_group_ == 'identify' %}
+          <div class="fixed_component respon_identity">
+            <div class="top_comp name_center">Robert James</div>
+            <div class="top_comp img_center" style="background-image:url({{ module.manager_image.src }})"></div>
+            <div class="top_comp num_right">1/200</div>
+            <div class="top_comp left_side_name">New York</div>
+            <div class="top_comp face_match">Face Match</div>
+            <div class="top_comp face_match_img" style="background-image:url({{ module.leader_image.src }})"></div>
+            <div class="top_comp num_right_match" _ngcontent-c1="">1/1</div>
+            <div class="top_comp left_side_name_match">Skopenow</div>
+            <div class="top_comp matched">100% Match</div>
+            <div class="name_center_line"></div>
+            <div class="num_right_line"></div>
+            <div class="name_center_line2"></div>
+            <div class="num_right_line2"></div>
+            <div class="name_center_line3"></div>
+            <div class="num_right_line_match"></div>
+            <div class="num_right_line2_match"></div>
+            <div class="name_center_line3_thisMatched"></div>
+          </div>
+          {% endif %}
+          {% if item.select_work_group_ == 'alert' %}
+          <div class="fixed_component">
+            <div class="top_comp name1">Robert James</div>
+            <div class="top_comp name2">Physical Activity</div>
+            <div class="top_comp Person_img1" style="background-image:url({{ module.manager_image.src }})"></div>
+            <div class="top_comp Person_img2_running" style="background-image:url({{ module.running_person.src }})"></div>
+            <div class="top_comp Subject1">Subject identified</div>
+            <div class="top_comp Subject2">Behavior Flagged</div>
+            <div class="public_line1"></div>
+            <div class="public_line2"></div>
+            <div class="public_line3"></div>
+            <div class="top_comp worrning" style="background-image:url({{ module.envelope.src }})"></div>
+            <div class="name1_line"></div>
+            <div class="name2_line"></div>
+            <div class="img1_line"></div>
+            <div class="img2_line"></div>
+          </div>
+          {% endif %}
+          {% if item.select_work_group_ == 'map' %}
+          <div class="fixed_component respo_map">
+            <div class="top_comp city_center">New York, New York</div>
+            <div class="top_comp recent">Recent</div>
+            <div class="top_comp social0">Instagram Tag</div>
+            <div class="top_comp city_center2">Nashville. TN</div>
+            <div class="top_comp recent2">2010</div>
+            <div class="top_comp social2">Facebook</div>
+            <div class="top_comp city_center3">Oyster Bay, NY</div>
+            <div class="top_comp recent3">1999</div>
+            <div class="top_comp social3">Consumer DB</div>
+            <div class="heatmap_lin1"></div>
+            <div class="heatmap_lin2"></div>
+            <div class="heatmap_lin3"></div>
+            <div class="heatmap_lin1_right"></div>
+            <div class="heatmap_lin2_right"></div>
+            <div class="heatmap_lin3_right"></div>
+            <div class="heatmap_lin1_center"></div>
+            <div class="heatmap_lin2_center"></div>
+          </div>
+          {% endif %}
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+          <div class="search_web_data">
+            {{ item.content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

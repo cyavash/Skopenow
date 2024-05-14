@@ -1,0 +1,324 @@
+/* ******************************************************************************
+*********************************************************************************
+This file contains all the neccessary styles to control how your forms looks
+throughout your site. Styles for form fields, buttons, inputs, etc.
+*********************************************************************************
+****************************************************************************** */
+
+form {
+  padding: 15px;
+  padding-top: 0px;
+  max-width: {{ form_max_width }};
+  border: 1px solid;
+  padding: 20px 30px;
+  background-color: #fff;
+}
+
+@media (max-width: 767px) {
+
+  form {
+    max-width: 100%;
+  }
+
+}
+
+.body-container-wrapper form {
+  margin-bottom: 30px;
+}
+
+
+h3.form-title {
+
+}
+
+.hs-form-field > label,
+.field > label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+input[type="text"],
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"],
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"],
+input[type="email"], 
+input[type="url"], 
+input[type="search"],
+input[type="tel"], 
+input[type="color"], 
+input[type="file"],
+textarea, 
+select {
+  width: 100%;
+  outline: 0;
+  border: 1px solid;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 15px 10px;
+  font-size: 12px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover, 
+input[type="datetime"]:hover, 
+input[type="datetime-local"]:hover, 
+input[type="date"]:hover,
+input[type="month"]:hover, 
+input[type="time"]:hover, 
+input[type="week"]:hover, 
+input[type="number"]:hover,
+input[type="email"]:hover, 
+input[type="url"]:hover, 
+input[type="search"]:hover,
+input[type="tel"]:hover, 
+input[type="color"]:hover, 
+input[type="file"]:hover,
+textarea:hover, 
+select:hover {
+
+}
+
+.hs-input[type=checkbox],
+.hs-input[type=radio] {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 3px 5px 3px 0px;
+  line-height: normal;
+  border: none;
+}
+
+.hs-input[type=file] {
+  background-color: #fff;
+  padding: initial;
+  border: initial;
+  line-height: initial;
+  box-shadow: none;
+}
+
+.hs-input:-moz-placeholder {}
+
+.hs-input::-webkit-input-placeholder {}
+
+.hs-input input,
+.hs-input textarea {
+  transition: border 0.2s linear;
+}
+.hs-input:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+textarea.hs-input {
+  height: auto;
+}
+
+select[multiple].hs-input {
+  height: inherit;
+}
+
+.hs-button,
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  text-decoration: none !important;
+  display: inline-block;
+  margin: 15px 0;
+  outline: 0;
+  white-space: normal;
+  border: 1px solid;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 400;
+  font-family: Avenir;
+  font-size: 14px;
+  transition: all .2s ease-in-out;
+}
+
+.hs-button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+.hs-button.primary:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus {
+
+}
+
+.hs-button.primary:active,
+input[type="submit"]:active,
+input[type="button"]:active {
+
+}
+
+ul.hs-error-msgs {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding:0;
+}
+
+.hs-error-msgs label {
+  display: inline-block;
+  background: #d9534e;
+  padding:2px 10px !important;
+  color: #fff !important;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.submitted-message {
+  overflow: visible !important;
+}
+
+/* Force single column fields to full width inside of fieldsets */
+fieldset.form-columns-1 .hs-input:not([type=radio]):not([type=checkbox]) {
+width: 100% !important;
+}
+
+input.hs-input.error,
+div.field.error input,
+div.field.error textarea,
+div.field.error .chzn-choices,
+textarea.hs-input.error,
+select.hs-input.error {
+  border-color: {{ form_error_border_color }};
+}
+input.hs-input.error:focus,
+div.field.error input:focus,
+div.field.error textarea:focus,
+div.field.error .chzn-choices:focus,
+textarea.hs-input.error:focus,
+select.hs-input.error:focus {
+  border-color: {{ form_error_focus_border_color }};
+}
+.hs_cos_wrapper_type_email_simple_subscription input[type="email"]{
+  padding: 15px 10px !important;
+}
+.actions {
+  padding: 0;
+}
+
+.inputs-list {
+  margin: 0 0 5px;
+  width: 100%;
+  padding-left: 0;
+}
+.inputs-list > li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  padding-top: 0;
+}
+.inputs-list label {
+  display: block;
+  float: none;
+  width: auto;
+  padding: 0;
+  text-align: left;
+  white-space: normal;
+}
+.inputs-list:first-child {
+  padding-top: 6px;
+}
+.inputs-list > li + li {
+  padding-top: 2px;
+}
+.inputs-list label > input,
+.inputs-list label > span {
+  vertical-align: middle;
+}
+
+ul.no-list {
+  list-style: none;
+}
+
+.field {
+  margin-bottom: 18px;
+}
+
+.hs-field-desc {
+  color: {{ form_description_color }};
+  margin: 0px 0px 6px;
+  font-size: 14px;
+}
+
+.hs-form-required {
+  color: red;
+}
+
+.hs-richtext {
+  margin-bottom: 3px;
+  line-height: 1.2;
+  font-size: {{ body_font_size }};
+  color: {{ body_color }};
+}
+.hs-richtext hr {
+  text-align: left;
+  margin-left: 0;
+  width: 91%;
+}
+
+.grecaptcha-badge {
+  margin: 0 auto;
+}
+
+.email-correction, .email-validation {
+  padding-top: 3px;
+  font-size: 12px;
+}
+.email-correction a,
+.email-validation a {
+  cursor: pointer;
+}
+
+@media (max-width: 400px),
+  (min-device-width: 320px) and (max-device-width: 480px) {
+    .email-correction form .form-columns-2 .hs-form-field,
+    .email-correction form .form-columns-3 .hs-form-field,
+    .email-validation form .form-columns-2 .hs-form-field,
+    .email-validation form .form-columns-3 .hs-form-field {
+      float: none;
+      width: 100%;
+    }
+    .email-correction form .form-columns-2 .hs-form-field .hs-input,
+    .email-correction form .form-columns-3 .hs-form-field .hs-input,
+    .email-validation form .form-columns-2 .hs-form-field .hs-input,
+    .email-validation form .form-columns-3 .hs-form-field .hs-input {
+      width: 90%;
+    }
+    .email-correction form .form-columns-2 .hs-form-field input[type=checkbox],
+    .email-correction form .form-columns-2 .hs-form-field input[type=radio],
+    .email-correction form .form-columns-3 .hs-form-field input[type=checkbox],
+    .email-correction form .form-columns-3 .hs-form-field input[type=radio],
+    .email-validation form .form-columns-2 .hs-form-field input[type=checkbox],
+    .email-validation form .form-columns-2 .hs-form-field input[type=radio],
+    .email-validation form .form-columns-3 .hs-form-field input[type=checkbox],
+    .email-validation form .form-columns-3 .hs-form-field input[type=radio] {
+      width: 24px;
+    }
+}
+
+.hs-button,
+.hs-form-field input[type=text],
+.hs-form-field input[type=email],
+.hs-form-field input[type=phone],
+.hs-form-field input[type=number],
+.hs-form-field input[type=tel],
+.hs-form-field input[type=date],
+.hs-form-field textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.hs-default-font-element,
+.hs-main-font-element {
+  font-family: {{ body_font_family }};
+}

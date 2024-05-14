@@ -1,0 +1,48 @@
+.banner {
+  color: #FFF; 
+}
+
+.banner p{
+color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.banner h1 {
+  font-family: DM Sans;
+  font-size: 60px;
+  font-weight: 700;
+  color: #FFF;
+  letter-spacing: 0em;
+  line-height: 1.1;
+  display: inline-block;
+  position: relative;
+    text-decoration: underline;
+  text-decoration-color: #2980fb;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 6px;
+}
+
+
+
+.banner img {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .banner .row-fluid {
+    display: flex;
+    align-items: center; 
+  } 
+  .banner p {
+    font-size: 18px; 
+  }
+}
+@media screen and (max-width: 767px) {
+  .banner img {
+    margin-top: 60px; 
+  }
+}

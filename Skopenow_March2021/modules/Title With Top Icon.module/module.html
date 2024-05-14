@@ -1,0 +1,18 @@
+<div class="top-icon-title">
+  <ul>
+    {% for item in module.icon_items %}
+    <li class="{{item.icon_type}}">
+      {% if item.icon_type == "image" %}
+      <div class="quick_icons ic_{{ loop.index }}" style="background-image:url({{ item.image_field.src }});"></div>
+      {% else if item.icon_type == "code" %}
+      <span>
+        {{ item.icon }}
+      </span>
+      {% endif %}
+      {% if item.title %}
+      <h4>{{ item.title }}</h4>
+      {% endif %}
+    </li>
+    {% endfor %}  
+  </ul>
+</div>

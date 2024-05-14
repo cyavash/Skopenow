@@ -1,0 +1,31 @@
+a.header-custom-logo {
+  color: #fff;
+  transition: all .2s ease-in-out;
+  font-size: 17px;
+  line-height: 50px;
+  font-weight: 400;
+  display: inline-block;
+  height: 50px;
+  padding: 0 11px;
+  padding-left: 0;
+}
+a.header-custom-logo svg {
+  width: 230px;
+  margin-bottom: 2px;
+  vertical-align: -5px;
+}
+@media (min-width: 880px){
+  a.header-custom-logo {
+    margin: 5px 3px 0 0;
+  }
+  a.header-custom-logo svg {
+    width: 230px;
+
+  }
+}
+@media(max-width:768px){
+  a.header-custom-logo svg {
+    width: 140px;
+    margin-top: 14px;
+  }
+}

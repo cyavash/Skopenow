@@ -1,0 +1,161 @@
+[ {
+  "id" : "a1284d70-fc1f-509e-015a-32c14d2fd2d1",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#243a52",
+    "opacity" : 100
+  }
+}, {
+  "id" : "5aa751db-9925-eec9-95e4-2a1e74a11978",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title"
+}, {
+  "id" : "c09d57c0-adc0-69b3-9d9a-bedf0f16e92f",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext"
+}, {
+  "id" : "4fba99d6-3cef-3252-75a3-3de11f3d3a9f",
+  "name" : "assistant_image_group",
+  "display_width" : null,
+  "label" : "Assistant Image Group",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "139e5c85-61cc-be4a-5426-e0befa1b7577",
+    "name" : "image_1",
+    "display_width" : null,
+    "label" : "Image 1",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/bellboy.svg",
+      "alt" : "Assistant 1",
+      "loading" : "lazy",
+      "width" : 473,
+      "height" : 575,
+      "max_width" : 473,
+      "max_height" : 575
+    }
+  }, {
+    "id" : "0ef1fd00-5a17-94c0-292e-07974ec3599b",
+    "name" : "image_2",
+    "display_width" : null,
+    "label" : "Image 2",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/blonde.svg",
+      "alt" : "Assistant 2",
+      "loading" : "lazy",
+      "width" : 133,
+      "height" : 149,
+      "max_width" : 133,
+      "max_height" : 149
+    }
+  }, {
+    "id" : "77bbc8b6-47ca-0d2c-3517-f2d283175a74",
+    "name" : "image_3",
+    "display_width" : null,
+    "label" : "Image 3",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/bonuy.svg",
+      "alt" : "Assistant 3",
+      "loading" : "lazy",
+      "width" : 139,
+      "height" : 167,
+      "max_width" : 139,
+      "max_height" : 167
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "image_1" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/bellboy.svg",
+      "alt" : "Assistant 1",
+      "loading" : "lazy",
+      "width" : 473,
+      "height" : 575,
+      "max_width" : 473,
+      "max_height" : 575
+    },
+    "image_2" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/blonde.svg",
+      "alt" : "Assistant 2",
+      "loading" : "lazy",
+      "width" : 133,
+      "height" : 149,
+      "max_width" : 133,
+      "max_height" : 149
+    },
+    "image_3" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/bonuy.svg",
+      "alt" : "Assistant 3",
+      "loading" : "lazy",
+      "width" : 139,
+      "height" : 167,
+      "max_width" : 139,
+      "max_height" : 167
+    }
+  }
+}, {
+  "id" : "a772831b-e63c-fd8f-ed57-1f051adda311",
+  "name" : "contract_image",
+  "display_width" : null,
+  "label" : "Contract Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/contract.svg",
+    "alt" : "contract",
+    "loading" : "lazy",
+    "width" : 426,
+    "height" : 322,
+    "max_width" : 426,
+    "max_height" : 322
+  }
+} ]

@@ -1,0 +1,41 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Contact Page
+-->
+{% extends "./layouts/base.html" %}
+{% block header %}
+<div class="hs-contact-page has-footer-only">
+  {% endblock header %}
+  {% block body %}
+  <div class="main-content-wrapper">
+    <main class="body-container-wrapper">
+      <div class="contact-top-row">
+        {% dnd_area "row_1" class='hs-contact-page-content row-1', label='Row 1' %}
+        {% end_dnd_area %}
+      </div>
+      <div class="contact-bottom-row">
+        {% dnd_area "row_2" class='hs-contact-page-content row-2', label='Row 2' %}
+        {% end_dnd_area %}
+      </div>
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+

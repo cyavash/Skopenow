@@ -1,0 +1,24 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: TEST - On Demand Webinar
+-->
+
+{% extends './layouts/base.html' %}
+
+{% block header %}
+
+  {% global_partial path="./partials/header.html" %}
+{% endblock header %}
+
+{% block body %}
+
+{% module "module_16760599343044" path="/Skopenow_March2021/modules/Webinar On-Demand Banner", label="Webinar On-Demand Banner" %}
+
+{% module "module_16753058677561" path="/Skopenow_March2021/modules/Webinar Presenter", label="Webinar Presenter" %}
+
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+{% endblock footer%}

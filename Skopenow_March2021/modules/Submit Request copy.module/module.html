@@ -1,0 +1,56 @@
+<div class="submit_request">
+  <div class="row tracing_sections" style="background-color:rgba({{module.background_color.color|convert_rgb}},{{module.background_color.opacity * 0.01}})">
+    <div class="page-center">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          {% if module.title %}
+          <h3>{{ module.title }}</h3>
+          {% endif %}
+          {{ module.content }}
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="analyst_assistancebg2" >
+            {% if module.assistant_image_group.image_1.src %}
+            {% set sizeAttrs = 'width="{{ module.assistant_image_group.image_1.width }}" height="{{ module.assistant_image_group.image_1.height }}"' %}
+            {% if module.assistant_image_group.image_1.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.assistant_image_group.image_1.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.assistant_image_group.image_1.max_width }}" height="{{ module.assistant_image_group.image_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.assistant_image_group.image_1.loading != 'disabled' ? 'loading="{{ module.assistant_image_group.image_1.loading }}"' : '' %}
+            <img class="charc charc1" src="{{ module.assistant_image_group.image_1.src }}" alt="{{ module.assistant_image_group.image_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+
+            {% if module.assistant_image_group.image_2.src %}
+            {% set sizeAttrs = 'width="{{ module.assistant_image_group.image_2.width }}" height="{{ module.assistant_image_group.image_2.height }}"' %}
+            {% if module.assistant_image_group.image_2.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.assistant_image_group.image_2.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.assistant_image_group.image_2.max_width }}" height="{{ module.assistant_image_group.image_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.assistant_image_group.image_2.loading != 'disabled' ? 'loading="{{ module.assistant_image_group.image_2.loading }}"' : '' %}
+            <img class="charc" src="{{ module.assistant_image_group.image_2.src }}" alt="{{ module.assistant_image_group.image_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+
+            {% if module.assistant_image_group.image_3.src %}
+            {% set sizeAttrs = 'width="{{ module.assistant_image_group.image_3.width }}" height="{{ module.assistant_image_group.image_3.height }}"' %}
+            {% if module.assistant_image_group.image_3.size_type == 'auto' %}
+            {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+            {% elif module.assistant_image_group.image_3.size_type == 'auto_custom_max' %}
+            {% set sizeAttrs = 'width="{{ module.assistant_image_group.image_3.max_width }}" height="{{ module.assistant_image_group.image_3.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+            {% set loadingAttr = module.assistant_image_group.image_3.loading != 'disabled' ? 'loading="{{ module.assistant_image_group.image_3.loading }}"' : '' %}
+            <img class="charc" src="{{ module.assistant_image_group.image_3.src }}" alt="{{ module.assistant_image_group.image_3.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </div>
+          {% if module.contract_image.src %}
+          <div>
+            <div class="analyst_assistancebg3" style="background-image: url({{ module.contract_image.src }});"></div>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+{{ require_js(get_asset_url("../js/highlightV10.js")) }}
+<div class="api_codes">
+  <ul class="d-flex align-items-center">
+    {% for item in module.api_code_items %}
+    <li class="tab-title {% if loop.first %}active{% endif %}"><span>{{ item.title }}</span></li>
+    {% endfor %}    
+  </ul>
+  <div class="tab-content-wrapper">
+    {% for item in module.api_code_items %}
+    <div class="tab-content" style="{% if loop.first %}display:block;{% endif %}">
+      {{ item.code }} 
+    </div>
+    {% endfor %}    
+  </div>
+</div>

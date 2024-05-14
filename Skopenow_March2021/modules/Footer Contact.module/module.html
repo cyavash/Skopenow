@@ -1,0 +1,71 @@
+<ul class="contacts_contact">
+  <li>
+    <a href="tel:{{ module.phone_number }}">
+      <div>
+        <i class="icon-phone"></i>
+      </div>
+      <span>{{ module.phone_number }}</span>
+    </a>
+  </li>
+  <li>
+     <a id="contact_us_launch_link" href="mailto:support@skopenow.com">
+      <div>
+        <i class="icon-chat"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+      </div>
+      <span>Chat with support</span>
+    </a>
+  </li>
+  <li class="social-links">
+    {% set href = module.facebook.url.href %}
+    {% if module.facebook.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    {% set rel = [] %}
+    {% if module.link_field.no_follow %}
+    {% do rel.append("nofollow") %}
+    {% endif %}
+    {% if module.link_field.open_in_new_tab %}
+    {% do rel.append("noopener") %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.facebook.open_in_new_tab %}target="_blank"{% endif %}
+       {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+       >
+      <i class="icon-facebook"></i>
+    </a>
+    {% set href = module.twitter.url.href %}
+    {% if module.twitter.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    {% set rel = [] %}
+    {% if module.link_field.no_follow %}
+    {% do rel.append("nofollow") %}
+    {% endif %}
+    {% if module.link_field.open_in_new_tab %}
+    {% do rel.append("noopener") %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.twitter.open_in_new_tab %}target="_blank"{% endif %}
+       {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+       >
+      <i class="icon-twitter"></i>
+    </a>
+    {% set href = module.linkedin.url.href %}
+    {% if module.linkedin.url.type is equalto "EMAIL_ADDRESS" %}
+    {% set href = "mailto:" + href %}
+    {% endif %}
+    {% set rel = [] %}
+    {% if module.link_field.no_follow %}
+    {% do rel.append("nofollow") %}
+    {% endif %}
+    {% if module.link_field.open_in_new_tab %}
+    {% do rel.append("noopener") %}
+    {% endif %}
+    <a href="{{ href }}"
+       {% if module.linkedin.open_in_new_tab %}target="_blank"{% endif %}
+       {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+       >
+      <i class="icon-linkedin"></i>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,88 @@
+.banner-wrapper {
+  color: #fff;
+  text-align: center;
+  min-height: 362px;
+  font-family: Avenir,Open Sans,Segoe UI,sans-serif;
+  background: linear-gradient(90deg,rgba(66, 123, 200,1.0) 0,rgba(44, 63, 93,1.0));
+}
+
+.banner-wrapper h1 {
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 60px;
+  color: #fff;
+}
+
+.banner-wrapper p {
+  font-size: 18px;
+  font-family: Poppins;
+  margin-top: 0;
+}
+
+.banner-wrapper .banner_button {
+  font-size: 16px;
+  background-color: #21395f;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: all .3s ease!important;
+  width: 190px;
+  margin: 0 15px;
+  height: 45px;
+  padding: 10px 0;
+  border: 2px solid #21395f;
+}
+
+.banner-wrapper .banner_button:hover {
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+  transform: translateY(2px);
+  color: #fff;
+}
+
+.banner-wrapper {
+  padding: 100px 0 75px;
+}
+
+.banner-wrapper h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.banner-wrapper p {
+  margin-bottom: 30px;
+}
+
+.banner-wrapper  .try_free {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: all .3s ease!important;
+  width: 190px;
+  margin: 0 15px;
+  height: auto;
+  padding: 8.5px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Avenir,Open Sans,Segoe UI,sans-serif;
+}
+
+@media(max-width:505px){
+  .banner-wrapper .banner_button, .banner-wrapper .try_free {
+    margin: 0;
+    margin-bottom: 15px !important;
+  }
+  .banner-wrapper .hs-cta-wrapper,.banner-wrapper .banner_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

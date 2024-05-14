@@ -1,0 +1,71 @@
+/* CSS for HubSpot module */
+.pp_img_text_banner {
+  padding: 50px 0;
+}
+.hp_img_text_banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.hp_img_text_banner.shift .container {
+  flex-direction: row-reverse;
+}
+.hp_img_text_banner .img_part {
+  width: 50%;
+  align-items: center;
+}
+.hp_img_text_banner .img_part img {
+}
+.hp_img_text_banner .text_part {
+  max-width: 530px;
+   align-items: center;
+}
+.hp_img_text_banner .text_part h4 {
+  color: #0680FB;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.hp_img_text_banner .text_part h2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 36px;
+  color: #212529;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.hp_img_text_banner .text_part p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #425466;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .hp_img_text_banner .img_part {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .hp_img_text_banner .text_part {
+    width: 100%;
+  }
+  .hp_img_text_banner .text_part h2 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+}
+
+
+
+
+

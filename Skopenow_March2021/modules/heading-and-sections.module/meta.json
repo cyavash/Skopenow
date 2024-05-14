@@ -1,0 +1,7 @@
+{
+  "global" : false,
+  "content_types" : [ "QUOTE_TEMPLATE", "LANDING_PAGE", "SITE_PAGE", "CUSTOMER_PORTAL", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 152782262073,
+  "is_available_for_new_content" : true
+}

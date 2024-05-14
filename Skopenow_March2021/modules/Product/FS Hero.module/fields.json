@@ -1,0 +1,104 @@
+[ {
+  "id" : "25c47b29-6f3d-2924-b71f-2d32070121b8",
+  "name" : "top_text",
+  "display_width" : null,
+  "label" : "Top text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "WORKBENCH"
+}, {
+  "id" : "4323342d-7b31-d8fb-0920-f24e26db0098",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Streamlined People and Business Investigations"
+}, {
+  "id" : "73a10b5c-692b-6972-0947-2cb68fcfe4b6",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Instantly generate intelligence reports on any subject to tackle fraud, threat, crime, and enhance due diligence. Workbench sets the industry standard by combining comprehensive data with AI driven insights to transform the way you conduct investigations."
+}, {
+  "id" : "6d538f17-f273-3340-3ac9-1ba5f23e70ed",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "465e8458-4232-7c6b-44f5-3bbeaa9c91e1",
+    "name" : "button_text",
+    "display_width" : null,
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Explore the Product"
+  }, {
+    "id" : "e378dc45-72a1-bd99-e626-071b853a5468",
+    "name" : "url",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+    "type" : "url",
+    "default" : {
+      "content_id" : null,
+      "href" : "#",
+      "type" : "EXTERNAL"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "button_text" : "Explore the Product",
+    "url" : {
+      "content_id" : null,
+      "href" : "#",
+      "type" : "EXTERNAL"
+    }
+  }
+}, {
+  "id" : "4b6e558a-bf9d-ed4c-4c61-927cc0bff7ef",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/gs-hero.svg",
+    "alt" : "gs-hero",
+    "loading" : "lazy",
+    "width" : 319,
+    "height" : 354,
+    "max_width" : 319,
+    "max_height" : 354
+  }
+} ]

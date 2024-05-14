@@ -1,0 +1,63 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Trial Page
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="hs-trial-page no-back-to-top">
+
+  {% global_partial path="./partials/header_v2.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    {% module "banner" path="../modules/Banner", label="Banner" %}
+    <main class="body-container-wrapper">
+      <div class="row rom_form green_check body-14">
+        <div class="conatiner_new_form clearfix">
+          <div class="col-md-6 col-sm-12 column">
+            {% dnd_area "col_left" class='hs-trial-page-content trial-includes', label='Column Left - Your Free Trial Includes' %}
+            {% end_dnd_area %}
+          </div>
+          <div class="col-md-6 col-sm-12 column">
+            {% dnd_area "col_right" class='hs-trial-page-content column-form hs-simple-form error_float', label='Column Right - Tell Us About Yourself' %}
+            {% end_dnd_area %}
+          </div>
+        </div>
+      </div>
+      {% dnd_area "features" class='hs-trial-page-content hs-features', label='Included Features' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "questions" class='hs-trial-page-content hs-questions', label='FAQs' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "book_demo" class='hs-trial-page-content hs-book-demo', label='Book a Demo' %}
+      {% end_dnd_area %}
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,420 @@
+[ {
+  "id" : "d5507f22-287d-f640-19bf-e3052c4afea3",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "8d9613e9-4efa-29fe-d932-9696dc6f2375",
+    "name" : "logo",
+    "display_width" : null,
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/skop_logo.svg",
+      "alt" : "skop_logo",
+      "loading" : "lazy",
+      "width" : 140,
+      "height" : 17,
+      "max_width" : 140,
+      "max_height" : 17
+    }
+  }, {
+    "id" : "b07e3ee9-ae45-6834-30a7-ce8f97b7c55f",
+    "name" : "url",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/skop_logo.svg",
+      "alt" : "skop_logo",
+      "loading" : "lazy",
+      "width" : 140,
+      "height" : 17,
+      "max_width" : 140,
+      "max_height" : 17
+    },
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    }
+  }
+}, {
+  "id" : "52c60e02-2ead-025a-f410-c82c7fef25a8",
+  "name" : "left_menu_item",
+  "display_width" : null,
+  "label" : "left Menu item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "35109ff3-cc30-e6b3-6423-a6efda6396d4",
+    "name" : "menu_text",
+    "display_width" : null,
+    "label" : "Menu text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Products"
+  }, {
+    "id" : "be22a8bf-9bb5-a86f-29da-a6a50aa0f076",
+    "name" : "url",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    }
+  }, {
+    "id" : "ca6cd9e0-549d-a1e8-dcf1-2746b41cef9d",
+    "name" : "sub_menu",
+    "display_width" : null,
+    "label" : "Sub menu",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "9c01f758-5619-8e99-938f-f327c343235c",
+    "name" : "sub_item",
+    "display_width" : null,
+    "label" : "Sub item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 3
+    },
+    "visibility" : {
+      "controlling_field" : "ca6cd9e0-549d-a1e8-dcf1-2746b41cef9d",
+      "controlling_field_path" : null,
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "16fc7fb4-d647-f8d2-f839-769156f13ca5",
+      "name" : "sub_menu_text",
+      "display_width" : null,
+      "label" : "sub_menu text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Workbench"
+    }, {
+      "id" : "5d1d6736-9a64-e2a5-0cb6-77750b19ee64",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "content",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Streamlined, accurate people & business search"
+    }, {
+      "id" : "e87a29ee-cf6b-9f08-f270-46826a73526a",
+      "name" : "url",
+      "display_width" : null,
+      "label" : "URL",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+      "type" : "url",
+      "default" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "sub_menu" : false,
+    "sub_item" : [ {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    } ]
+  }, {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "sub_menu" : false,
+    "sub_item" : [ {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    } ]
+  }, {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "sub_menu" : false,
+    "sub_item" : [ {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    } ]
+  }, {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "sub_menu" : false,
+    "sub_item" : [ {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    }, {
+      "sub_menu_text" : "Workbench",
+      "content" : "Streamlined, accurate people & business search",
+      "url" : {
+        "content_id" : 106934963109,
+        "href" : null,
+        "type" : "CONTENT"
+      }
+    } ]
+  } ]
+}, {
+  "id" : "77f328d2-c7bc-6737-78f2-4c3813fa974e",
+  "name" : "right_menu_item",
+  "display_width" : null,
+  "label" : "Right Menu item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "a22743d4-a1ea-59d2-72a4-3ede9017564d",
+    "name" : "menu_text",
+    "display_width" : null,
+    "label" : "Menu text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Products"
+  }, {
+    "id" : "4c6863f3-9bdb-c0c6-b27e-a470c8d9556f",
+    "name" : "url",
+    "display_width" : null,
+    "label" : "URL",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+    "type" : "url",
+    "default" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    }
+  }, {
+    "id" : "909f63f9-c0ae-fbd6-2c7b-c5fd09d49d7c",
+    "name" : "button_type",
+    "display_width" : null,
+    "label" : "Button type",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "button_type" : false
+  }, {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "button_type" : false
+  }, {
+    "menu_text" : "Products",
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "#",
+      "content_id" : null
+    },
+    "button_type" : false
+  } ]
+} ]

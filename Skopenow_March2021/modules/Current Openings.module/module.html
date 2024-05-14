@@ -1,0 +1,56 @@
+<div class="current-openings-wrapper">
+  <div class="content-wrapper">
+    <div class="row current-open-title-wrap">
+      <div class="col-3">
+      </div>
+      <div class="col-6">
+        <div class="current_opening_title">
+          <h3>
+            {{ module.heading }}
+          </h3>
+          <span>{{ module.sub_heading }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="row current-tab-wrap">
+      <ul class="tabs current_opening_nav">
+        {% for item in module.content_wrap_items %}
+        <li class="tab-link {% if loop.first %}current{% endif %}" data-tab="tab{{ loop.index }}"><a>{{ item.nav_title }}</a></li>
+        {% endfor %}
+      </ul>
+      {% for item in module.content_wrap_items %}
+      <div id="tab{{ loop.index }}" class="tab-content {% if loop.first %}current{% endif %} current_opening-con-wrap">
+        <div class="tab_pane">
+          {% for item2 in item.content_items %}
+          <div class="sales_data clearfix">
+            <div class="mata">
+              <h5>
+                {{ item2.title }}
+              </h5>
+              <span>{{ item2.sub_title }}</span>
+            </div>
+            {% set href = item2.button_link.url.href %}
+            {% if item2.button_link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            {% set rel = [] %}
+            {% if item2.button_link.no_follow %}
+            {% do rel.append("nofollow") %}
+            {% endif %}
+            {% if item2.button_link.open_in_new_tab %}
+            {% do rel.append("noopener") %}
+            {% endif %}
+            <a class="read_more" href="{{ href }}"
+               {% if item2.button_link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+               >{{ item2.button_text }}</a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="current_opening_blank_col">
+      </div>
+    </div>
+  </div>
+</div>

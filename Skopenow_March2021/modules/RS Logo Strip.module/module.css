@@ -1,0 +1,23 @@
+.logo_wrapper{
+  padding:20px 0; 
+}
+
+.logo_img{
+  text-align:center;
+}
+
+.logo_img img{
+  margin-right:40px;
+}
+
+.logo_img img:last-child{
+  margin-right:0px;
+}
+
+@media(max-width:479px){
+  .logo_img img:last-child,
+  .logo_img img{
+    display:block;
+    margin:0 auto 30px;
+  }
+}

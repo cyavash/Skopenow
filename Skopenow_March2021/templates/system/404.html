@@ -1,0 +1,31 @@
+<!--
+templateType: error_page
+isAvailableForNewContent: true
+label: 404 Error Page
+-->
+{% extends "../layouts/base.html" %}
+
+
+{% block header %}
+<div class="not_found_page has-footer-only">
+  {% global_partial path="../partials/header.html" %}
+  {% endblock header %}
+  {% block body %}
+  <div class="page-center">
+    <div class="body-content">
+      <div class="column">
+        <h4>404</h4>
+        <h3>We can't find what you are looking for.</h3>
+        <p>It appears you are looking for a page that either does not exist or has been removed from our server.</p>
+        <img  alt="image" src="{{get_asset_url('../../images/404.jpg')}}">
+        <p class="go_back">Go back from whence you came. JK.<a  class="hover_t" href="/contact">Drop us a line</a></p>
+        <p class="still_lost">STILL LOST? TRY THESE LINKS INSTEAD</p>
+      </div>
+    </div>
+    {% endblock body %}
+    {% block footer %}
+    {% global_partial path="../partials/footer_v2.html" %}
+  </div>
+</div>
+{% endblock footer%}
+

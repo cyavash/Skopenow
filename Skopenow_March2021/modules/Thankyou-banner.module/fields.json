@@ -1,0 +1,22 @@
+[ {
+  "id" : "cd3df0f7-14a3-5a43-21ee-6a83e10e9199",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Thank you for signing up for: <br><span>[Webinar Name Here]</span>"
+}, {
+  "id" : "97726ac4-79f4-b76f-319c-f03a3fb334d5",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>You're all set. You will receive the webinar confirmation from <u>no-reply@zoom.us </u>, if you do not receive a confirmation email within 12 hours, please contact <u>marketing@skopenow.com</u> for assistance.</p>"
+} ]

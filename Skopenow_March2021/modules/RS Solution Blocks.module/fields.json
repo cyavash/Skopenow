@@ -1,0 +1,235 @@
+[ {
+  "id" : "d65a93f4-8a5a-5a17-ff2c-04dcb5103a13",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Another heading Goes here"
+}, {
+  "id" : "6b950eaa-5029-3ee9-9524-5b1a169483d7",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet"
+}, {
+  "id" : "7f0d9904-bbfc-d242-27fe-03c7fda15421",
+  "name" : "service_items",
+  "display_width" : null,
+  "label" : "Service Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 4,
+    "max" : null,
+    "sorting_label_field" : "36604fd3-044c-96dc-338b-999917c8e64c",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "a73e4604-5eee-3ac7-1841-1c7b2fb02167",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201410.svg",
+      "alt" : "Group 1410",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    }
+  }, {
+    "id" : "828ab26d-887b-3664-2d99-ab6a8718e503",
+    "name" : "icon_size",
+    "display_width" : null,
+    "label" : "Icon size",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "45"
+  }, {
+    "id" : "b8ac272e-4bb4-09e9-4e35-b3bd1fe20d08",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Solution heading"
+  }, {
+    "id" : "8ba0b71a-5239-dda1-5a0a-22392eee9e0e",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia</p>"
+  }, {
+    "id" : "153c2d25-fd5c-f95f-e267-2b6bb23c5dc8",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Learn More"
+  }, {
+    "id" : "2ec8ba03-3e24-22e3-b437-44399aaccc61",
+    "name" : "link_url",
+    "display_width" : null,
+    "label" : "Link Url",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.skopenow.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201410.svg",
+      "alt" : "Group 1410",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "icon_size" : "45",
+    "title" : "Solution heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia</p>",
+    "link_text" : "Learn More",
+    "link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.skopenow.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201410.svg",
+      "alt" : "Group 1410",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "icon_size" : "45",
+    "title" : "Solution heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia</p>",
+    "link_text" : "Learn More",
+    "link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.skopenow.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201410.svg",
+      "alt" : "Group 1410",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "icon_size" : "45",
+    "title" : "Solution heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia</p>",
+    "link_text" : "Learn More",
+    "link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.skopenow.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Group%201410.svg",
+      "alt" : "Group 1410",
+      "loading" : "lazy",
+      "width" : 53,
+      "height" : 53,
+      "max_width" : 53,
+      "max_height" : 53
+    },
+    "icon_size" : "45",
+    "title" : "Solution heading",
+    "description" : "<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec sed odio dui. Vestibulum id ligula porta felis euismod semper. Aenean lacinia</p>",
+    "link_text" : "Learn More",
+    "link_url" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "https://www.skopenow.com",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ]
+}, {
+  "id" : "88769dc5-1a0d-1ba6-1f60-3c2feadefd37",
+  "name" : "book_a_demo_cta",
+  "display_width" : null,
+  "label" : "Book A Demo CTA",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "cd9eff34-7281-484a-a7b1-b000030b2278"
+} ]

@@ -1,0 +1,44 @@
+<div class="comparison-section">
+  <div class="page-center">
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th class="table-image">
+            {% if module.logo_1.src %}
+              {% set sizeAttrs = 'width="{{ module.logo_1.width }}" height="{{ module.logo_1.height }}"' %}
+              {% if module.logo_1.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.logo_1.width }}" height="{{ module.logo_1.height }}" style="max-width: 100%; height: auto;"' %}
+              {% elif module.logo_1.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.logo_1.max_width }}" height="{{ module.logo_1.max_height }}" style="max-width: 100%; height: auto;"' %}
+              {% endif %}
+               {% set loadingAttr = module.logo_1.loading != 'disabled' ? 'loading="{{ module.logo_1.loading }}"' : '' %}
+              <img src="{{ module.logo_1.src }}" alt="{{ module.logo_1.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+            {% endif %}
+          </th>
+          <th class="table-image">
+          {% if module.logo_2.src %}
+            {% set sizeAttrs = 'width="{{ module.logo_2.width }}" height="{{ module.logo_2.height }}"' %}
+            {% if module.logo_2.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ module.logo_2.width }}" height="{{ module.logo_2.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif module.logo_2.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ module.logo_2.max_width }}" height="{{ module.logo_2.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = module.logo_2.loading != 'disabled' ? 'loading="{{ module.logo_2.loading }}"' : '' %}
+            <img src="{{ module.logo_2.src }}" alt="{{ module.logo_2.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in module.comparison_item %}
+        <tr>
+          <td>{{ item.heading }}</td>
+          <td>{{ item.content_1 }}</td>
+          <td>{{ item.content_2 }}</td>
+        </tr>  
+        {% endfor %}
+      </tbody> 
+    </table>
+  </div>
+</div>

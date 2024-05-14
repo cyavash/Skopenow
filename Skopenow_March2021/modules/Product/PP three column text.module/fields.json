@@ -1,0 +1,53 @@
+[ {
+  "id" : "e8abd9c9-1e69-2339-1c05-95ffe5b4c123",
+  "name" : "block",
+  "display_width" : null,
+  "label" : "Block",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "302dbb18-1c3f-6cf2-ba25-a8cc704e01c1",
+    "name" : "sub_title",
+    "display_width" : null,
+    "label" : "Sub title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Collect and analyze"
+  }, {
+    "id" : "aff434c1-5e16-c9ec-7d73-4b47ec311632",
+    "name" : "sub_content",
+    "display_width" : null,
+    "label" : "Sub content",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "information from hundreds of sources"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "sub_title" : "Collect and analyze",
+    "sub_content" : "information from hundreds of sources"
+  }, {
+    "sub_title" : "Collect and analyze",
+    "sub_content" : "information from hundreds of sources"
+  }, {
+    "sub_title" : "Collect and analyze",
+    "sub_content" : "information from hundreds of sources"
+  } ]
+} ]

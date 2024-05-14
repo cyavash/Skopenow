@@ -1,0 +1,18 @@
+<div class="banner-variant" style="background: url('{{ module.background_image.src }}') bottom center no-repeat;">
+  <div class="page-center">
+    <div class="banner-content">
+      <h1>
+        {{ module.heading }}
+      </h1> 
+      {% inline_rich_text field="content" value="{{ module.content }}" %}
+      <a href="{{ module.cta_link }}" class="cta_button">{{ module.cta_text }}</a>
+            
+      <div class="animation-holder">
+        <div class="animation-holder-inner">
+          {{ module.animation }}
+        </div>  
+      </div>  
+      
+    </div><!-- end banner-content -->    
+  </div><!-- end page-center -->
+</div><!-- end banner-variant -->

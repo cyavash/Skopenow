@@ -1,0 +1,194 @@
+[ {
+  "id" : "8a805c99-2070-463f-7bc8-2d0944dbcf65",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Serving"
+}, {
+  "id" : "1b4efe76-7d67-6c90-2752-3d1c654fc4ac",
+  "name" : "section_item",
+  "display_width" : null,
+  "label" : "Section Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 9
+  },
+  "children" : [ {
+    "id" : "3f74975a-46ba-a721-8e53-b06fbd90b9cd",
+    "name" : "section_label",
+    "display_width" : null,
+    "label" : "Section Label",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Global Security Teams"
+  }, {
+    "id" : "ea895808-a965-06aa-85d0-00fe7caf590c",
+    "name" : "link_url",
+    "display_width" : null,
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  }, {
+    "id" : "593dc80b-05b3-f52d-82bd-1930b13ac410",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  }, {
+    "section_label" : "Global Security Teams",
+    "link_url" : "#",
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/security-teams.svg",
+      "alt" : "security-teams",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 36,
+      "max_width" : 36,
+      "max_height" : 36
+    }
+  } ]
+} ]

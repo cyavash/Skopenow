@@ -1,0 +1,82 @@
+[ {
+  "id" : "primary_menu_field",
+  "name" : "primary_menu_field",
+  "display_width" : null,
+  "label" : "Primary menu field",
+  "required" : false,
+  "locked" : false,
+  "type" : "menu",
+  "default" : 42892381195
+}, {
+  "id" : "881c6aa0-5a93-8ef3-f23a-914b902663a8",
+  "name" : "new_tag",
+  "display_width" : null,
+  "label" : "New Tag",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 1
+  },
+  "children" : [ {
+    "id" : "617a7397-0275-3df5-27a2-0a297d605f76",
+    "name" : "tag_text",
+    "display_width" : null,
+    "label" : "Tag Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "New"
+  }, {
+    "id" : "14a43eca-6433-ae12-827f-1572e9facc47",
+    "name" : "background_color",
+    "display_width" : null,
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#0480fb"
+  }, {
+    "id" : "21066b57-73fc-0a74-2ce9-c682926b2c7f",
+    "name" : "parent_position",
+    "display_width" : null,
+    "label" : "Parent Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1"
+  }, {
+    "id" : "4cf4a29f-1050-8f4b-5006-84d3955006a5",
+    "name" : "item_position",
+    "display_width" : null,
+    "label" : "Item Position",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "2"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "tag_text" : "New",
+    "background_color" : "#0480fb",
+    "parent_position" : "1",
+    "item_position" : "2"
+  } ]
+} ]

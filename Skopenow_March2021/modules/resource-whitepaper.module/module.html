@@ -1,0 +1,32 @@
+<div class="resource-whitepaper">
+  <div class="container">
+    <h2>
+      {{ module.heading }}
+    </h2>
+    
+    <div class="row-fluid">
+      {% for item in module.resource %}
+        <div class="span4 resource-item-wrap">
+           <div class="resource-item">
+                  <div class="img-box">
+                  {% if item.image_field.src %}
+                    {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+                    {% if item.image_field.size_type == 'auto' %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                    {% elif item.image_field.size_type == 'auto_custom_max' %}
+                      {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                    {% endif %}
+                     {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+                    <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                  {% endif %}
+                </div>  
+                <h3>{{ item.heading }}</h3>
+                <a href="{{ item.link_url }}">{{ item.link_text }}</a>
+            </div><!-- end resource-item -->   
+         </div><!-- end span4 --> 
+       {% endfor %}
+    </div><!-- end row-fluid -->
+    
+    <a href="#" class="see-more">{{ module.cta_text }}</a> 
+  </div><!-- end container -->
+</div><!-- end resource-whitepaper -->

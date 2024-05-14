@@ -1,0 +1,17 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_POST", "BLOG_LISTING" ],
+  "module_id" : 148240487607,
+  "css_assets" : [ {
+    "url" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Codes/slick.css",
+    "autoload" : true,
+    "name" : "slick.css"
+  } ],
+  "js_assets" : [ {
+    "url" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Codes/slick.js",
+    "autoload" : true,
+    "name" : "slick.js"
+  } ],
+  "is_available_for_new_content" : true
+}

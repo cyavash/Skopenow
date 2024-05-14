@@ -1,0 +1,26 @@
+<div class="pp_banner">
+  <div class="container">
+  <div class="text_part">
+      <h4>
+        <img src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/fs-logo.svg"/>
+      </h4>
+      <h3>
+        {{ module.title }}
+      </h3>
+      <a href="{{ module.button.url.href }}">{{ module.button.button_text }}</a>
+    </div>
+    <div class="img_part">
+      {% if module.image_field.src %}
+	{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}"' %}
+	{% if module.image_field.size_type == 'auto' %}
+		{% set sizeAttrs = 'width="{{ module.image_field.width }}" height="{{ module.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+	{% elif module.image_field.size_type == 'auto_custom_max' %}
+		{% set sizeAttrs = 'width="{{ module.image_field.max_width }}" height="{{ module.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+	{% endif %}
+	 {% set loadingAttr = module.image_field.loading != 'disabled' ? 'loading="{{ module.image_field.loading }}"' : '' %}
+	<img src="{{ module.image_field.src }}" alt="{{ module.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+{% endif %}
+    </div>
+     
+  </div>
+</div>

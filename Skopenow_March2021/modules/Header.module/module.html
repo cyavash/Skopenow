@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="new_header">
+  <div class="content">
+    <div class="logo_part">
+      <a href="{{ module.logo.url.href }}">
+        <img src="{{ module.logo.logo.src }}">
+      </a>
+      <span class="mobile_trigger"></span>
+    </div>
+    <div class="navigation">
+      <div class="left_part">
+        <ul>
+          {% for item in module.left_menu_item %}
+          <li>
+            <a href="{{ item.url.href }}">{{ item.menu_text }} </a>
+            {% if item.sub_menu %}<i class="fa fa-angle-down"></i>{% endif %}
+            {% if item.sub_menu %}
+            <div class="sub_group">
+              {% for sub in item.sub_item %}
+              <div class="sub_item">
+                <a href="{{ sub.url.href }}">
+                  <h4>
+                    {{ sub.sub_menu_text }}
+                  </h4>
+                  <p>
+                    {{ sub.content }}
+                  </p>
+                </a>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="right_part">
+        <ul>
+          {% for item in module.right_menu_item %}
+          <li>
+            <a href="{{ item.url.href }}" class="{% if item.button_type %}button_type{% endif %}">{{ item.menu_text }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+[ {
+  "id" : "2a317270-b907-2b1b-5192-302a2d165289",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Unrivaled Thread Assessment & Fraud Detection"
+}, {
+  "id" : "510708d4-b39b-7f9e-7379-5035f6101d91",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Over 1,000 customers—including Fortune 500 companies and large government agencies—use Skopenow’s software and APIs to conduct streamlined OSINT investigations."
+}, {
+  "id" : "ecd19dd5-968c-a815-d9f8-aae86bc936a8",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Request a Trial"
+}, {
+  "id" : "bc5e80f4-b338-666a-fd46-e060dc456cd5",
+  "name" : "url",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "#",
+    "content_id" : null
+  }
+}, {
+  "id" : "f52ab732-9890-d50a-6e7a-7f8399f9c464",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "picker" : "file",
+  "id" : "9a57c53c-1709-6982-b122-a1bef677b4de",
+  "name" : "file",
+  "display_width" : null,
+  "label" : "File",
+  "required" : false,
+  "locked" : false,
+  "type" : "file",
+  "default" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Radar-Dark.json"
+} ]

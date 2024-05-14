@@ -1,0 +1,41 @@
+<div class="banner_wrapper">
+  <div class="banner_img" style="background: transparent linear-gradient(90deg, #58CFED 0%, #5A38F2 100%) 0% 0% no-repeat padding-box;">
+  <div class="skew_skopenow_help"></div>
+  </div>
+  <div class="banner-inner">
+    <div class="offer_wrapper page-center">
+       <div class="banner-text col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         <div class="logo_word">
+           <span>{% logo
+            override_inherited_src="{{ module.logo_field.override_inherited_src }}"
+            src="{{ module.logo_field.src }}"
+            alt="{{ module.logo_field.alt }}"
+            suppress_company_name="{{ module.logo_field.suppress_company_name }}"
+      %}</span>
+         </div> 
+        <span style="margin-right:20px;"><img src="https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Path%201646.svg">{{ module.offer_group.date_and_time }}</span> <span><img src="https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Subtraction%201.svg">{{ module.offer_group.duration }}</span>
+         <h1>
+           {{ module.offer_group.heading }}
+         </h1>
+         <h4>
+           {{ module.offer_group.subheading }}
+         </h4>
+      </div>
+      <div class="form_wrapper col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="form_wrapper_inner">   
+        <h3>          
+          {{ module.offer_group.form_heading }}
+        </h3>
+        {% form
+        form_to_use="{{ module.offer_group.offer_form.form_id }}"
+        response_response_type="{{ module.offer_group.offer_form.response_type }}"
+        response_message="{{ module.offer_group.offer_form.message }}"
+        response_redirect_id="{{ module.offer_group.offer_form.redirect_id }}"
+        response_redirect_url="{{module.offer_group.offer_form.redirect_url}}"
+        gotowebinar_webinar_key="{{ module.offer_group.offer_form.gotowebinar_webinar_key }}"
+      %}
+      </div>
+      </div>
+     </div>   
+  </div>
+</div>

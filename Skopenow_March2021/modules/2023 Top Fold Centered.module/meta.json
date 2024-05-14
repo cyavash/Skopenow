@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "content_types" : [ "LANDING_PAGE", "SITE_PAGE" ],
+  "host_template_types" : [ "PAGE" ],
+  "module_id" : 132228120601,
+  "label" : "2023 Top Fold Centered",
+  "is_available_for_new_content" : true
+}

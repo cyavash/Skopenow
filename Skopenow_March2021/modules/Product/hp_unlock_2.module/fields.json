@@ -1,0 +1,94 @@
+[ {
+  "id" : "17066b9f-fd61-58ff-6633-58e0ea8267a9",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Unlock the Power of Workbench"
+}, {
+  "id" : "a443ca6a-2403-33d4-0575-67bafdc41627",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See for yourself how the Skopenow can modernize your people and business search. To get started, request a demo and an expert will get in touch with you shortly. "
+}, {
+  "id" : "2adcc05e-d918-0f2f-e493-95d7160f906a",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Book a Demo"
+}, {
+  "id" : "448538cb-5081-0fc0-47b3-e5bfd65d0a08",
+  "name" : "url",
+  "display_width" : null,
+  "label" : "URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "#",
+    "type" : "EXTERNAL"
+  }
+}, {
+  "id" : "678bea84-3b0b-194c-14d0-7bacd13326cb",
+  "name" : "background",
+  "display_width" : null,
+  "label" : "Background",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/bottom_back.png",
+    "alt" : "bottom_back",
+    "loading" : "lazy",
+    "width" : 2160,
+    "height" : 707,
+    "max_width" : 2160,
+    "max_height" : 707
+  }
+}, {
+  "id" : "1b38596c-be10-f305-3ac8-0b64268f9bd6",
+  "name" : "reveal",
+  "display_width" : null,
+  "label" : "reveal",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "7fb47545-0959-1c07-db66-2fac07a0b69f",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#212529"
+} ]

@@ -1,0 +1,206 @@
+.guide_banner {
+  background: linear-gradient(270.73deg, #0680FB -30.69%, #333961 101.06%);
+  padding: 100px 0 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.guide_banner .overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(0, -10%);
+}
+
+.guide_banner .container {
+    max-width: 1140px;
+  padding: 0 15px;
+  padding-right:35px;
+  margin: 0 auto;
+  position: relative;
+}
+.guide_banner .cover {
+  z-index:1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-70%, -5%);
+
+}
+.guide_banner .cover img {
+  max-width: 377px;
+    width: 100%;
+  margin:auto;
+display:block;
+    margin-bottom: 60px;
+     box-shadow: -4px -1px 24px -11px #000;
+}
+.guide_banner .content {
+  display: flex;
+    flex-wrap: wrap;
+/*     justify-content: space-between; */
+  align-items: flex-start;
+  text-align:left;
+  justify-content: space-between;
+  min-height:612px;
+}
+.guide_banner .text_part {
+      width: 60%;
+  padding-right: 206px;
+  padding-top:43px;
+  text-align:left;
+  z-index: 2;
+}
+.guide_banner .text_part h4 {
+      font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #F69B5D;
+    margin: 0;
+    margin-bottom: 35px;
+}
+.guide_banner h2 {
+      font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    margin: 0;
+    position: relative;
+    margin-bottom: 39px;
+}
+
+.guide_banner .text_part strong{
+  font-weight:500;}
+
+.guide_banner .text_part p {
+      font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+}
+.guide_banner .text_part ul {
+      font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+  padding-left: 20px;
+}
+.guide_banner .text_part ul li {
+}
+.guide_banner .form_part {
+  z-index:2;
+      width: 40%;
+  background: #FFFFFF;
+  max-width:430px;
+    box-shadow: 0px 0px 30px 2px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    padding: 25px 40px;
+  box-shadow: -9px -1px 24px -11px #000;
+  min-height:612px;
+}
+.guide_banner .form_part p {
+  font-family: 'DM Sans';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+.guide_banner .form_part form {
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+.guide_banner .form_part form input, .guide_banner .form_part form select {
+  padding: 10px 15px;
+  font-size: 13px;
+  font-family: 'DM Sans';
+  line-height: 21px;
+  border-color: #000;
+}
+.guide_banner .form_part form input.hs-button {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  border-radius: 30px;
+  margin: 0;
+  margin-top: 30px;
+}
+.guide_banner .form_part form .field {
+  margin-bottom: 15px;
+}
+.guide_banner .form_part form ul.hs-error-msgs {
+  margin: 0;
+  position: absolute;
+}
+
+.guide_banner .form_part form ul.hs-error-msgs label {
+      font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #FF4747 !important;
+    background: none;
+    padding: 5px 10px !important;
+}
+@media (max-width: 767px) {
+  .guide_banner {
+    padding: 50px 10px;
+  }
+  .guide_banner .text_part {
+    width: 100%;
+    padding-right: 0;
+  }
+  .guide_banner .text_part h4 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  .guide_banner .text_part h2 {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  .guide_banner .text_part p, .guide_banner .text_part ul {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .guide_banner .form_part {
+    width: 100%;
+    margin-top: 40px;
+    padding: 20px;
+  }
+  .guide_banner .form_part form input, .guide_banner .form_part form select {
+    width: 100% !important;
+  }
+}
+
+.text_part h2:before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  top: 9px;
+  left: 0;
+  height: calc(100% - 18px);
+  background: #0680FB;
+}
+
+

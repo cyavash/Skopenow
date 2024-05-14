@@ -1,0 +1,24 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: On Demand Webinar
+-->
+
+{% extends './layouts/base.html' %}
+
+{% block header %}
+
+  {% global_partial path="./partials/Header_New.html" %}
+{% endblock header %}
+
+{% block body %}
+
+{% module "module_16753051268344" path="/Skopenow_March2021/modules/Webinar Register banner", label="Webinar Register banner" %}
+
+{% module "module_16753058677561" path="/Skopenow_March2021/modules/Webinar Presenter", label="Webinar Presenter" %}
+
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+{% endblock footer%}

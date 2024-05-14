@@ -1,0 +1,74 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: API Page
+-->
+{% extends "./layouts/base.html" %}
+{{ require_js(get_asset_url("../js/highlightV10.js")) }}
+{% block header %}
+<div class="hs-api-page has-footer-only hs-v2-page">
+
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    {% module "banner" path="../modules/Banner", label="Banner" %}
+    <main class="body-container-wrapper">
+      <div class="page-center">
+        <div class="row">
+          {% dnd_area "row1" class='hs-api-page-content hs-integrate-title', label='Row 1' %}
+          {% end_dnd_area %}
+        </div>
+        <div class="row">
+          {% dnd_area "row2" class='hs-api-page-content hs-integrate-icons', label='Row 2' %}
+          {% end_dnd_area %}
+        </div>
+        <div class="row">
+          {% dnd_area "row3" class='hs-api-page-content hs-language-title', label='Row 3' %}
+          {% end_dnd_area %}
+        </div>
+        <div class="codes-of-api">
+          {% dnd_area "row4" class='hs-api-page-content hs-language-codes', label='Row 4' %}
+          {% end_dnd_area %}
+        </div>
+        {% dnd_area "row5" class='hs-api-page-content hs-book-demo', label='Row 5' %}
+        {% end_dnd_area %}
+      </div>
+      <div class="quick_support">
+        <div class="row">
+          {% dnd_area "row6" class='hs-api-page-content hs-benifit-title', label='Row 6' %}
+          {% end_dnd_area %}
+        </div>
+        <div class="row">
+          {% dnd_area "row7" class='hs-api-page-content hs-benifit-icons', label='Row 7' %}
+          {% end_dnd_area %}
+        </div>
+      </div>
+
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

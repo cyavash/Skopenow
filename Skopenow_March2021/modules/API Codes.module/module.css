@@ -1,0 +1,77 @@
+.api_codes {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.api_codes ul {
+  line-height: 70px;
+  background-color: #000;
+  position: relative;
+  top: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+.api_codes ul li {
+  list-style: none;
+  font-size: 14px;
+}
+
+.api_codes ul li span {
+  display: block;
+  line-height: 70px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 30px;
+}
+
+.api_codes ul li.active span {
+  background-color: #272822;
+  cursor: auto;
+}
+
+.api_codes .hljs {
+  background: #272822;
+  font-size: 15px;
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  color: #abb2bf;
+  margin-bottom: 32px;
+}
+
+.api_codes .hljs .hljs-doctag,.api_codes .hljs .hljs-formula,.api_codes .hljs .hljs-keyword {
+  color: #c678dd
+}
+
+.api_codes .hljs .hljs-built_in,.api_codes .hljs .hljs-class .hljs-title {
+  color: #e6c07b
+}
+
+.api_codes .hljs .hljs-addition,.api_codes .hljs .hljs-attribute,.api_codes .hljs .hljs-meta-string,.api_codes .hljs .hljs-regexp,.api_codes .hljs .hljs-string {
+  color: #98c379
+}
+
+.api_codes .hljs .hljs-comment,.api_codes .hljs .hljs-quote {
+  color: #5c6370;
+  font-style: italic
+}
+.api_codes .tab-content {
+  display: none;
+}
+.api_codes .hljs .php .hljs-built_in {
+  color: #c678dd;
+}
+
+.api_codes .hljs .hljs-keyword {
+  font-weight: normal;
+}
+.api_codes .hljs .hljs-variable {
+  color: #abb2bf;
+}
+@media(max-width:425px){
+  .api_codes ul li span {
+    padding: 0 20px;
+  }
+}

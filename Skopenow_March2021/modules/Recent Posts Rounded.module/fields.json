@@ -1,0 +1,94 @@
+[ {
+  "id" : "6b7eec95-13ed-6a39-89ec-e723ca0ab377",
+  "name" : "section_title",
+  "display_width" : null,
+  "label" : "Section Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Stay Informed"
+}, {
+  "id" : "030261d7-7f8c-d568-144e-0c2e11cef4fc",
+  "name" : "section_sub_title",
+  "display_width" : null,
+  "label" : "Section Sub Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The latest news &amp; insights from Skopenow"
+}, {
+  "id" : "11aeeab8-e2b0-8a08-0121-f87164136768",
+  "name" : "select_blog",
+  "display_width" : null,
+  "label" : "Select Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "default" : 32395852934
+}, {
+  "id" : "779e8595-b5a4-8254-d93f-4e3b426b50e0",
+  "name" : "post_count",
+  "display_width" : null,
+  "label" : "Post Count",
+  "required" : false,
+  "locked" : false,
+  "display" : "text",
+  "step" : 1,
+  "type" : "number",
+  "default" : 6
+}, {
+  "id" : "e06eab21-db44-4f86-9fee-3625f2049f46",
+  "name" : "news_top_marginrs",
+  "display_width" : null,
+  "label" : "News Top Marginrs",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "placeholder" : "0",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "0"
+}, {
+  "id" : "63b270c7-f3db-6d7e-79de-f33614697a8b",
+  "name" : "button_enabled",
+  "display_width" : null,
+  "label" : "Button enabled",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "48d672d4-80c8-a7a5-04ef-b7c4ad6e527f",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View All"
+}, {
+  "id" : "4ecba431-6547-f366-8994-1f1a1bba0a37",
+  "name" : "button_url",
+  "display_width" : null,
+  "label" : "Button URL",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION" ],
+  "type" : "url",
+  "default" : {
+    "type" : "EXTERNAL",
+    "href" : "#",
+    "content_id" : null
+  }
+} ]

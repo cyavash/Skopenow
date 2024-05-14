@@ -1,0 +1,337 @@
+.tracking_head .analyst_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.tracking_head {
+  position: relative;
+  padding-top: 100px;
+
+}
+.tracking_head .page-center {
+  position: relative;
+  z-index: 2;
+}
+.tracking_head .tracking_demo {
+  position: relative;
+  align-items: center!important;
+  margin-top: -70px;
+  display: flex;
+}
+
+.tracking_head .row>div {
+  padding: 0 15px;
+}
+
+.tracking_head .tracking_demo .demo-inner-wrapper-left {
+  width: 100%;
+}
+
+.tracking_head .tracking_demo .demo-inner-wrapper-left h1 {
+  line-height: 1.2;
+  margin-bottom: .5rem;
+  font-family: 'Oswald';
+  color: #7d83fd;
+  font-size: 60px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 14px;
+}
+
+.tracking_head .tracking_demo .demo-inner-wrapper-left p {
+  font-family: Avenir;
+  color: #fff;
+  font-size: 20px;
+  padding-right: 140px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.tracking_head .tracking_demo .demo-inner-wrapper-left .tracking_action {
+  position: relative;
+  z-index: 2;
+}
+
+.tracking_head .tracking_demo  .book_demo {
+  font-family: Avenir;
+  display: inline-block;
+  background-color: #7d83fd;
+  border-radius: 100px;
+  padding: 8px 35px;
+  color: #fff;
+  margin-right: 15px;
+  box-shadow: 0 15px 30px 0 rgb(45 35 66 / 15%);
+  font-size: 14px;
+  transition: all .3s ease!important;
+}
+
+.tracking_head .tracking_demo .book_demo:hover {
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+  opacity: .7;
+  transform: translateY(2px);
+}
+
+.tracking_head .tracking_demo .view_pricing {
+  display: inline-block;
+  font-family: Avenir;
+  background-color: #8798aa;
+  border-radius: 100px;
+  padding: 8px 35px;
+  color: #242446;
+  box-shadow: 0 15px 30px 0 rgb(45 35 66 / 15%);
+  font-size: 14px;
+  transition: all .3s ease!important;
+}
+
+.tracking_head .tracking_demo .view_pricing:hover {
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+  opacity: .7;
+  transform: translateY(2px);
+}
+
+.tracking_head a.request_demo {
+  background-color: #005373;
+  border-color: #696ae5;
+  padding: 10px 40px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: all .3s ease!important;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.tracking_head a.request_pricing {
+  background-color: #fff;
+  border-color: #fff;
+  padding: 10px 40px;
+  color: #242446;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: all .3s ease!important;
+  font-size: 14px;
+  margin-left: -5px;
+}
+
+.tracking_head a.request_pricing:hover {
+  background-color: #eee;
+  transform: translateY(2px);
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+}
+
+.tracking_head a.request_demo:hover {
+  background-color: #157292;
+  transform: translateY(2px);
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+}
+
+.tracking_head div[class*=triangle] {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent !important;
+  border-right: 25px solid transparent !important;
+  border-bottom: 50px solid #3d3d5e;
+  position: absolute;
+}
+
+.tracking_head div[class*=triangle].triangle1 {
+  top: 30px;
+  left: -20px;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.tracking_head div[class*=triangle].triangle2 {
+  top: 150px;
+  left: -60px;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+.tracking_head div[class*=triangle].triangle3 {
+  top: 350px;
+  left: 360px;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+
+  to {
+    opacity: .2;
+    transform: rotate(1turn);
+  }
+}
+
+.tracking_head .tracking_example {
+  font-family: Avenir;
+  color: #3e4758;
+  text-align: center;
+  font-size: 25px;
+}
+
+.tracking_head .tracking_example ul {
+  margin: 0;
+  padding: 0 50px;
+}
+
+.tracking_head .tracking_example ul li {
+  list-style: none;
+  color: #3e4758;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tracking_head .tracking_example ul li:after {
+  transition: all .5s ease;
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  background-color: #7d83fd;
+  left: 0;
+}
+
+.tracking_head .setup_monitor {
+  background-color: #7d83fd;
+  border-color: #696ae5;
+  padding: 10px 40px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  transition: all .3s ease!important;
+  float: left;
+  margin-left: 50px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: Avenir;
+  font-size: 14px;
+}
+
+.tracking_head .setup_monitor:hover {
+  background-color: #4344b3;
+  transform: translateY(2px);
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+}
+
+.tracking_head .tracking_example ul li:hover:after {
+  transition: all .5s ease;
+  width: 130%;
+  left: -45px;
+}
+
+.tracking_head .tracking_example ul li:first-child:after {
+  background-color: #3dcf8e;
+}
+
+@media(max-width:1200px){
+  .tracking_head .tracking_example ul {
+    padding: 0 15px;
+  }
+
+  .tracking_head .tracking_demo .demo-inner-wrapper-left p {
+    padding-right: 0;
+  }
+
+  .tracking_head .tracking_demo .book_demo,
+  .tracking_head .tracking_demo a.request_demo{
+    padding: 8px 15px;
+  }
+
+  .tracking_head .tracking_demo .view_pricing,
+  .tracking_head .tracking_demo a.request_pricing{
+    padding: 8px 15px;
+  }
+  .tracking_head div[class*=triangle].triangle3 {
+    left: 300px;
+  }
+}
+
+@media(max-width:767px){
+  .tracking_head .row>div {
+    width: 100% !important;
+  }
+
+  .tracking_head .tracking_example {
+    display: none;
+  }
+
+  .tracking_head {
+    padding-top: 70px;
+    text-align: center;
+  }
+
+  .tracking_head .row>div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .tracking_head div[class*=triangle].triangle3 {
+    right: 13px;
+    left: auto;
+    top: 170px;
+  }
+
+  .tracking_head .analyst_bg {
+    width: 100%;
+  }
+}
+
+@media(max-width:425px){
+  .tracking_head .tracking_demo .book_demo {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,103 @@
+<div class="{{name}} sldr-wrap" id="slider-main">
+  <div class="page-center">  
+    <div class="sldr-otr">  
+      <div class="sldr-left"> 
+        <div class="sldr-main"> 
+          {% for item in module.item %}
+            <div class="sldr-main-otr">   
+              <div class="sldr-inner sldr-c{{ item.graphic_choice }}">
+                <div class="sldr-list">
+                  <div class="sldr-img">
+                     {% if item.image.src %}
+                      {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}"' %}
+                      {% if item.image.size_type == 'auto' %}
+                        {% set sizeAttrs = 'width="{{ item.image.width }}" height="{{ item.image.height }}" style="max-width: 100%; height: auto;"' %}
+                      {% elif item.image.size_type == 'auto_custom_max' %}
+                        {% set sizeAttrs = 'width="{{ item.image.max_width }}" height="{{ item.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                      {% endif %}
+                       {% set loadingAttr = item.image.loading != 'disabled' ? 'loading="{{ item.image.loading }}"' : '' %}
+                      <img src="{{ item.image.src }}" alt="{{ item.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                    {% endif %}
+                  </div>
+                  <div class="sldr-Custom">
+                     {{ item.anime_code }}
+                  </div>
+                  {% if item.title %}
+                    <div class="sldr-title">
+                      <h5 style="color:{{ module.style.slider_text.color }}!important;">{{ item.title }}</h5>
+                    </div> 
+                  {% endif %}  
+                </div>
+              </div> 
+            </div>
+          {% endfor %}
+        </div> 
+      </div> 
+      <div class="sldr-rgt"> 
+        <div class="sldr-rgt-otr ">  
+          {% if module.heading %}
+            <div class="sldr-header">
+              <h3 style="color:{{ module.style.header_color.color }};">{{ module.heading }}</h3>
+            </div> 
+          {% endif %}  
+          {% if module.description %}
+             <div class="sldr-desc" style="color: {{ module.style.content_color.color }} !important;">
+               {{ module.description }}
+             </div> 
+          {% endif %}  
+        </div> 
+      </div>  
+    </div>
+	</div>
+</div>
+
+ 
+{% require_css %}
+<style> 
+  
+  
+</style>
+{% end_require_css %}
+
+{% require_js %}
+<script>
+  
+  $(document).ready(function() {
+    $('.sldr-main').slick({        
+      autoplay: true,
+      autoplaySpeed: 5000, 
+      slidesToShow: 1, 
+      slidesToScroll: 1,
+      dots: true ,
+      arrows: true, 
+      responsive: [
+        {
+  				 breakpoint: 1024,
+  				 settings: { 
+  			 }
+        },
+        {
+      		 breakpoint: 600,
+      		 settings: {
+        	 slidesToShow: 1,
+        	 slidesToScroll: 1,
+           dots: false
+     					}
+    		},
+    		 {
+     			 breakpoint: 480,
+     			 settings: {
+        	 slidesToShow: 1,
+        	 slidesToScroll: 1,
+           dots: false
+      	 }
+    		 }
+  		 ] 
+    });    
+  }); 
+  
+</script>
+{% end_require_js %}
+
+ 
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

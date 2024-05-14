@@ -1,0 +1,30 @@
+<div style="padding-bottom:100px; margin-top:90px;">
+  <div class="container news_title_section page-center">
+    <h3 class="text-center news_title" style="font-family:'DM Sans';font-size:36px; color:#000000; font-weight:700;">{{ module.section_title }}</h3>
+  </div>
+  {% set rec_posts = blog_recent_posts(module.select_blog, module.post_count) %}
+  <div class="container page-center" style="padding-top:50px;">
+    <div class="row">
+      {% for rec_post in rec_posts %}
+          <div class="rectangle-parent">
+            <a href="{{ rec_post.absolute_url }}">
+      <div class="group-child"></div>
+      <img class="material-icon" alt="" src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/material-icon.svg" /><b
+        class="download-now" style="font-family:'DM Sans';font-size:16px;font-weight:700;"
+        >Download Now</b
+      >
+      <div class="the-definitive-guide" style="font-family:'DM Sans';font-size:16px;font-weight:400">
+        {{ rec_post.name|striptags }}
+      </div>
+<img class="guide-template-5-1" alt="" src="{{ rec_post.featured_image }}"/>
+            </a>
+      </div>
+      {% endfor %}
+    {% if module.button_enabled %}
+    <div class="bottom_btn">
+      <a href="{{ module.button_url.href }}">{{ module.button_text }}</a>
+    </div>
+    {% endif %}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Blank Page Menu
+-->
+{% extends "./layouts/base.html" %}
+{{ require_js(get_asset_url("../js/highlight.js")) }}
+{{ require_js(get_asset_url("../js/line-number.js")) }}
+{% block header %}
+<div class="hs-home-page home_page">
+
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    <main class="body-container-wrapper">
+      {% dnd_area "banner_area" class='hs-home-page-section home-banner', label='Banner Area' %}
+      {% end_dnd_area %}
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  <div style="margin-top:-150px;">
+    
+  </div>
+  {% global_partial path="./partials/footer.html" %}
+  <script>
+    window.onload = function() {
+      hljs.initHighlighting();
+      var aCodes = document.getElementsByTagName('pre');
+      for (var i=0; i < aCodes.length; i++) {
+        hljs.highlightBlock(aCodes[i]);
+      }
+      hljs.initLineNumbersOnLoad();
+
+    }
+  </script>
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

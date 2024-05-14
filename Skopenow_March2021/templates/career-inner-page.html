@@ -1,0 +1,55 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Career Inner Page
+-->
+
+{% extends "./layouts/base.html" %}
+{% block header %}
+<div class="hs-career-inner-page has-footer-only hs-v2-page">
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+  {% block body %}
+
+
+  <div class="hs-career-page-inner">
+    <div class="main-content-wrapper">
+      <main class="body-container-wrapper">
+        <div class="page-center">
+          <div class="page-inner">
+
+            <div class="hs-row1">
+              {% dnd_area "row1" class='row1', label='Row 1 - Back link' %}
+              {% end_dnd_area %}
+            </div>
+            <div class="hs-row2">
+              {% dnd_area "row2" class='row2', label='Row 2' %}
+              {% end_dnd_area %}
+            </div>
+            <div class="Apply-now">
+              <div class="inner">
+                <div class="left">
+                  {% dnd_area "row3_l" class='row3_l', label='Row 3 - Left' %}
+                  {% end_dnd_area %}
+                </div>
+                <div  class="left">
+                  {% dnd_area "row3_r" class='row3_r', label='Row 3 - Right' %}
+                  {% end_dnd_area %}
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </main>
+    </div>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+</div>
+{% endblock footer%}

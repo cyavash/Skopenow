@@ -1,0 +1,54 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Faq Page
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="hs-faq-page">
+
+  {% global_partial path="./partials/header_v3.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="faq-body-wrapper minus-row">
+    
+    <div class="faq-page-help"></div>
+    <div class="main-content-wrapper">
+      <main class="body-container-wrapper">
+        {% dnd_area "row_1" class='hs-trial-page-content', label='Row 1' %}
+        {% end_dnd_area %}
+      </main>
+    </div>
+    
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+
+</div>
+{% endblock footer%}
+
+
+{% require_js %}
+<script>
+  $('.sidebar-custom-header').prependTo('.hs-faq-page .faq-body-wrapper');
+  $('.custom-headerv3').prependTo('.hs-faq-page .main-content-wrapper');
+  $('.header_v3_menu .navigation-primary ul > li:last-child > a').append('<i aria-hidden="true" class=" icon-right-arrow1"></i>');
+</script>
+{% end_require_js %}
+
+
+
+
+
+
+
+
+
+
+
+
+

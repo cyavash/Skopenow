@@ -1,0 +1,47 @@
+<div class="banner_wrapper">
+  <div class="banner_img" style="background-image:url('{{ module.banner_image.src }}')">
+  <div class="skew_skopenow_help"></div>
+  </div>
+  <div class="banner-inner">
+      <div class="offer_wrapper page-center">    
+        <div class="logo_word">
+          <span>
+            {% logo
+      override_inherited_src="{{ module.logo_field.override_inherited_src }}"
+      src="{{ module.logo_field.src }}"
+      alt="{{ module.logo_field.alt }}"
+      suppress_company_name="{{ module.logo_field.suppress_company_name }}"
+      %}
+          </span>      
+        </div>
+       <div class="lp_image col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         {% if module.offer_group.offer_image.src %}
+         {% set sizeAttrs = 'width="{{ module.offer_group.offer_image.width }}" height="{{ module.offer_group.offer_image.height }}"' %}
+         {% if module.offer_group.offer_image.size_type == 'auto' %}
+         {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+         {% elif module.offer_group.offer_image.size_type == 'auto_custom_max' %}
+         {% set sizeAttrs = 'width="{{ module.offer_group.offer_image.max_width }}" height="{{ module.offer_group.offer_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+         {% endif %}
+         {% set loadingAttr = module.offer_group.offer_image.loading != 'disabled' ? 'loading="{{ module.offer_group.offer_image.loading }}"' : '' %}
+          <img src="{{ module.offer_group.offer_image.src }}" alt="{{ module.offer_group.offer_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+         {% endif %}
+         <span>{{ module.offer_group.offer_image_content }}</span>
+      </div>
+      <div class="form_wrapper col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="form_wrapper_inner">                 
+            <h3>          
+            {{ module.offer_group.form_heading }}
+            </h3>
+            {% form
+            form_to_use="{{ module.offer_group.offer_form.form_id }}"
+            response_response_type="{{ module.offer_group.offer_form.response_type }}"
+            response_message="{{ module.offer_group.offer_form.message }}"
+            response_redirect_id="{{ module.offer_group.offer_form.redirect_id }}"
+            response_redirect_url="{{module.offer_group.offer_form.redirect_url}}"
+            gotowebinar_webinar_key="{{ module.offer_group.offer_form.gotowebinar_webinar_key }}"
+          %}
+        </div>  
+      </div>
+     </div>   
+  </div>
+</div>

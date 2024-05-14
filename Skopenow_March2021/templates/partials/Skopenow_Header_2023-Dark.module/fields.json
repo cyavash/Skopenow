@@ -1,0 +1,718 @@
+[ {
+  "id" : "1bb01ff4-9448-a61c-2012-b782cec3ed39",
+  "name" : "header_color_scheme",
+  "display_width" : null,
+  "label" : "Header Color Scheme",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "header-white", "Light" ], [ "header-black", "Dark" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "header-black"
+}, {
+  "id" : "bc305a8c-216c-ab5a-b4c7-313a0f52b0a3",
+  "name" : "logo",
+  "display_width" : null,
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2109ca31-290f-9f66-5ff8-47082399f2ee",
+    "name" : "logo_dark",
+    "display_width" : null,
+    "label" : "Logo -  Dark",
+    "required" : false,
+    "locked" : false,
+    "show_loading" : false,
+    "type" : "logo",
+    "default" : {
+      "override_inherited_src" : false,
+      "src" : null,
+      "alt" : null
+    }
+  }, {
+    "id" : "0612feec-c9b8-5907-4049-8ac73f84250e",
+    "name" : "logo_white",
+    "display_width" : null,
+    "label" : "Logo -  White",
+    "required" : false,
+    "locked" : false,
+    "show_loading" : false,
+    "type" : "logo",
+    "default" : {
+      "override_inherited_src" : true,
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/skopenow-white.svg",
+      "alt" : "skopenow-white",
+      "suppress_company_name" : true,
+      "width" : 230,
+      "height" : 28
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "logo_dark" : {
+      "override_inherited_src" : false,
+      "src" : null,
+      "alt" : null
+    },
+    "logo_white" : {
+      "override_inherited_src" : true,
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/skopenow-white.svg",
+      "alt" : "skopenow-white",
+      "suppress_company_name" : true,
+      "width" : 230,
+      "height" : 28
+    }
+  }
+}, {
+  "id" : "169f64bd-0c28-8a3c-1be5-e975d37240cc",
+  "name" : "menu",
+  "display_width" : null,
+  "label" : "Menu",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2a6906a6-4af1-7fc7-6ac7-d5463b86ee62",
+    "name" : "menu_text",
+    "display_width" : null,
+    "label" : "Menu Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "ddb4f862-de79-bfb7-ee56-cb05d2030297",
+    "name" : "link",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "5702076b-fd70-2f04-7e2f-5dd0f3564aaf",
+    "name" : "ecmenu",
+    "display_width" : null,
+    "label" : "Enable Child Menu",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "c7f2d183-f87d-cd20-924e-db0be8015fe6",
+    "name" : "column_one",
+    "display_width" : null,
+    "label" : "Column One",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "menu.ecmenu",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "26d01085-ba3b-8ce2-dc06-7970e1e61ed1",
+      "name" : "menu_item",
+      "display_width" : null,
+      "label" : "Menu Item",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : null
+      },
+      "children" : [ {
+        "id" : "33812ebb-3d4f-c255-bdcb-e4346ba272f6",
+        "name" : "menu_type",
+        "display_width" : null,
+        "label" : "Menu Type",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "list", "List" ], [ "igroup", "Image Group" ], [ "clist", "List With Content" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice"
+      }, {
+        "id" : "9cf053dd-a516-8ede-4ac0-404c00d50d8b",
+        "name" : "list",
+        "display_width" : null,
+        "label" : "List",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : null
+        },
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "menu.column_one.menu_item.menu_type",
+          "controlling_value_regex" : "list",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "9ecf0594-983a-fd4c-9deb-694c923d1efc",
+          "name" : "title",
+          "display_width" : null,
+          "label" : "Title",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text"
+        }, {
+          "id" : "ccbc2102-19e0-a45e-b08d-86044700b547",
+          "name" : "image_field",
+          "display_width" : null,
+          "label" : "Image",
+          "required" : false,
+          "locked" : false,
+          "responsive" : true,
+          "resizable" : true,
+          "show_loading" : false,
+          "type" : "image",
+          "default" : {
+            "size_type" : "auto",
+            "src" : "",
+            "alt" : null,
+            "loading" : "lazy"
+          }
+        }, {
+          "id" : "7ccc496a-bc31-f478-2ce9-358db644e0d0",
+          "name" : "link",
+          "display_width" : null,
+          "label" : "Link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "href" : "https://www.skopenow.com/",
+              "type" : "EXTERNAL"
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "default" : [ ]
+      }, {
+        "id" : "5b5abd5a-a4b0-f8d3-2f1a-b14806393192",
+        "name" : "list_with_content",
+        "display_width" : null,
+        "label" : "List With Content",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : null
+        },
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "menu.column_one.menu_item.menu_type",
+          "controlling_value_regex" : "clist",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "e1b01454-5785-c313-7246-76e1e9188c47",
+          "name" : "title",
+          "display_width" : null,
+          "label" : "Title",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text"
+        }, {
+          "id" : "fab3f30e-97b3-136f-3a0b-06e3241c463e",
+          "name" : "image_field",
+          "display_width" : null,
+          "label" : "Image",
+          "required" : false,
+          "locked" : false,
+          "responsive" : true,
+          "resizable" : true,
+          "show_loading" : false,
+          "type" : "image",
+          "default" : {
+            "size_type" : "auto",
+            "src" : "",
+            "alt" : null,
+            "loading" : "lazy"
+          }
+        }, {
+          "id" : "33e11a90-a2cb-5a07-9ebc-ec209386035c",
+          "name" : "content",
+          "display_width" : null,
+          "label" : "Content",
+          "required" : false,
+          "locked" : false,
+          "type" : "richtext"
+        }, {
+          "id" : "fbdbd82c-12a9-8bb3-f405-1e3cd4b2a6e7",
+          "name" : "link",
+          "display_width" : null,
+          "label" : "Link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "href" : "https://www.skopenow.com/",
+              "type" : "EXTERNAL"
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "default" : [ ]
+      }, {
+        "id" : "97be1172-2dbf-3c64-d0d5-83d9c8f81c2f",
+        "name" : "image_group",
+        "display_width" : null,
+        "label" : "Image Group",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : null
+        },
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "menu.column_one.menu_item.menu_type",
+          "controlling_value_regex" : "igroup",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "e6dc3533-64ed-2940-f346-fd0c0e852290",
+          "name" : "image",
+          "display_width" : null,
+          "label" : "Image",
+          "required" : false,
+          "locked" : false,
+          "responsive" : true,
+          "resizable" : true,
+          "show_loading" : false,
+          "type" : "image",
+          "default" : {
+            "size_type" : "auto",
+            "src" : "",
+            "alt" : null,
+            "loading" : "lazy"
+          }
+        }, {
+          "id" : "77af58dd-5edc-899e-9d07-1d1b9fd48ef7",
+          "name" : "heading",
+          "display_width" : null,
+          "label" : "Heading",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text"
+        }, {
+          "id" : "2ce65013-a366-c136-af54-82be65801b94",
+          "name" : "content",
+          "display_width" : null,
+          "label" : "Content",
+          "required" : false,
+          "locked" : false,
+          "type" : "richtext"
+        }, {
+          "id" : "728d4dc8-8d43-e8de-f83e-101774dcb4f0",
+          "name" : "link",
+          "display_width" : null,
+          "label" : "Link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "href" : "https://www.skopenow.com/",
+              "type" : "EXTERNAL"
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "default" : [ ]
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "menu_item" : [ ]
+    }
+  }, {
+    "id" : "f8901f8e-586c-ac8d-bee1-4affdeaff22d",
+    "name" : "column_two",
+    "display_width" : null,
+    "label" : "Column Two",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "menu.ecmenu",
+      "controlling_value_regex" : "true",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "children" : [ {
+      "id" : "f510615e-66fc-1b90-0571-b8671f078205",
+      "name" : "menu_item",
+      "display_width" : null,
+      "label" : "Menu Item",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : null
+      },
+      "children" : [ {
+        "id" : "cb131b01-87a1-f5ec-48a6-63347b2fa7e3",
+        "name" : "menu_type",
+        "display_width" : null,
+        "label" : "Menu Type",
+        "required" : false,
+        "locked" : false,
+        "display" : "select",
+        "choices" : [ [ "list", "List" ], [ "igroup", "Image Group" ], [ "clist", "List With Content" ] ],
+        "multiple" : false,
+        "reordering_enabled" : true,
+        "preset" : null,
+        "type" : "choice"
+      }, {
+        "id" : "8ac3928a-fc11-f510-ca97-938f29843d76",
+        "name" : "list",
+        "display_width" : null,
+        "label" : "List",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : null
+        },
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "menu.column_two.menu_item.menu_type",
+          "controlling_value_regex" : "list",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "6db1c108-be6b-0b4d-a78d-5b501b012729",
+          "name" : "title",
+          "display_width" : null,
+          "label" : "Title",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text"
+        }, {
+          "id" : "f3468d3d-a64d-e29c-1fc1-858b90343a66",
+          "name" : "image_field",
+          "display_width" : null,
+          "label" : "Image",
+          "required" : false,
+          "locked" : false,
+          "responsive" : true,
+          "resizable" : true,
+          "show_loading" : false,
+          "type" : "image",
+          "default" : {
+            "size_type" : "auto",
+            "src" : "",
+            "alt" : null,
+            "loading" : "lazy"
+          }
+        }, {
+          "id" : "a2087b10-af11-32e4-2128-1e40253788d9",
+          "name" : "link",
+          "display_width" : null,
+          "label" : "Link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "href" : "https://www.skopenow.com/",
+              "type" : "EXTERNAL"
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "default" : [ ]
+      }, {
+        "id" : "80ec2cc5-e36f-cf45-50c9-f1ff1c10d7bd",
+        "name" : "list_with_content",
+        "display_width" : null,
+        "label" : "List With Content",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : null
+        },
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "menu.column_two.menu_item.menu_type",
+          "controlling_value_regex" : "clist",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "8b74c549-852c-fd70-91f5-d0daf4edd3f0",
+          "name" : "title",
+          "display_width" : null,
+          "label" : "Title",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text"
+        }, {
+          "id" : "9845315e-3136-af6c-41ae-b7bea0877b6b",
+          "name" : "image_field",
+          "display_width" : null,
+          "label" : "Image",
+          "required" : false,
+          "locked" : false,
+          "responsive" : true,
+          "resizable" : true,
+          "show_loading" : false,
+          "type" : "image",
+          "default" : {
+            "size_type" : "auto",
+            "src" : "",
+            "alt" : null,
+            "loading" : "lazy"
+          }
+        }, {
+          "id" : "74c9d979-b1cb-6053-2e07-a1f0917d6edf",
+          "name" : "content",
+          "display_width" : null,
+          "label" : "Content",
+          "required" : false,
+          "locked" : false,
+          "type" : "richtext"
+        }, {
+          "id" : "eee56cd9-0684-ff7c-9e73-34eefa7aba09",
+          "name" : "link",
+          "display_width" : null,
+          "label" : "Link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "href" : "https://www.skopenow.com/",
+              "type" : "EXTERNAL"
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "default" : [ ]
+      }, {
+        "id" : "fe1c001e-3f4b-2bf0-ee43-198988771891",
+        "name" : "image_group",
+        "display_width" : null,
+        "label" : "Image Group",
+        "required" : false,
+        "locked" : false,
+        "occurrence" : {
+          "min" : null,
+          "max" : null,
+          "sorting_label_field" : null,
+          "default" : null
+        },
+        "visibility" : {
+          "controlling_field" : null,
+          "controlling_field_path" : "menu.column_two.menu_item.menu_type",
+          "controlling_value_regex" : "igroup",
+          "property" : null,
+          "operator" : "EQUAL",
+          "access" : null
+        },
+        "children" : [ {
+          "id" : "70811e6f-8ee0-4ade-b0fd-a5b8b1e5a226",
+          "name" : "image",
+          "display_width" : null,
+          "label" : "Image",
+          "required" : false,
+          "locked" : false,
+          "responsive" : true,
+          "resizable" : true,
+          "show_loading" : false,
+          "type" : "image",
+          "default" : {
+            "size_type" : "auto",
+            "src" : "",
+            "alt" : null,
+            "loading" : "lazy"
+          }
+        }, {
+          "id" : "4accd3ad-ce71-41ca-b57e-bde7957d18c9",
+          "name" : "heading",
+          "display_width" : null,
+          "label" : "Heading",
+          "required" : false,
+          "locked" : false,
+          "validation_regex" : "",
+          "allow_new_line" : false,
+          "show_emoji_picker" : false,
+          "type" : "text"
+        }, {
+          "id" : "e8d30337-cc6d-ee97-557d-68c7c43263f4",
+          "name" : "content",
+          "display_width" : null,
+          "label" : "Content",
+          "required" : false,
+          "locked" : false,
+          "type" : "richtext"
+        }, {
+          "id" : "98c4a7a6-89cc-7bb6-4d92-1f1758511931",
+          "name" : "link",
+          "display_width" : null,
+          "label" : "Link",
+          "required" : false,
+          "locked" : false,
+          "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG", "CALL_TO_ACTION", "PHONE_NUMBER", "WHATSAPP_NUMBER", "PAYMENT" ],
+          "show_advanced_rel_options" : false,
+          "type" : "link",
+          "default" : {
+            "url" : {
+              "content_id" : null,
+              "href" : "https://www.skopenow.com/",
+              "type" : "EXTERNAL"
+            },
+            "open_in_new_tab" : false,
+            "no_follow" : false
+          }
+        } ],
+        "tab" : "CONTENT",
+        "expanded" : false,
+        "group_occurrence_meta" : null,
+        "type" : "group",
+        "default" : [ ]
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "group_occurrence_meta" : null,
+      "type" : "group",
+      "default" : [ ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "menu_item" : [ ]
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+} ]

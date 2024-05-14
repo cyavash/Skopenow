@@ -1,0 +1,165 @@
+<!--
+templateType: blog_post
+isAvailableForNewContent: true
+label: Blog Post
+-->
+{% extends './layouts/base.html' %}
+
+{% block header %}
+<div class="hs-blog-page">
+
+  {% global_partial path="./partials/Header_New_Dark.html" %}
+  {% endblock header %}
+
+  {% block body %}
+
+  <div class="hs_blog_wrapper" style="padding-top:25px!important;">
+    <div class="page-center">
+      <div class="blog-row">
+        <div class="blog-sep sep-left"></div>
+        <div class="blog-content">
+          <div class="blog-section">
+            <div class="blog-post-wrapper cell-wrapper">
+              <div class="section post-header">
+
+                <!-- Post Title -->
+                <h2><a href="https://www.skopenow.com/news" style="color:#000000">{{ group.public_title }}</a> > Post</h2>
+
+                <!-- Featured Image -->
+                {% if content.featured_image %}
+                <div class="hs-featured-image-wrapper">
+                  <a href="{{ content.absolute_url }}" title="" class="hs-featured-image-link">
+                    <img src="{{ content.featured_image }}" alt="{{ content.name|striptags }}" class="hs-featured-image">
+                  </a>
+                </div>
+                {% endif %}
+
+              </div>
+
+              <!-- Post Content -->
+              <div class="section post-body">
+
+                <h1 class="post_title">{{ content.name }} </h1>
+
+                <div class="rec_social post_top">
+                  <ul>
+                    <li class="sb-button">
+                      <a class="share_twitter" href="javascript:;" title="twitter" onclick="window.open('http://twitter.com/share?text={{ content.name|striptags }}%3F&amp;url={{ content.absolute_url }}','Twitter Share','width=600,height=600')"><i></i></a>
+                    </li>
+                    <li class="sb-button">
+                      <a class="share_facebook" href="javascript:;" title="facebook" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}','Facebook Share','width=600,height=600')"><i></i></a>
+                    </li>
+                    <li class="sb-button">
+                      <a class="share_linkedin" href="javascript:;" title="linkedin" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}','LinkedIn Share','width=600,height=600')"><i></i></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="blog_post_content">
+                  {{ content.post_body }}
+                </div>
+
+                <div class="rec_social post_bottom">
+                  <div class="share_title">SHARE</div>
+                  <ul>
+                    <li class="sb-button">
+                      <a class="share_twitter" href="javascript:;" title="twitter" onclick="window.open('http://twitter.com/share?text={{ content.name|striptags }}%3F&amp;url={{ content.absolute_url }}','Twitter Share','width=600,height=600')"><i></i></a>
+                    </li>
+                    <li class="sb-button">
+                      <a class="share_facebook" href="javascript:;" title="facebook" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u={{ content.absolute_url }}','Facebook Share','width=600,height=600')"><i></i></a>
+                    </li>
+                    <li class="sb-button">
+                      <a class="share_linkedin" href="javascript:;" title="linkedin" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{content.absolute_url}}','LinkedIn Share','width=600,height=600')"><i></i></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="post_tag_author">
+                  {% if content.tag_list %}
+                  <div class="tags_title"><i class="icon-tag"></i>TAGS </div>
+                  <ul class="tags_links">
+                    {% for tag in content.tag_list %}
+                    <li>
+                      <a href="{{ blog_tag_url(group.id, tag.slug) }}"> {{ tag.name }}</a>{% if not loop.last %},{% endif %}
+                    </li>
+                    {% endfor %}
+                  </ul>
+                  {% endif %}
+                  <div class="small_sepr"></div>
+                  {% if content.blog_post_author.avatar %}
+                  <div class="user_img">
+                    <img alt="{{ content.blog_post_author.display_name }}" src="{{ content.blog_post_author.avatar }}">         
+                  </div>
+                  {% endif %}
+                  <div class="user_name">
+                    <p>AUTHOR</p>
+                    <p>{{ content.blog_post_author.display_name }}</p>
+                  </div>
+                </div>
+
+               <!-- <div class="custom-related-posts clearfix">
+        
+                  <div class="rel-posts-row">
+
+
+                    {% if content.topic_list %}
+                    {% set max_posts = 3 %}{# Set the max number of related posts to be output to the page here #}
+                    {% set post_list = [] %}
+                    {% for topic in content.topic_list %}
+                    {% set post_list = post_list + blog_recent_topic_posts('group.id', topic.slug, max_posts + 1 ) %}
+                    {% if loop.last %}
+                    {% set post_list = post_list|sort(true, false, 'publish_date')|unique('name') %}
+                    {% set i = 0 %}
+
+                    {% for post in post_list %}
+                    {% if content.absolute_url != post.absolute_url and i < max_posts %} 
+                    <div class="related-post-item clearfix">
+                      <div class="related-post-header">
+                        {% if post.featured_image %}
+                        <div class="related-post-image">
+                          <a href="{{ post.absolute_url }}">
+                            <img src="{{ resize_image_url( post.featured_image,300 ) }}" alt="{{ post.name }}">
+                          </a>
+                        </div>
+                        {% endif %}
+                      </div>
+                      <div class="related-post-title"><a href="{{ post.absolute_url }}">{{ post.name}}</a></div>
+                      <div class="related-post-body">
+                        <div class="custom-date">
+                          {{ post.publish_date_local_time.strftime('%B') }}
+                          {{ post.publish_date_local_time.strftime('%d') }}
+                          {{ post.publish_date_local_time.strftime('%Y') }}
+                        </div>
+                      </div>
+                    </div>
+                    {% set i = i + 1 %}
+                    {% endif %}
+                    {% endfor %}
+
+                    {% endif %}
+                    {% endfor %}
+                    {% endif %}
+                  </div>
+                </div> -->
+
+              </div>
+
+
+            </div>
+          </div>
+
+          {% blog_comments "blog_comments" overrideable=False, label='Blog Comments' %}
+
+        </div>
+        <div class="blog-sep sep-right"></div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+
+</div>
+{% endblock footer%}

@@ -1,0 +1,134 @@
+[ {
+  "id" : "93589086-4c54-a9f3-8cd8-b8acf81fda0e",
+  "name" : "blogs_to_show",
+  "display_width" : null,
+  "label" : "Blogs to Show",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "bdeb3293-d27c-59bf-2ae6-0e4621ea2047",
+    "name" : "skopenow_news",
+    "display_width" : null,
+    "label" : "Skopenow News",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "98914290-2039-d9b5-7937-945938829e40",
+    "name" : "skopenow_resource_center",
+    "display_width" : null,
+    "label" : "Skopenow Resource Center",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "c019a44b-df2e-ff43-aca1-b29997f8891a",
+    "name" : "skopenow_osint_guides",
+    "display_width" : null,
+    "label" : "Skopenow OSINT Guides",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "032f38fc-40c1-763a-b901-99297773e419",
+    "name" : "skopenow_osint_webinars",
+    "display_width" : null,
+    "label" : "Skopenow OSINT Webinars",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : true
+  }, {
+    "id" : "4e7ba047-e863-bf26-5eea-91a7370e2e04",
+    "name" : "skopenow_presents",
+    "display_width" : null,
+    "label" : "Skopenow Presents",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "fbe3f4c5-2543-cdc1-66c4-112b16ddced9",
+    "name" : "opensource_intelligence_glossary",
+    "display_width" : null,
+    "label" : "Opensource Intelligence Glossary",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "84a41a29-a1d9-791a-01ca-6bb616d451c0",
+    "name" : "data_sheets",
+    "display_width" : null,
+    "label" : "Data Sheets",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "skopenow_news" : true,
+    "skopenow_resource_center" : true,
+    "skopenow_osint_guides" : true,
+    "skopenow_osint_webinars" : true,
+    "skopenow_presents" : false,
+    "opensource_intelligence_glossary" : false,
+    "data_sheets" : false
+  }
+}, {
+  "id" : "b7d122a0-c622-80dc-4f53-b52e1654411a",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : true,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Explore Resources"
+}, {
+  "id" : "48e16d52-557c-61aa-09d3-5f994ff07dee",
+  "name" : "button",
+  "display_width" : null,
+  "label" : "Button",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : true
+}, {
+  "id" : "5ee80d56-cee8-cbe4-1330-5f4c128f0784",
+  "name" : "author",
+  "display_width" : null,
+  "label" : "Author",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "08079b6f-ba69-8afa-3f5a-e8ff0d1bb3db",
+  "name" : "search_box",
+  "display_width" : null,
+  "label" : "Search Box",
+  "required" : false,
+  "locked" : false,
+  "display" : "toggle",
+  "type" : "boolean",
+  "default" : false
+} ]

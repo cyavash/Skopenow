@@ -1,0 +1,51 @@
+[ {
+  "id" : "2b4e7c49-a8f4-6ac7-7c35-da98261384b0",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Frequently Asked Questions"
+}, {
+  "id" : "e731c711-63ad-a0f6-b7e5-3c4809debfca",
+  "name" : "faq_items",
+  "display_width" : null,
+  "label" : "FAQ Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "1308e526-5fbf-9260-b621-35d33e841c14",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "1308e526-5fbf-9260-b621-35d33e841c14",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "afb35760-4d0a-48be-2052-db7eb2d3eaca",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : { }
+} ]

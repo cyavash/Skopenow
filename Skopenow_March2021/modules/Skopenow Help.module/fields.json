@@ -1,0 +1,122 @@
+[ {
+  "id" : "49c54f30-e939-36d5-2029-d7a77798d8c5",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "How does Skopenow help?"
+}, {
+  "id" : "ce3ffc7a-5f0d-c4bf-8dac-79dac208721c",
+  "name" : "help_card_items",
+  "display_width" : null,
+  "label" : "Help Card Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "2062ef01-e5c2-02af-316b-8b1fbd003948",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "2062ef01-e5c2-02af-316b-8b1fbd003948",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Title"
+  }, {
+    "id" : "ba297bfe-94d5-db32-3640-29834a9418fe",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "6c1c6090-561c-8fcb-892d-ae1739a8fe70",
+    "name" : "border_color",
+    "display_width" : null,
+    "label" : "Border Color",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "bt_green", "Green" ], [ "bt_yellow", "Yellow" ], [ "bt_ber", "Voilet" ], [ "bt_red", "Red" ], [ "bt_blue", "Blue" ], [ "bt_yellow2", "Yellow Dark" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "bt_green"
+  }, {
+    "id" : "54f63681-95dc-6859-0292-17a73ccd91fe",
+    "name" : "help_button_items",
+    "display_width" : null,
+    "label" : "Help Button Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : "04bc1aa0-c4ec-7858-e9db-cd60541105f7",
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "04bc1aa0-c4ec-7858-e9db-cd60541105f7",
+      "name" : "button_title",
+      "display_width" : null,
+      "label" : "Button Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Button Title"
+    }, {
+      "id" : "1dd2e7ac-d23a-6b39-ba43-1ad1fa345d6f",
+      "name" : "tooltip_text",
+      "display_width" : null,
+      "label" : "Tooltip Text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "description"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "button_title" : "Button Title",
+      "tooltip_text" : "description"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "Title",
+    "border_color" : "bt_green",
+    "help_button_items" : {
+      "button_title" : "Button Title",
+      "tooltip_text" : "description"
+    }
+  }
+} ]

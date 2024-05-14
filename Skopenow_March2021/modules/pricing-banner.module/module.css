@@ -1,0 +1,191 @@
+.banner {
+  padding: 100px 0;
+  background: #102434;
+  color: #FFF;
+  padding: 160px 0 49px 0;
+}
+.reveal {
+ opacity: 1!important;
+ transform: none!important;
+}
+.banner h1 {
+  text-align: center;
+  font-family: "DM Sans";
+  font-weight: bold;
+  font-size: 48px;
+  position: relative;
+  margin: auto;
+  color: #FFF;
+  width: 594px;
+  max-width: 100%;
+  margin-bottom: 70px;
+}
+.banner h1::before {
+  content: " ";
+  height: 5px;
+  background: #0680FB;
+  width: 336px;
+  position: absolute;
+  bottom: 0;
+  left: 45px;
+}
+.banner h1::after {
+  content: " ";
+  height: 5px;
+  background: #0680FB;
+  width: 142px;
+  position: absolute;
+  bottom: 0;
+  right: 47px;
+}
+.banner h1 span {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+.banner h1 span::after {
+  content: " ";
+  width: 16px;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 3px;
+}
+.features-box {
+  background: #FFF;
+  border-radius: 10px;
+  padding: 25px;  
+  height: 100%;
+  color: #425466;
+  width: 330px;
+  max-width: 100%;
+  margin: 50px auto;
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
+}
+.features-box h2 {
+  font-size: 24px;
+  font-family: "DM Sans";
+  font-weight: bold;
+  color: #0680FB;
+}
+.features-box2{
+
+}
+.features-box2 h2 {
+    color: #0680FB; 
+}
+.features-box3{
+
+}
+.features-box3 h2 {
+    color: #0680FB; 
+}
+.features-box a {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  background-color: #0680FB;
+  border-radius: 24px;
+  padding: 11px 28px;
+  margin-top: 10px;
+}
+.features-box a:hover {
+  opacity: 0.85; 
+}
+.features-box2 a {
+  background-color: #0680FB;
+}
+.features-box3 a {
+  background-color: #0680FB;
+}
+.features-box p {
+  font-family: "Poppins";
+  font-size: 14px;
+  color: #425466;
+}
+.features-box p strong {
+  font-weight: 600; 
+}
+.banner .row-fluid {
+  align-items: stretch;
+} 
+.banner .span4 {
+  height: 100%; 
+}
+.features-box ul {
+  margin-left: 0; 
+  padding-left: 20px;
+  font-family: "Poppins";
+  font-size:16px;
+}
+.features-box ul li {
+  font-weight: 400;
+  font-size: 16px;
+} 
+a.view-features {
+  color: #FFF;
+  text-align: center;
+  text-transform: none;
+  display: block;
+  margin-top: 0px;
+  font-size: 16px;
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+.view-features img {
+  position: relative;
+  top: -1px;
+  left: 5px;
+}
+.view-features:hover {
+  
+}
+p.subtitle {
+  font-weight: 600;
+}
+p.description {
+  font-size: 14px; 
+}
+.features-box h3 {
+  font-weight: 400;
+  font-size: 16px;
+  border-top: 1px solid #D9D9D9;
+  margin-top: 25px;
+  padding-top: 20px;
+  font-family: "Poppins";
+}
+.features-box h3 strong {
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+  .banner {
+    padding: 130px 0 70px 0; 
+  }
+  .banner h1 {
+    margin-bottom: 30px;
+  }
+  .banner h1 {
+    font-size: 38px;
+    text-decoration: underline;
+    text-decoration-color: #0680FB;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 6px;
+  }
+  .banner h1::before,
+  .banner h1::after
+  {
+    display: none; 
+  }  
+}
+@media screen and (max-width: 440px) {
+  .banner h1 {
+    font-size: 32px;
+  }
+}

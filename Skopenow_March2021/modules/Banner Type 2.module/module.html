@@ -1,0 +1,39 @@
+<div class="tracking_head" id="{{name}}" style="background: linear-gradient(270deg,rgba({{ module.background_color.background_gradient_start_color.color|convert_rgb }},{{ module.background_color.background_gradient_start_color.opacity * 0.01 }}) 50%,rgba({{ module.background_color.background_gradient_end_color.color|convert_rgb }},{{ module.background_color.background_gradient_end_color.opacity * 0.01 }}) 0);">
+  <div class="page-center">
+    <div class="row">
+      {% if module.column_left.richtext_field or module.column_left.heading %}
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex align-items-baseline tracking_demo">
+        <div class="demo-inner-wrapper-left">
+          {% if module.column_left.heading %}
+          <h1>{{ module.column_left.heading }}</h1>
+          {% endif %}
+
+          <div class="tracking_action">
+            {{ module.column_left.richtext_field }}
+          </div>
+
+          <div class="triangle1" style="border-color:rgba({{ module.animated_triangle_color.color|convert_rgb }},{{ module.animated_triangle_color.opacity * 0.01 }})"></div>
+          <div class="triangle2" style="border-color:rgba({{ module.animated_triangle_color.color|convert_rgb }},{{ module.animated_triangle_color.opacity * 0.01 }})"></div>
+          <div class="triangle3" style="border-color:rgba({{ module.animated_triangle_color.color|convert_rgb }},{{ module.animated_triangle_color.opacity * 0.01 }})"></div>
+        </div>
+      </div>
+      {% endif %}
+      {% if module.column_right.richtext_field %}
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tracking_example font-avenir">
+        {{ module.column_right.richtext_field }}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% if module.overlay_color.overlay_gradient_start_color.color or module.overlay_color.overlay_gradient_end_color.color %}
+  <div class="analyst_bg" style="background: linear-gradient(180deg,rgba({{ module.overlay_color.overlay_gradient_start_color.color|convert_rgb }},{{ module.overlay_color.overlay_gradient_start_color.opacity * 0.01 }}) 0,rgba({{ module.overlay_color.overlay_gradient_end_color.color|convert_rgb }},{{ module.overlay_color.overlay_gradient_end_color.opacity * 0.01 }}));"></div>
+  {% endif %}
+</div>
+
+<style>
+  @media(max-width:767px){
+    #{{name}}.tracking_head{
+      background: rgba({{ module.background_color.background_gradient_end_color.color|convert_rgb }},{{ module.background_color.background_gradient_end_color.opacity * 0.01 }}) !important;
+    }
+  }
+</style>

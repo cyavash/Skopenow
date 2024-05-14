@@ -1,0 +1,23 @@
+<div class="thankyou_banner banner"> 
+ <div class="container">
+    <h1>
+      {{ module.heading }} 
+   </h1>
+   
+   <div class="row-fluid"> 
+     {% for item in module.feature_box %}
+     <div class="span4">
+       <div class="features-box features-box{{ loop.index }}">
+          <h2>{{ item.feature_heading }}</h2>
+          <p class="subtitle">{{ item.subtitle }}</p>
+          <p class="description">{{ item.description }}</p>
+          <a href="#" id="{{ item.feature_heading }}">{{ item.cta_text }}</a>
+          {% inline_rich_text field="content" value="{{ item.content }}" %}
+        </div> 
+      </div> 
+     {% endfor %} 
+   </div><!-- end row-fluid -->
+   
+   <a href="{{ module.cta_link }}" class="view-features">{{ module.cta_text }} <img src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Arrow%201.svg" alt=""></a>
+ </div><!-- end container-->     
+</div><!-- end banner -->

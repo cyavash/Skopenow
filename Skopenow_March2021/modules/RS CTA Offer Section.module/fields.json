@@ -1,0 +1,52 @@
+[ {
+  "id" : "f030f5a1-0d2d-31fa-6200-da0994d3f6bc",
+  "name" : "cta_image",
+  "display_width" : null,
+  "label" : "CTA Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/Guide-Mockup-1.png",
+    "alt" : "Guide-Mockup-1",
+    "loading" : "lazy",
+    "width" : 454,
+    "height" : 616,
+    "max_width" : 454,
+    "max_height" : 616
+  }
+}, {
+  "id" : "6fa69f15-fa56-035c-d147-51af09fe2aa2",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "The Definitive Guide: Gab for OSINT Investigation"
+}, {
+  "id" : "b17d1d0e-0a9b-ae82-e79b-a9b6812e62ec",
+  "name" : "richtext_field",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum.</p>"
+}, {
+  "id" : "8cb2e8b3-4e45-065b-36cc-3b0597f57944",
+  "name" : "cta_button",
+  "display_width" : null,
+  "label" : "CTA Button",
+  "required" : false,
+  "locked" : false,
+  "type" : "cta",
+  "default" : "33bf7950-df9a-46b9-9da7-01d0c8cb6120"
+} ]

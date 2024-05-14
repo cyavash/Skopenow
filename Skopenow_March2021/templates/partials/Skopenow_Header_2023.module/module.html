@@ -1,0 +1,276 @@
+<header class="header-wrapper {{ module.header_color_scheme }}">
+  <div class="container page-center"> 
+    <div class="header-section">
+      <div class="logo-wrap">
+        <div class="logo-img logo-dark">
+          {% set loadingAttr = module.logo.logo_dark.loading != 'disabled' ? '{{ module.logo.logo_dark.loading }}' : '' %}
+          {% logo
+            override_inherited_src="{{ module.logo.logo_dark.override_inherited_src }}"
+            src="{{ module.logo.logo_dark.src }}"
+            alt="{{ module.logo.logo_dark.alt }}"
+            width="{{ module.logo.logo_dark.width }}"
+            height="{{ module.logo.logo_dark.height }}"
+            loading="{{ loadingAttr }}"
+            suppress_company_name="{{ module.logo.logo_dark.suppress_company_name }}"
+          %}
+        </div>
+        <div class="logo-img logo-light">
+          {% set loadingAttr = module.logo.logo_white.loading != 'disabled' ? '{{ module.logo.logo_white.loading }}' : '' %}
+          {% logo
+            override_inherited_src="{{ module.logo.logo_white.override_inherited_src }}"
+            src="{{ module.logo.logo_white.src }}"
+            alt="{{ module.logo.logo_white.alt }}"
+            width="{{ module.logo.logo_white.width }}"
+            height="{{ module.logo.logo_white.height }}"
+            loading="{{ loadingAttr }}"
+            suppress_company_name="{{ module.logo.logo_white.suppress_company_name }}"
+          %}
+        </div>
+      </div><!-- end logo-wrap -->
+      <div class="menu-wrap">
+        <div class="ham-bg">
+          <div class="button_container" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+          </div>
+        </div>
+      </div><!-- end menu-wrap -->
+      
+      <div class="menu-wrapper">
+        <div class="menu-section">
+          {% for item in module.menu %}
+          <div class="menu-grp {% if item.ecmenu %}mega-nav{% endif %}">
+            {% set href = item.link.url.href %}
+            {% if item.link.url.type is equalto "EMAIL_ADDRESS" %}
+            {% set href = "mailto:" + href %}
+            {% endif %}
+            <a href="{{ href }}"
+               {% if item.link.open_in_new_tab %}target="_blank"{% endif %}
+               {% if item.link.rel %}rel="{{ item.link.rel }}"{% endif %}
+               >
+              {{ item.menu_text }}
+            </a>
+            {% if item.ecmenu %}
+            <div class="mega-wrapper">
+              <div class="mega-child-menu">
+                <div class="menu-colum-one">
+                  {% for item2 in item.column_one.menu_item %}
+                  <div class="menu-inner-child">
+                    {% if item2.menu_type == "clist" %}
+                    <div class="menu-list-content">
+                      {% for item3 in item2.list_with_content %}
+                      <div class="menu-list-content-inner">
+                        {% set href = item3.link.url.href %}
+                        {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                           >
+                          <div class="clist-img">
+                            {% if item3.image_field.src %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}"' %}
+                            {% if item3.image_field.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item3.image_field.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.max_width }}" height="{{ item3.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item3.image_field.loading != 'disabled' ? 'loading="{{ item3.image_field.loading }}"' : '' %}
+                            <img src="{{ item3.image_field.src }}" alt="{{ item3.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </div>
+                          <div class="clist-text">
+                            <h3>{{ item3.title }}</h3>
+                            {{ item3.content }}
+                          </div>
+                        </a>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% if item2.menu_type == "list" %}
+                    <ul class="list-type">
+                      {% for item3 in item2.list %}
+                      <li>
+                        {% set href = item3.link.url.href %}
+                        {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                           >
+
+                          <span class="list-icon">
+                            {% if item3.image_field.src %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}"' %}
+                            {% if item3.image_field.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item3.image_field.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.max_width }}" height="{{ item3.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item3.image_field.loading != 'disabled' ? 'loading="{{ item3.image_field.loading }}"' : '' %}
+                            <img src="{{ item3.image_field.src }}" alt="{{ item3.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </span>
+                          <span class="list-text">{{ item3.title }}</span>
+                        </a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if item2.menu_type == "igroup" %}
+                    <div class="menu-content-section">
+                      {% for item3 in item2.list_with_content %}
+                      <div class="menu-content-inner">
+                        {% set href = item3.link.url.href %}
+                        {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                           >
+                          <div class="menu-content-img">
+                            {% if item3.image_field.src %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}"' %}
+                            {% if item3.image_field.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item3.image_field.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.max_width }}" height="{{ item3.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item3.image_field.loading != 'disabled' ? 'loading="{{ item3.image_field.loading }}"' : '' %}
+                            <img src="{{ item3.image_field.src }}" alt="{{ item3.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </div>
+                          <div class="menu-content-heading">
+                            {{ item3.title }}
+                          </div>
+                          <div class="menu-content-text">
+                            {{ item3.content }}
+                          </div>
+                        </a> 
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% endfor %}
+                </div> 
+                <div class="menu-colum-two">
+                  {% for item2 in item.column_two.menu_item %}
+                  <div class="menu-inner-child">
+                    {% if item2.menu_type == "clist" %}
+                    <div class="menu-list-content">
+                      {% for item3 in item2.list_with_content %}
+                      <div class="menu-list-content-inner">
+                        {% set href = item3.link.url.href %}
+                        {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                           >
+                          <div class="clist-img">
+                            {% if item3.image_field.src %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}"' %}
+                            {% if item3.image_field.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item3.image_field.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.max_width }}" height="{{ item3.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item3.image_field.loading != 'disabled' ? 'loading="{{ item3.image_field.loading }}"' : '' %}
+                            <img src="{{ item3.image_field.src }}" alt="{{ item3.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </div>
+                          <div class="clist-text">
+                            <h3>{{ item3.title }}</h3>
+                            {{ item3.content }}
+                          </div>
+                        </a>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                    {% if item2.menu_type == "list" %}
+                    <ul class="list-type">
+                      {% for item3 in item2.list %}
+                      <li>
+                        {% set href = item3.link.url.href %}
+                        {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                           >
+
+                          <span class="list-icon">
+                            {% if item3.image_field.src %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}"' %}
+                            {% if item3.image_field.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.width }}" height="{{ item3.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item3.image_field.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item3.image_field.max_width }}" height="{{ item3.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item3.image_field.loading != 'disabled' ? 'loading="{{ item3.image_field.loading }}"' : '' %}
+                            <img src="{{ item3.image_field.src }}" alt="{{ item3.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </span>
+                          <span class="list-text">{{ item3.title }}</span>
+                        </a>
+                      </li>
+                      {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {% if item2.menu_type == "igroup" %}
+                    <div class="menu-content-section">
+                      {% for item3 in item2.image_group %}
+                      <div class="menu-content-inner">
+                        {% set href = item3.link.url.href %}
+                        {% if item3.link.url.type is equalto "EMAIL_ADDRESS" %}
+                        {% set href = "mailto:" + href %}
+                        {% endif %}
+                        <a href="{{ href }}"
+                           {% if item3.link.open_in_new_tab %}target="_blank"{% endif %}
+                           {% if item3.link.rel %}rel="{{ item3.link.rel }}"{% endif %}
+                           >
+                          <div class="menu-content-img">
+                            {% if item3.image.src %}
+                            {% set sizeAttrs = 'width="{{ item3.image.width }}" height="{{ item3.image.height }}"' %}
+                            {% if item3.image.size_type == 'auto' %}
+                            {% set sizeAttrs = 'width="{{ item3.image.width }}" height="{{ item3.image.height }}" style="max-width: 100%; height: auto;"' %}
+                            {% elif item3.image.size_type == 'auto_custom_max' %}
+                            {% set sizeAttrs = 'width="{{ item3.image.max_width }}" height="{{ item3.image.max_height }}" style="max-width: 100%; height: auto;"' %}
+                            {% endif %}
+                            {% set loadingAttr = item3.image.loading != 'disabled' ? 'loading="{{ item3.image.loading }}"' : '' %}
+                            <img src="{{ item3.image.src }}" alt="{{ item3.image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                            {% endif %}
+                          </div>
+                          <div class="menu-content-heading">
+                           {{ item3.heading }}
+                          </div>
+                          <div class="menu-content-text">
+                           {{ item3.content }}
+                          </div>
+                        </a> 
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% endif %}
+                  </div>
+                  {% endfor %}
+                </div><!-- end menu-column-two -->   
+              </div><!-- end mega-child-menu -->
+            </div><!-- end mega-wrapper -->
+            {% endif %}
+          </div><!-- end menu-grp -->
+          {% endfor %}
+        </div><!-- end menu-section -->
+      </div><!-- end menu-wrapper -->
+    </div><!-- end header-section -->
+  </div><!-- end container -->
+</header><!-- end header-wrapper -->

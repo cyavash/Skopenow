@@ -1,0 +1,178 @@
+.service_workflow > .row {
+  margin: 0;
+}
+
+.service_workflow h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.service_workflow [class*="col-"] {
+  padding: 0 15px;
+}
+
+.service_workflow {
+  overflow-x: hidden;
+}
+
+.service_workflow p {
+  font-size: 18px;
+  color: #a2c3d4;
+  padding-right: 180px;
+  margin-top:0;
+  margin-bottom:1rem;
+}
+
+.service_workflow p span {
+  color: #fff;
+}
+
+.service_workflow .tracking_chart_content {
+  position: relative;
+  height: 400px;
+  width: 360px;
+}
+
+.service_workflow .tracking_chart_content > div:not(.section_line) {
+  background-color: #7d83fd;
+  color: #fff;
+  text-align: center;
+}
+
+.service_workflow .tracing_sections.chart_type_circle
+.tracking_chart_content > div:not(.section_line) {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  line-height: 80px;
+  position: absolute;
+  z-index: 2;
+}
+
+.service_workflow {
+  font-size: 14px;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div.section_line {
+  border: 2px solid #7d82fd;
+  z-index: 1;
+  position: absolute;
+  border-bottom: none;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div.section_line.bottom_wide_line {
+  width: 306px;
+  height: 109px;
+  border-radius: 50%/109px 109px 0 0;
+  transform: rotate( 180deg );
+  left: 26px;
+  bottom: 0;
+}
+
+.service_workflow .tracing_sections .tracking_chart_content>div.section_line.vr_line {
+  bottom: 0;
+  left: 190px;
+  width: 2px;
+  border: 0;
+  position: absolute;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div.section_line.top_line {
+  width: 210px;
+  height: 200px;
+  border-radius: 50%/209px 200px 0 0;
+  bottom: 130px;
+  left: 85px;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div:not(.section_line):first-child{
+  top: 50%;
+  margin-top: -40px;
+  left: 50px;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div:not(.section_line):nth-child(2){
+  top: 50%;
+  margin-top: -40px;
+  left: 150px;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div:not(.section_line):nth-child(3){
+  top: 50%;
+  margin-top: -40px;
+  left: 250px;
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div.section_line.bottom_line{
+  width: 210px;
+  height: 200px;
+  left: 85px;
+  border-radius: 50%/209px 200px 0 0;
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.service_workflow .tracing_sections.chart_type_circle .tracking_chart_content>div.section_line.vr_line {
+  height: 100%;
+}
+
+.service_workflow .tracing_sections.chart_type_rectangle .tracking_chart_content>div:not(.section_line) {
+  width: 180px;
+  height: 30px;
+  border-radius: 100px;
+  line-height: 30px;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.service_workflow .tracing_sections.chart_type_rectangle .tracking_chart_content {
+  position: relative;
+  height: 280px;
+  width: 300px;
+}
+
+.service_workflow .tracing_sections.chart_type_rectangle .tracking_chart_content>div.section_line.vr_line {
+  height: 100%;
+  position: absolute;
+}
+
+.service_workflow .tracing_sections.chart_type_rectangle .tracking_chart_content>div:not(.section_line):first-child {
+  top: 70px;
+}
+
+.service_workflow .tracing_sections.chart_type_rectangle .tracking_chart_content>div:not(.section_line):nth-child(2) {
+  top: 130px;
+}
+
+.service_workflow .tracing_sections.chart_type_rectangle .tracking_chart_content>div:not(.section_line):nth-child(3) {
+  top: 190px;
+}
+
+@media(max-width:1200px){
+  .service_workflow p {
+    padding-right: 0;
+  }
+}
+
+@media(max-width:991px){
+  .service_workflow .tracking_chart_content {
+    left: -25px;
+  }
+}
+
+@media(max-width:767px){
+  .service_workflow .tracing_sections {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .service_workflow .tracking_chart_content {
+    display: none;
+  }
+}

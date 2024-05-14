@@ -1,0 +1,278 @@
+
+.current-openings-wrapper ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.current-openings-wrapper .tab-content{
+  display: none;
+}
+
+.current-openings-wrapper .tab-content.current{
+  display: inherit;
+}
+
+.current-openings-wrapper .content-wrapper {
+  margin-top: 3rem;
+}
+
+.current-openings-wrapper .current-open-title-wrap .col-3 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.current-openings-wrapper .current-open-title-wrap .col-6 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.current-openings-wrapper .current_opening_title {
+  height: 100px;
+}
+
+.current-openings-wrapper .current_opening_title h3 {
+  margin: 0;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.75rem;
+  color: #2e3234;
+}
+
+.current-openings-wrapper .current_opening_title span {
+  color: #707a80;
+  font-size: 18px;
+}
+
+.current-openings-wrapper .current-tab-wrap .current_opening_nav {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.current-openings-wrapper .current-tab-wrap .current_opening-con-wrap {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.current-openings-wrapper .current-tab-wrap .current_opening_blank_col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+
+@media (min-width:576px){
+  .current-openings-wrapper .current-tab-wrap .current_opening_nav {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .current-openings-wrapper .current-tab-wrap .current_opening-con-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .current-openings-wrapper .current-tab-wrap .current_opening_blank_col {
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+  }
+}
+
+
+@media (min-width:768px){
+  .current-openings-wrapper .current-tab-wrap .current_opening_nav {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .current-openings-wrapper .current-tab-wrap .current_opening-con-wrap {
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+  }
+
+  .current-openings-wrapper .current-tab-wrap .current_opening_blank_col {
+    flex: 0 0 8.33333333%;
+    max-width: 8.33333333%;
+  }
+}
+
+@media (min-width: 992px){
+  .current-openings-wrapper .current-open-title-wrap .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .current-openings-wrapper .current-open-title-wrap .col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .current-openings-wrapper .current-tab-wrap .current_opening_nav {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .current-openings-wrapper .current-tab-wrap .current_opening-con-wrap {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .current-openings-wrapper .current-tab-wrap .current_opening_blank_col {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+
+
+
+
+.current-openings-wrapper .tabs li {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-direction: column!important;
+}
+
+.current-openings-wrapper .tabs li a {
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  padding: .5rem 1rem;
+  border-radius: .25rem;
+  color: #71797e;
+}
+
+.current-openings-wrapper .tabs li.current a {
+  background-color: #f3f4f6;
+  color: #0d0d0d;
+  position: relative;
+}
+
+.current-openings-wrapper .tabs li.current a:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 19px solid transparent;
+  border-left: 20px solid #f3f4f6;
+  border-bottom: 19px solid transparent;
+  position: absolute;
+  right: -18px;
+  top: 0;
+}
+
+.current-openings-wrapper .tab_pane {
+  margin-bottom: 70px;
+  width: 100%;
+}
+
+.current-openings-wrapper  .sales_data {
+  border: 1px solid #e7eaee;
+  padding: 30px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  display: table;
+  width: 100%;
+}
+
+.current-openings-wrapper .sales_data .mata {
+  width: 70%;
+  float: left;
+}
+
+.current-openings-wrapper .sales_data a.read_more {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all .3s ease;
+  background-color: #3f94f6;
+  border-radius: 6px;
+  color: #fff;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 125px;
+  text-align: center;
+  float: right;
+  box-shadow: 0 15px 30px 0 rgb(45 35 66 / 15%);
+}
+
+.current-openings-wrapper .sales_data a.read_more:hover {
+  transform: translateY(2px);
+}
+
+.current-openings-wrapper .sales_data h5 {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  color: #3988da;
+  margin-bottom: 0;
+  font-family: Avenir!important;
+}
+
+.current-openings-wrapper .sales_data span {
+  font-family: Avenir!important;
+  color: #6f7b81;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+}
+
+
+@media(max-width:767px){
+  .current-openings-wrapper .current-tab-wrap .current_opening_nav {
+    display: flex;
+  }
+
+  .current-openings-wrapper .tabs li {
+    flex-direction: row!important;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    height: 40px;
+  }
+
+  .current-openings-wrapper .tabs li.current a:after {
+    display: none;
+  }
+  .current-openings-wrapper .tabs li a {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media(max-width:576px){
+  .current-openings-wrapper .sales_data {
+    display: block!important;
+    padding: 10px;
+  }
+
+  .current-openings-wrapper .sales_data .mata {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .current-openings-wrapper .sales_data a.read_more {
+    margin: 0 auto;
+  }
+  .current-openings-wrapper .current_opening_title {
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:425px){
+  .current-openings-wrapper .tabs li a {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

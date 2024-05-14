@@ -1,0 +1,195 @@
+[ {
+  "id" : "bf694c2a-0e8b-165d-39ec-4dc9153fcda4",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Search, collect, and analyze open source data anonymously."
+}, {
+  "id" : "6614ef1b-064c-ea9a-ba6a-c0f2eb13f728",
+  "name" : "tabber_items",
+  "display_width" : null,
+  "label" : "Tabber Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "76032370-baee-e621-c88a-10dbe530ef90",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "76032370-baee-e621-c88a-10dbe530ef90",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Tab Title"
+  }, {
+    "id" : "c8b3ca28-5ceb-8da9-6f2b-658e7a9ab200",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Tab Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "e535bfbb-f0f5-2abe-1c06-cf92c09569d0",
+    "name" : "select_work_group_",
+    "display_width" : null,
+    "label" : "Select Work Group ",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "find", "Find" ], [ "link", "Link" ], [ "identify", "Identify" ], [ "alert", "Alert" ], [ "map", "Map" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "find"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "Tab Title",
+    "select_work_group_" : "find"
+  }
+}, {
+  "id" : "c06f4186-f170-8da4-d6c0-25a5759aea6f",
+  "name" : "filter_icon",
+  "display_width" : null,
+  "label" : "Filter Icon",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/filter.svg",
+    "alt" : "filter",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+}, {
+  "id" : "9de9b608-0010-1622-ec83-fa473b7062bc",
+  "name" : "manager_image",
+  "display_width" : null,
+  "label" : "Manager Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/manager.svg",
+    "alt" : "manager",
+    "loading" : "lazy",
+    "width" : 353,
+    "height" : 359,
+    "max_width" : 353,
+    "max_height" : 359
+  }
+}, {
+  "id" : "b89d717f-c846-451e-c126-5d4f090a8da5",
+  "name" : "running_person",
+  "display_width" : null,
+  "label" : "Running Person Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/running2.svg",
+    "alt" : "running2",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+}, {
+  "id" : "f3212d1f-71a5-7c63-45db-f36af8548dba",
+  "name" : "envelope",
+  "display_width" : null,
+  "label" : "Envelope Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/envelope.svg",
+    "alt" : "envelope",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+}, {
+  "id" : "85cba426-db3f-d3b4-d257-c397ea5cc51b",
+  "name" : "leader_image",
+  "display_width" : null,
+  "label" : "Leader Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/leader.svg",
+    "alt" : "leader",
+    "loading" : "lazy",
+    "width" : 336,
+    "height" : 365,
+    "max_width" : 336,
+    "max_height" : 365
+  }
+}, {
+  "id" : "a1f43baf-94d9-8be4-5d5d-5b8a094b22d4",
+  "name" : "secretary_image",
+  "display_width" : null,
+  "label" : "Secretary Image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/Skopenow_March2021/images/secretary.svg",
+    "alt" : "secretary",
+    "loading" : "lazy",
+    "width" : 268,
+    "height" : 321,
+    "max_width" : 268,
+    "max_height" : 321
+  }
+} ]

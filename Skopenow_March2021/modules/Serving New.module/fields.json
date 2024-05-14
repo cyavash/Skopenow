@@ -1,0 +1,84 @@
+[ {
+  "id" : "35bc4944-4a85-cb0f-305b-e0376c68beb4",
+  "name" : "section_heading",
+  "display_width" : null,
+  "label" : "Section Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Serving"
+}, {
+  "id" : "b2b9714d-acb4-52ef-8a09-94069f1a1b5c",
+  "name" : "serving_button_items",
+  "display_width" : null,
+  "label" : "Serving Button Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "60b79da2-a5e0-4857-a020-9e3fc892e508",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "60b79da2-a5e0-4857-a020-9e3fc892e508",
+    "name" : "text",
+    "display_width" : null,
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Button Text"
+  }, {
+    "id" : "e21d314f-bbaf-62bf-3514-83066fda23a2",
+    "name" : "link_field",
+    "display_width" : null,
+    "label" : "Link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "show_advanced_rel_options" : false,
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "type" : "EXTERNAL",
+        "href" : "#",
+        "content_id" : null
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }, {
+    "id" : "9427c8ca-91f6-0785-fa4b-885884cdfe20",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/realtime-intel.svg",
+      "alt" : "realtime-intel",
+      "loading" : "lazy",
+      "width" : 32,
+      "height" : 32,
+      "max_width" : 32,
+      "max_height" : 32
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ ]
+} ]

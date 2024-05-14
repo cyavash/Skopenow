@@ -1,0 +1,70 @@
+[ {
+  "id" : "dfecafeb-9671-7ede-1ad8-5e0a0cf224d3",
+  "name" : "phone_number",
+  "display_width" : null,
+  "label" : "Phone Number",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "(800)252-1437"
+}, {
+  "id" : "62e9271e-a5ea-06f0-2eba-6c8d1ee5e51a",
+  "name" : "facebook",
+  "display_width" : null,
+  "label" : "Facebook",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.facebook.com/skopenow",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "e2888697-67dd-7ceb-6cef-68231cee8c5c",
+  "name" : "twitter",
+  "display_width" : null,
+  "label" : "Twitter",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://twitter.com/skopenow",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+}, {
+  "id" : "da6e7f0e-dbd5-242d-8fe5-9d5b3a36f650",
+  "name" : "linkedin",
+  "display_width" : null,
+  "label" : "Linkedin",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "show_advanced_rel_options" : false,
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "type" : "EXTERNAL",
+      "href" : "https://www.linkedin.com/company/skopenow",
+      "content_id" : null
+    },
+    "open_in_new_tab" : true,
+    "no_follow" : false
+  }
+} ]

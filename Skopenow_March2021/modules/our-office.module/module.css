@@ -1,0 +1,79 @@
+.banner-wrapper {
+  display: flex; 
+  align-items: center;
+}
+.banner-wrapper .banner_button {
+  background-color: #0680fb;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-block;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  margin: 0;
+  padding: 10px 25px;
+  position: relative;
+  text-align: center;
+  transition: all .3s ease!important;
+  width: auto;
+} 
+ 
+.our-office {
+  margin: 20px 0 100px 0;
+}
+.office-inner {
+  background: #212529;
+  border-radius: 10px;  
+  color: #FFF;
+  font-family: "DM Sans";
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.office-inner img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.office-content {
+  padding: 48px 22px 30px 15px;
+  height: 100%;
+}
+.our-office h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #FFF;
+}
+.our-office p {
+  font-family: "Poppins";
+  font-size: 16px;
+}
+.our-office .btn {
+  background-color: #0680fb;
+  border-radius: 100px;
+  color: #fff;
+  display: inline-block;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: 500;
+  height: 45px;
+  margin: 0;
+  margin-top: 13px;
+  padding: 10px 25px;
+  position: relative;
+  text-align: center;
+  transition: all .3s ease!important;
+  width: auto;
+}
+.our-office .btn:hover {
+  opacity: 0.85; 
+}
+/* RESPONSIVE */
+@media screen and (max-width: 767px) {
+  .office-content {
+    padding-bottom: 48px; 
+  }
+  .office-content h3 {
+    margin-top: 0; 
+  }
+}

@@ -1,0 +1,31 @@
+<section class="container-fluid section_one">
+  <div class="page-center container new_slider_section">
+    <div class="row">
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+        <div class="home_slo">
+          <div class="d-flex align-items-center home_left_con">
+            <div>
+              <div class="top_title">
+                <h1>{{ module.heading_1 }}</h1>
+                <h1>{{ module.heading_2 }}</h1>
+              </div>
+              <div>
+                {{ module.content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 column">
+        <div class="bg_con" style="background-image:url({{ module.background_image.src }})">
+          {% for item in module.task_items %}
+          <label class="task task-item{{ loop.index }}" >
+            <span style="animation-delay: -{{ loop.index + 1 }}s; background-color:rgba({{ item.background_color.color|convert_rgb }},{{ item.background_color.opacity * 0.01 }})">
+              <div class="check"></div> {{ item.Title }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

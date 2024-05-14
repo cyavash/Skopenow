@@ -1,0 +1,45 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest"></script>
+  
+<div class="thankyou_banner banner"> 
+  <lottie-player class="top-left" src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/OSINT-Upper%20Left-2.json" background="#21262b" speed="0.25" style="" direction="1" mode="bounce" loop autoplay></lottie-player>
+  <lottie-player class="bottom-right" src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/OSINT-Lower%20Right-1.json" background="#21262b" speed="0.25" style="" direction="1" mode="bounce" loop autoplay></lottie-player>
+  <div class="container">
+    <div class="content">
+      <p class="date">
+        {{ module.banner.date }}
+      </p>
+      <h1 style="padding-bottom:15px;"><span>{{ module.banner.heading }}</span></h1>
+
+    
+
+    </div><!-- end content -->  
+  </div><!-- end container -->
+</div><!-- end banner -->
+
+<div class="speakers-section">
+  <div class="container">
+    <h2>
+      {{ module.speakers_section.heading }}
+    </h2>
+    
+    <div class="row-fluid">
+      {% for item in module.speakers_section.speaker %}
+        <div class="speaker">
+    
+          <h3>
+            {{ item.heading }} - {{ item.company }} - {{ item.title }}
+          </h3>
+
+<div class="hs-responsive-embed-inner-wrapper" style="position: relative; overflow: hidden; max-width: 100%; padding-bottom:56%; margin: 0;"><iframe class="hs-responsive-embed-iframe" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allow="autoplay; fullscreen" xml="lang" src="{{ item.share_url }}" width="800" height="450" data-service="vimeo" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
+
+          <a href="{{ item.presentation_name }}" target="_blank" class="btn">{{ item.button_text }}</a>
+        </div><!-- end speaker -->
+      {% endfor %}
+    </div><!-- end row-fluid -->
+  </div><!-- end container -->
+</div><!-- end speakers-section -->
+
+

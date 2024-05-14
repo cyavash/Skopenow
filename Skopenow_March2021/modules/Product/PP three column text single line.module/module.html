@@ -1,0 +1,16 @@
+<div class="pp_three_col">
+  <div class="container">
+    <div class="content">
+      {% for item in module.block %}
+      <div class="block">
+        <div>
+          <p>
+          <span class="bold">{{ item.sub_title }}</span> {{ item.sub_content }}
+          </p>  
+        </div>
+        
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

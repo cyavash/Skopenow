@@ -1,0 +1,131 @@
+.content-with-icon {
+  display: flex;
+}
+
+.content-with-icon.topic_block i[class*="icon"] {
+  flex: 0 0 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 38px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: #29323F;
+  margin-top: 2px;
+}
+
+.topic_wrapper.icon_text h2{
+  text-align: center;
+  letter-spacing: 0px;
+  color: #29323F;
+  opacity: 1;
+  margin-bottom: 20px;
+  font-weight: 900;
+    font-size: 38px;
+    font-family: Avenir;
+}
+
+.topic_wrapper.icon_text h3 {
+margin:10px auto 60px;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #29323F;
+  opacity: 1;
+      font-size: 1.55rem;
+  text-align:center;
+  font-weight:normal;
+  width:70%;
+}
+
+.content-with-icon.topic_block .ques_data h4{
+  font-size:28px;
+}
+
+.content-with-icon.topic_block .ques_data p {
+  letter-spacing: 0px;
+  color: #29323F;
+  opacity: 1;
+  font-size:15px;
+}
+
+.content-with-icon.topic_block .topic_bg_image{
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex: none;
+}
+
+.topic_wrapper.icon_text .skew_skopenow_help.top_left_right {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    background: white;
+    top: 0px;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(356deg);
+}
+
+.topic_wrapper.icon_text .skew_skopenow_help.bottom_left_right {
+    width: 100%;
+    height: 19%;
+    position: absolute;
+    background: white;
+    bottom: -130px;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(356deg);
+}
+
+.topic_wrapper.icon_text {
+    display: inline-block;
+    width: 100%;
+    padding: 100px 0 190px;
+  position:relative;
+}
+
+.content-with-icon.topic_block {
+    margin-bottom: 30px;
+}
+
+.topic_wrapper.icon_text .ques_data {
+  margin-left: 15px;
+  padding-right: 30px;
+}
+
+.cta_wrapper{
+  text-align:center;
+}
+
+@media(max-width:991px){
+  .topic_wrapper.icon_text{
+    padding:100px 0 180px;
+  }
+  .topic_wrapper.icon_text .skew_skopenow_help.bottom_left_right{
+    height:14%;
+    bottom: -150px;
+  }
+}
+
+@media(max-width:767px){
+  .topic_wrapper.icon_text{
+    padding:100px 0;
+  }
+  .topic_wrapper.icon_text .skew_skopenow_help.top_left_right{
+    height:5%;
+  }
+  .topic_wrapper.icon_text .skew_skopenow_help.bottom_left_right{
+    height:17%;
+    bottom:-170px;
+  }
+}
+
+@media(max-width:479px){
+  .topic_wrapper.icon_text .skew_skopenow_help.bottom_left_right{
+  height:5%;
+  bottom:-4%;
+}
+}

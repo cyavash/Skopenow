@@ -1,0 +1,58 @@
+[ {
+  "id" : "275844f4-9b30-d26f-de02-2d436558fcc6",
+  "name" : "date_time",
+  "display_width" : null,
+  "label" : "Date time",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "January 19th, 2022 @ 11:00 AM ET"
+}, {
+  "id" : "dbef4c48-09b8-61ec-53f6-b44e2b728f1f",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vehicle-Based OSINT Investigations"
+}, {
+  "id" : "61a6fca5-342e-7581-49dd-4fe04abab6d3",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Vehicles are intrinsically linked to our way of life and are rarely found far from their owners, with infrastructure designed around their heavy use. Therefore, identifying the vehicle that the subject of an investigation owns, has access to, or is in possession of, can provide valuable insight into their current location.</p>\n<p><strong>By attending this session you will learn:</strong></p>\n<ul>\n<li>Vehicle records can be a useful part of OSINT investigations for law enforcement.</li>\n<li>Global security teams, insurance fraud investigators, journalists, and more.</li>\n<li>In this webinar, we'll show you how to conduct OSINT investigations using vehicle data.</li>\n</ul>\n<p><strong>All attendees will receive a digital copy of our white paper:  The Definitive Guide to Vehicle-Based OSINT Investigations.</strong></p>"
+}, {
+  "id" : "1aef8327-7074-a2a8-9828-63531c8f14cb",
+  "name" : "form",
+  "display_width" : null,
+  "label" : "FORM",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+}, {
+  "id" : "f82480e7-9450-ab08-fde4-0f9a24da46d4",
+  "name" : "form_sub_title",
+  "display_width" : null,
+  "label" : "Form sub title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<strong>Don’t miss this.</strong> <br> Register for our Vehicle-Based OSINT Investigations informational webinar"
+} ]

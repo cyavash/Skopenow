@@ -1,0 +1,87 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Home Page
+-->
+
+{% extends "./layouts/base.html" %}
+{{ require_js(get_asset_url("../js/highlight.js")) }}
+{{ require_js(get_asset_url("../js/line-number.js")) }}
+{% block header %}
+<div class="hs-home-page home_page">
+
+  {% global_partial path="./partials/Header_New_Dark.html" %}
+  
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    <main class="body-container-wrapper">
+      {% dnd_area "banner_area" class='hs-home-page-section home-banner', label='Banner Area' %}
+      {% end_dnd_area %}
+      {% dnd_area "tabber" class='hs-home-page-section home-tabber', label='Tabber' %}
+      {% end_dnd_area %}
+      {% dnd_area "news" class='hs-home-page-section home-posts', label='Recent Posts' %}
+      {% end_dnd_area %}
+      {% dnd_area "features" class='hs-home-page-section home-features', label='Included Features' %}
+      {% end_dnd_area %}
+      {% dnd_area "skopenow_help" class='hs-home-page-section home-help', label='How does Skopenow help?' %}
+      {% end_dnd_area %}
+      {% dnd_area "serving" class='hs-home-page-section home-serving', label='Serving' %}
+      {% end_dnd_area %}
+      <div class="home_api">
+        <div class="page-center">
+          <div class="row clearfix">
+            <div class="col-lg-12">
+              <div class="titels_api">
+                {% dnd_area "api_header" class='hs-home-page-section home-api-header', label='API Header' %}
+                {% end_dnd_area %}
+                {% dnd_area "api_icon" class='hs-home-page-section home-api-icons', label='API Tools' %}
+                {% end_dnd_area %}
+                <div class="code" id="code_prism">
+                  {% dnd_area "api_code" class='hs-home-page-section home-api-code', label='API Code' %}
+                  {% end_dnd_area %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% dnd_area "home_buttons" class='hs-home-page-section home-buttons', label='Contact Buttons' %}
+      {% end_dnd_area %}
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+  <script>
+    window.onload = function() {
+      hljs.initHighlighting();
+      var aCodes = document.getElementsByTagName('pre');
+      for (var i=0; i < aCodes.length; i++) {
+        hljs.highlightBlock(aCodes[i]);
+      }
+      hljs.initLineNumbersOnLoad();
+
+    }
+  </script>
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+[ {
+  "id" : "71de4164-ca3d-c0d0-be83-a5b668feb3d3",
+  "name" : "overlay_color",
+  "display_width" : null,
+  "label" : "Overlay Color",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "68eb6cb7-64df-0a3e-36e2-7187c1ad10e1",
+    "name" : "overlay_gradient_start_color",
+    "display_width" : null,
+    "label" : "Overlay Gradient Start Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#5d89e2",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "55fe87ea-a309-f5ed-4eba-4992219e87e1",
+    "name" : "overlay_gradient_end_color",
+    "display_width" : null,
+    "label" : "Overlay Gradient End Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#41d1da",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "overlay_gradient_start_color" : {
+      "color" : "#5d89e2",
+      "opacity" : 100
+    },
+    "overlay_gradient_end_color" : {
+      "color" : "#41d1da",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "449c7aac-31dc-1f15-1137-14ef985b0660",
+  "name" : "background_color",
+  "display_width" : null,
+  "label" : "Background Color",
+  "inline_help_text" : "Visible if overlay color is not defined",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "a8266d05-aeee-6c22-6d45-28b1c64fd2c2",
+    "name" : "background_gradient_start_color",
+    "display_width" : null,
+    "label" : "Background Gradient Start Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#fff",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fe89f375-6f75-c406-38d4-d9d9acaad0a3",
+    "name" : "background_gradient_end_color",
+    "display_width" : null,
+    "label" : "Background Gradient End Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#242446",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "background_gradient_start_color" : {
+      "color" : "#fff",
+      "opacity" : 100
+    },
+    "background_gradient_end_color" : {
+      "color" : "#242446",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "3d736f46-9fc7-9268-6a38-aee1e02eccb7",
+  "name" : "column_left",
+  "display_width" : null,
+  "label" : "Column Left",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1e0014f8-604f-b3fd-5de7-40b68346f8b7",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "ALERTS"
+  }, {
+    "id" : "29d762a0-2fe7-9a36-5aae-2fda416e9490",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Rich text",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Simple content</p>\n<a class=\"book_demo\" href=\"/demo\">Book a Demo</a> <a class=\"view_pricing\" href=\"/pricing\">View Pricing</a>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "heading" : "ALERTS",
+    "richtext_field" : "<p>Simple content</p>\n<a class=\"book_demo\" href=\"/demo\">Book a Demo</a> <a class=\"view_pricing\" href=\"/pricing\">View Pricing</a>"
+  }
+}, {
+  "id" : "e3bc0df5-5514-d122-1347-a82ec686984a",
+  "name" : "column_right",
+  "display_width" : null,
+  "label" : "Column Right",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1111556d-c66f-cef7-b40c-b369d9bf3c57",
+    "name" : "richtext_field",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<ul>\n<li>Item 1</li>\n<li><span style=\"color: #3dcf8e;\">Item</span> 2</li>\n</ul>\n<a class=\"setup_monitor\" href=\"#\">Set Up Alerts</a>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "richtext_field" : "<ul>\n<li>Item 1</li>\n<li><span style=\"color: #3dcf8e;\">Item</span> 2</li>\n</ul>\n<a class=\"setup_monitor\" href=\"#\">Set Up Alerts</a>"
+  }
+}, {
+  "id" : "343b4932-b2af-7611-6d16-b227fb440afb",
+  "name" : "animated_triangle_color",
+  "display_width" : null,
+  "label" : "Animated Triangle Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#3d3d5e",
+    "opacity" : 100
+  }
+} ]

@@ -1,0 +1,79 @@
+[ {
+  "id" : "12f031d9-93ff-5bb4-8d91-a6727b86ef77",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-State-of-OSINT-blog-image%201.jpg",
+    "alt" : "Skopenow-State-of-OSINT-blog-image 1",
+    "loading" : "lazy",
+    "width" : 463,
+    "height" : 350,
+    "max_width" : 463,
+    "max_height" : 350
+  }
+}, {
+  "id" : "8f566709-ab2d-0c04-1e3e-4f739084c473",
+  "name" : "subheading",
+  "display_width" : null,
+  "label" : "Subheading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "FEATURED"
+}, {
+  "id" : "1ae75a04-7ab2-0be8-5f5e-007717fecc19",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Title of Resource Name Goes Here"
+}, {
+  "id" : "6300125e-a543-6ce6-46fd-b834d48ce195",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+}, {
+  "id" : "772962e7-7246-ca04-35e0-ae8d175f2561",
+  "name" : "button_text",
+  "display_width" : null,
+  "label" : "Button Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Read the Report"
+}, {
+  "id" : "31bda7c3-ab4f-9138-4e56-0a0da5ba331d",
+  "name" : "button_link",
+  "display_width" : null,
+  "label" : "Button Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+} ]

@@ -1,0 +1,234 @@
+[ {
+  "id" : "7f0d9904-bbfc-d242-27fe-03c7fda15421",
+  "name" : "item",
+  "display_width" : null,
+  "label" : "Slide Item",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "c5c7b8ba-fdce-93f2-2ca3-484da890567c",
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "95ca69ca-7e1f-15a4-0344-aa8f8857d3dc",
+    "name" : "graphic_choice",
+    "display_width" : null,
+    "label" : "Graphic Choice",
+    "required" : true,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "Image", "Image" ], [ "Custom", "Custom" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "Image"
+  }, {
+    "id" : "e27364e4-3ce5-dd93-f076-1b5c319d2768",
+    "name" : "image",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "item.graphic_choice",
+      "controlling_value_regex" : "Image",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Images/General/Slide-4.png",
+      "alt" : "Slide-4",
+      "loading" : "lazy",
+      "width" : 486,
+      "height" : 326,
+      "max_width" : 486,
+      "max_height" : 326
+    }
+  }, {
+    "id" : "9e2b2816-bfe2-f358-1f9d-dfc098d61ab1",
+    "name" : "anime_code",
+    "display_width" : null,
+    "label" : "Anime Code",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "visibility" : {
+      "controlling_field" : null,
+      "controlling_field_path" : "item.graphic_choice",
+      "controlling_value_regex" : "Custom",
+      "property" : null,
+      "operator" : "EQUAL",
+      "access" : null
+    },
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : ""
+  }, {
+    "id" : "c5c7b8ba-fdce-93f2-2ca3-484da890567c",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "People & Business Search"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "graphic_choice" : "Image",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Images/General/Slide-4.png",
+      "alt" : "Slide-4",
+      "loading" : "lazy",
+      "width" : 486,
+      "height" : 326,
+      "max_width" : 486,
+      "max_height" : 326
+    },
+    "anime_code" : "",
+    "title" : "People & Business Search"
+  }, {
+    "graphic_choice" : "Image",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Images/General/Slide-4.png",
+      "alt" : "Slide-4",
+      "loading" : "lazy",
+      "width" : 486,
+      "height" : 326,
+      "max_width" : 486,
+      "max_height" : 326
+    },
+    "anime_code" : "",
+    "title" : "People & Business Search"
+  }, {
+    "graphic_choice" : "Image",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Images/General/Slide-4.png",
+      "alt" : "Slide-4",
+      "loading" : "lazy",
+      "width" : 486,
+      "height" : 326,
+      "max_width" : 486,
+      "max_height" : 326
+    },
+    "anime_code" : "",
+    "title" : "People & Business Search"
+  }, {
+    "graphic_choice" : "Image",
+    "image" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow_2023/Images/General/Slide-4.png",
+      "alt" : "Slide-4",
+      "loading" : "lazy",
+      "width" : 486,
+      "height" : 326,
+      "max_width" : 486,
+      "max_height" : 326
+    },
+    "anime_code" : "",
+    "title" : "People & Business Search"
+  } ]
+}, {
+  "id" : "36604fd3-044c-96dc-338b-999917c8e64c",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A fully integrated suite of online research and security products"
+}, {
+  "id" : "8e0c6179-ef85-95d3-a71c-c4578cbd2f1d",
+  "name" : "style",
+  "display_width" : null,
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dc96e155-353e-6429-9789-26f1c06813f3",
+    "name" : "header_color",
+    "display_width" : null,
+    "label" : "Header Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#212529",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "4988a657-44fc-b789-c78c-d3e4da62eff7",
+    "name" : "content_color",
+    "display_width" : null,
+    "label" : "Content Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "f19c8130-5005-29d7-1939-fac4018ace50",
+    "name" : "slider_text",
+    "display_width" : null,
+    "label" : "Slider Text",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#425466",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "header_color" : {
+      "color" : "#212529",
+      "opacity" : 100
+    },
+    "content_color" : {
+      "color" : "#FFFFFF",
+      "opacity" : 100
+    },
+    "slider_text" : {
+      "color" : "#425466",
+      "opacity" : 100
+    }
+  }
+}, {
+  "id" : "8ba0b71a-5239-dda1-5a0a-22392eee9e0e",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Streamline your investigative processes, mitigate risks, and enhance decision-making through a fully integrated platform. Use Skopenow to address all your OSINT needs while empowering your team with the situational awareness and internet investigation tools to tackle fraud, crime, threats, and more.</p>"
+} ]

@@ -1,0 +1,313 @@
+.no-banner{
+  overscroll-behavior-y: none !important;
+}
+.free_trial_banner{
+      min-height: calc(100vh);
+  overscroll-behavior-y: none;
+}
+.free_trial_banner .content {
+      display: flex;
+    flex-wrap: wrap;
+        min-height: calc(100vh);
+}
+.free_trial_banner .text_part {
+  width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  padding-top:10px;
+    padding-left: 90px;
+      padding-right: 90px;
+      padding-bottom: 150px;
+}
+.free_trial_banner .text_part .text_content {
+      max-width: 540px;
+}
+.free_trial_banner .text_part img.logo {
+      width: 200px;
+    max-width: 100%;
+    margin-bottom: 58px;
+}
+.free_trial_banner .text_part h1 {
+  font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 24px;
+      text-decoration: underline;
+    text-decoration-color: #0680FB;
+    text-decoration-thickness: 5px;
+      text-underline-offset: 6px;
+  
+}
+.free_trial_banner .text_part h3 {
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.free_trial_banner .text_part div p {
+      margin: 0;
+    margin-bottom: 14px;
+}
+.free_trial_banner .text_part div {
+  font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+.free_trial_banner .text_part div ul {
+      margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-left: 30px;
+}
+.free_trial_banner .text_part div ul li {
+  padding: 5px 0;
+  position: relative;
+}
+.free_trial_banner .text_part div ul li:before {
+  content: "";
+  background-image: url(https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Checkmark.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-size: 100%;
+  left: -30px;
+    top: 6px;
+}
+.free_trial_banner .text_part .text_content > p {
+  font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0680FB;
+    margin: 30px 0;
+}
+.free_trial_banner .text_part .logos {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 -10px;
+}
+
+.free_trial_banner .text_part .logos img {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  max-height: 55px;
+}
+.free_trial_banner .form_part {
+  width: 50%;
+    background-size: cover;
+  background-color:#1c344e;
+    background-position: center;
+  padding-top:70px;
+    padding-left: 120px;
+      padding-right: 120px;
+      padding-bottom: 120px;
+}
+.free_trial_banner .form_part .actualform {
+  max-width: 540px;
+  width: 100%;
+  min-height:636px;
+    margin: 0 auto;
+    background: #fff;
+    padding-top: 35px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px 2px rgb(0 0 0 / 10%);
+      overflow: hidden;
+}
+.free_trial_banner .form_part h3 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  padding: 0 50px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.free_trial_banner .form_part form {
+      border: none;
+    padding: 0 50px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-size: 16px;
+  color:#969696;
+}
+
+.free_trial_banner .form_part form .form-row {
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  line-height: 1;
+}
+.free_trial_banner .form_part form .form-row .half {
+  width: 48%;
+}
+.free_trial_banner .form_part form .form-row .single {
+  width: 100%;
+}
+.free_trial_banner .form_part form .form-row label.error {
+  font-size: 12px;
+  color: red;
+  font-family: 'DM Sans';
+}
+
+::placeholder{
+    color:#969696;
+}
+.free_trial_banner .form_part .form_label{
+font-size:12px;
+  color:#000000;
+  background-color:#ffffff;
+  padding-left:5px;
+  height:15px;
+  border-width:1px;
+  border-color:#000000;
+  font-family:'Avenir';
+  
+  
+}
+
+.free_trial_banner .form_part input:focus {
+  border-color:#03cd5c;
+ box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: 0 1px 5px #4E5A6D1A .3;
+  
+}
+.free_trial_banner .form_part select:focus {
+  border-color:#03cd5c;
+ box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: 0 1px 5px #4E5A6D1A .3;
+  
+}
+.free_trial_banner .form_part input {
+  padding: 14px 18px;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color:#000000;
+  border-color:#000000;
+}
+
+.alert-danger {
+color:red;
+  text-align:center;
+ margin-bottom:10px;
+  font-size:14px;
+  padding-left:15px;
+  padding-right:15px;
+
+}
+.alert-success {
+color:green;
+ text-align:center;
+ margin-bottom:10px;
+  font-size:14px;
+}
+.free_trial_banner .form_part .button12 {
+  position:relative;
+  border-radius:100px;
+  width:100%;
+  color:#ffffff;
+  background-color:#0680fb;
+  padding: 18px;
+  line-height: 1;
+  font-size: 16px;
+  font-family: 'Avenir';
+  -webkit-appearance: none !important;
+  border-style:none !important;
+   cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button12:hover {
+  transition-duration: 0.1s;
+  background-color: #0680fb;
+  opacity:.8;
+}
+.button12:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100px;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 10px #0680fb;
+}
+
+.button12:active:after {
+  box-shadow: 0 0 0 0 #0680fb;
+  position: absolute;
+  border-radius: 100px;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.button12:active {
+  top: 1px;
+}
+
+.free_trial_banner .form_part select {
+
+  font-family: 'Avenir';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 14px 18px;
+  color:#000000;
+  border-color:#000000;
+}
+
+@media (max-width: 1200px) {
+  .free_trial_banner .form_part, .free_trial_banner .text_part {
+    padding: 80px 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .free_trial_banner .form_part, .free_trial_banner .text_part {
+    width: 100%;
+    padding: 60px 20px;
+  }
+  .free_trial_banner .text_part h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .free_trial_banner .text_part h3 {
+        font-size: 18px;
+    line-height: 1.4;
+  }
+  .free_trial_banner .form_part form, .free_trial_banner .form_part h3 {
+    padding: 0 20px;
+  }
+  .free_trial_banner .form_part form input {
+    width: 100% !important;
+  }
+  .noshow{
+    display:none;
+  }
+}
+

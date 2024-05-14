@@ -1,0 +1,20 @@
+<div class="content_wrapper">
+  <div class="content_lp_inner page-center">
+    <h2>
+      {{ module.heading }}
+    </h2>  
+  {% for item in module.content_wrapper %}
+  <div class="content_column_lp col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    {% if item.sub_heading %}
+    <h4>
+      {{ item.sub_heading }}
+    </h4>
+    {% endif %}
+    <p>
+      {{ item.content }}
+    </p>
+  </div>
+  {% endfor %}
+  </div>
+  
+</div>

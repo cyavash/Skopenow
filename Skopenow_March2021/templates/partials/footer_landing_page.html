@@ -1,0 +1,23 @@
+<!--
+templateType: global_partial
+label: Page Footer
+-->
+
+<footer class="custom_footer lp">
+  <div class="page-center footer_container">
+    <div class="footer_row">
+      <div class="footer_col col_5">
+        {% menu "Resources_menu" id=43403835460, label='Resources Menu' %}
+      </div>
+      <div class="footer_copyright">
+        {% module_block module "copyright" label="Copyright" path="@hubspot/rich_text" %}
+        {% module_attribute "html" %}
+        <p>
+          © Skopenow. Inc. 
+        </p>
+        {% end_module_attribute %}
+        {% end_module_block %}
+      </div>
+    </div>
+  </div>
+</footer>

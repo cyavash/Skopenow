@@ -1,0 +1,132 @@
+.footer_form_wrapper{
+  position:relative;
+
+}
+.form_wrapper {
+  margin-top: 0px;
+  max-width:676px;
+}
+
+.form_wrapper_inner{
+  background-color: rgba(255,255,255,1.0);
+  border-color: rgba(237,237,237,1.0);
+  border-radius:5px;
+  box-shadow: 0px 10px 50px #4E5A6D1A;
+  padding: 0px 0;
+}
+.footer_form_inner.page-center{
+  max-width:800px;
+  z-index:9;
+  position:relative;
+}
+
+.content_lp.content-lp .form_wrapper h3{
+  color: #000000;
+  font-size: 38px;
+  text-align: center;
+  line-height: 48px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.form_wrapper form{
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom:0;
+  padding-right: 20px;
+  padding-left: 40px;
+  margin: auto;
+}
+
+input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], input[type="file"], textarea, select{
+  border: 1px solid #9FA1A6 !important;
+  border-radius: 3px;
+  opacity: 1;
+  font-size:15px;
+  color:#000000;
+}
+
+.hs-button, input[type="submit"], input[type="button"] {
+    border-radius: 100px;
+    font: normal normal 500 15px/25px 'Avenir';
+    letter-spacing: 0px;
+    color: #fff;
+    padding: 14px 44px;
+}
+
+.footer_form_wrapper .legal-consent-container p {
+  color: #29323F;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #29323F;
+  opacity: 1;
+  font-size:13px;
+}
+
+.footer_form_wrapper .form_wrapper {
+  padding-left: 0px;
+}
+
+::-webkit-input-placeholder,
+:-moz-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder {
+  font: normal normal normal 20px/27px Avenir;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+
+.footer_form_wrapper .skew_skopenow_help.top_left_right {
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    background: white;
+    top: 0px;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(356deg);
+}
+
+.share_box {
+  text-align: center;
+  padding: 40px 0 0;
+}
+
+ .content_lp.content-lp .share_box li {
+    font-size: 15px;
+    margin-bottom: .5rem;
+    display: inline-block;
+}
+
+.share_box h4{
+  display:inline-block; 
+  text-align: left;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  padding-right: 20px;
+}
+
+.share_box img {
+    width: 27px;
+    vertical-align: bottom;
+    margin-right: 10px;
+}
+
+div [data-global-resource-path="Skopenow_March2021/templates/partials/rs_footer_lp.html"]{
+  background: transparent linear-gradient(90deg, #63E17D 0%, #38998A 100%) 0% 0% no-repeat padding-box;
+  margin-top: -10px;
+}
+
+div [data-global-resource-path="Skopenow_March2021/templates/partials/rs_footer_lp.html"] .footer_copyright p{
+  color:#fff;
+}
+
+div [data-global-resource-path="Skopenow_March2021/templates/partials/rs_footer_lp.html"] .custom_footer{
+  padding:3rem 0;
+}
+
+.form_wrapper_inner .hs_cos_wrapper_type_form h3{
+  display:none !Important;
+}

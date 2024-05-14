@@ -1,0 +1,269 @@
+[ {
+  "id" : "59e86605-bbf1-07b0-0751-27422d616cb3",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Explore Our White Papers"
+}, {
+  "id" : "da82dc04-b3f9-362c-94bb-43733ddd5c83",
+  "name" : "resource",
+  "display_width" : null,
+  "label" : "resource",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 12
+  },
+  "children" : [ {
+    "id" : "4bf2abb3-c0a7-5e1e-25a4-3ba4120741e0",
+    "name" : "image_field",
+    "display_width" : null,
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    }
+  }, {
+    "id" : "3ab1a988-88df-1017-3342-ed10986261cc",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Link Analysis Tool Buyers"
+  }, {
+    "id" : "5db3289f-3a96-99d8-e39b-c49c7b11442e",
+    "name" : "link_text",
+    "display_width" : null,
+    "label" : "Link Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Read More"
+  }, {
+    "id" : "5319985a-d2c4-54fd-6fc4-60cbdf1da580",
+    "name" : "link_url",
+    "display_width" : null,
+    "label" : "Link URL",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  }, {
+    "image_field" : {
+      "size_type" : "auto",
+      "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Skopenow-Whitepaper-Template%201.png",
+      "alt" : "Skopenow-Whitepaper-Template 1",
+      "loading" : "lazy",
+      "width" : 230,
+      "height" : 148,
+      "max_width" : 230,
+      "max_height" : 148
+    },
+    "heading" : "Link Analysis Tool Buyers",
+    "link_text" : "Read More",
+    "link_url" : "#"
+  } ]
+}, {
+  "id" : "f38e1a95-5d86-5ff2-d447-7d1eaf7ce1b1",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "See More"
+} ]

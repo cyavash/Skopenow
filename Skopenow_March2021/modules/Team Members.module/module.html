@@ -1,0 +1,29 @@
+<div class="team-members-wrap">
+  <h1>
+    {{ module.heading }}
+  </h1>
+  <p class="sub">
+    {{ module.sub_heading }}
+  </p>
+  <ul class="team-mem-card">
+    {% for item in module.member_items %}
+    <li>
+      <div class="image">
+        {% if item.member_image.src %}
+        {% set sizeAttrs = 'width="{{ item.member_image.width }}" height="{{ item.member_image.height }}"' %}
+        {% if item.member_image.size_type == 'auto' %}
+        {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+        {% elif item.member_image.size_type == 'auto_custom_max' %}
+        {% set sizeAttrs = 'width="{{ item.member_image.max_width }}" height="{{ item.member_image.max_height }}" style="max-width: 100%; height: auto;"' %}
+        {% endif %}
+        {% set loadingAttr = item.member_image.loading != 'disabled' ? 'loading="{{ item.member_image.loading }}"' : '' %}
+        <img style="transform:scale({{item.zoom}}) {% if item.position_from_top %}translateY({{item.position_from_top}}px){% endif %} {% if item.position_from_left %}translateX({{item.position_from_left}}px){% endif %}" src="{{ item.member_image.src }}" alt="{{ item.member_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        {% endif %}
+      </div>
+      <div class="tooltip_hover">
+        {{ item.content }}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

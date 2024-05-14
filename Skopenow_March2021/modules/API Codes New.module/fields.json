@@ -1,0 +1,42 @@
+[ {
+  "id" : "a09541ea-79b1-94c0-819f-af4ed44c8c32",
+  "name" : "api_code_items",
+  "display_width" : null,
+  "label" : "API Code Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "496390dc-70c8-b096-fa0c-399780e82b8a",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "496390dc-70c8-b096-fa0c-399780e82b8a",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "PHP"
+  }, {
+    "id" : "9399f587-e142-6f3b-900d-5cf1bbb62bb4",
+    "name" : "code",
+    "display_width" : null,
+    "label" : "Code",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "title" : "PHP"
+  }
+} ]

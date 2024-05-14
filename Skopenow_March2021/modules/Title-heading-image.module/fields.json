@@ -1,0 +1,46 @@
+[ {
+  "id" : "3ee96647-ad13-fcad-9536-f49efa867ba1",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Platform"
+}, {
+  "id" : "343f4593-486e-3ddc-78d8-06e497049b6e",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Integrate Skopenow into your workflows"
+}, {
+  "id" : "f1289ed8-79b8-ba71-ffbc-da72525fa3f1",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Group%20585.png",
+    "alt" : "Group 585",
+    "loading" : "lazy",
+    "width" : 1156,
+    "height" : 728,
+    "max_width" : 1156,
+    "max_height" : 728
+  }
+} ]

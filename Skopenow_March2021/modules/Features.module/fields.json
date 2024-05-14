@@ -1,0 +1,69 @@
+[ {
+  "id" : "9d364103-2c7d-a480-f0e0-a8c2f55a46bc",
+  "name" : "gradient_start_color",
+  "display_width" : null,
+  "label" : "Background Gradient Start Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#37506f",
+    "opacity" : 100
+  }
+}, {
+  "id" : "0e0eb3fa-8d70-ec04-0c61-b6b0b76296c3",
+  "name" : "gradient_end_color",
+  "display_width" : null,
+  "label" : "Background Gradient End Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#314a68",
+    "opacity" : 100
+  }
+}, {
+  "id" : "77b4abcf-4a21-376d-8eac-12bbbeac372a",
+  "name" : "icon_code",
+  "display_width" : null,
+  "label" : "Icon",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<i class=\"iconAng-social\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span><span class=\"path4\"></span></i>"
+}, {
+  "id" : "a2b62e8c-e515-6a4a-eb60-301f8a4cc228",
+  "name" : "icon_title",
+  "display_width" : null,
+  "label" : "Icon Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Social"
+}, {
+  "id" : "cf2f5157-322e-3d49-683b-744e3e7107ee",
+  "name" : "description",
+  "display_width" : null,
+  "label" : "Description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Sample Description</p>"
+}, {
+  "id" : "3cea58c0-59e9-762a-6d3a-ad12d865472e",
+  "name" : "include_action",
+  "display_width" : null,
+  "label" : "Include Action",
+  "required" : false,
+  "locked" : false,
+  "display" : "radio",
+  "choices" : [ [ "Included", "Included" ], [ "Not Included", "Not Included" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "Included"
+} ]

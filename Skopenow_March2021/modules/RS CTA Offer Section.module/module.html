@@ -1,0 +1,14 @@
+<div class="cta_offer_wrapper vertical_middle_wrapper">
+  <div class="cta_offer_inner vertical_middle_wrapper_inner">
+    <div class="cta_image col-lg-6 col-md-6 col-sm-12 col-xs-1 vertical_middle">
+      <img src="{{ module.cta_image.src }}" alt="{{ module.cta_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+    </div>
+    <div class="cta_text col-lg-6 col-md-6 col-sm-12 col-xs-1 vertical_middle">
+      <h2>
+        {{ module.heading }}
+      </h2>
+      {{ module.richtext_field }}
+      {% cta guid="{{ module.cta_button }}" %}
+    </div>
+  </div>
+</div>

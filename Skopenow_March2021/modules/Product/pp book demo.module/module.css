@@ -1,0 +1,71 @@
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.pp_book_demo {
+  padding: 100px 0;
+  background-size: contain;
+  background-position:right;
+  background-repeat: no-repeat;
+  background-color:#212529;
+  text-align: center;
+}
+.pp_book_demo .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.pp_book_demo h2 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.pp_book_demo p {
+  font-family: 'poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.pp_book_demo a {
+  background: #0680FB;
+  border-radius: 100px;
+  padding: 9px 60px;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 16px;
+  line-height: 30px;
+  display: inline-block;
+  transition: all .3s;
+}
+.pp_book_demo a:hover {
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .pp_book_demo h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .pp_book_demo p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+

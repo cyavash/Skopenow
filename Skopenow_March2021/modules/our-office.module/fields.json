@@ -1,0 +1,67 @@
+[ {
+  "id" : "f3cb126f-4f6f-e041-8123-16c9a5e590cd",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Our Office"
+}, {
+  "id" : "a7da847b-ebb9-d319-6d57-17486b1673ae",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/image%201-1.png",
+    "alt" : "image 1-1",
+    "loading" : "lazy",
+    "width" : 450,
+    "height" : 350,
+    "max_width" : 450,
+    "max_height" : 350
+  }
+}, {
+  "id" : "d9b04985-ea2d-8930-b87b-050c088efb90",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>We know that this image looks like a stock photo but it really is our office building! Well, it's not 'ours' but we have an office on the 19th floor. We are located at 12 East 49th, New York, NY 10017.</p>"
+}, {
+  "id" : "68cc1f2f-4ba8-f2a6-144c-744cdfc085e7",
+  "name" : "link_text",
+  "display_width" : null,
+  "label" : "Link Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View Open Positions"
+}, {
+  "id" : "635bbcd5-6cb9-6d2d-85e4-356404dda25a",
+  "name" : "link_url",
+  "display_width" : null,
+  "label" : "Link URL",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+} ]

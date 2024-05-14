@@ -1,0 +1,37 @@
+<div class="banner-wrapper">
+  <div class="page-center">
+    <div class="row">
+      <div class="col-6 column" style="">
+        {% if module.heading %}
+        <h1>{{ module.heading }}</h1>
+        {% endif %}
+   {% if module.faq_items %}
+        <div class="faq-section" style="display:flex;justify-content: center!important;padding-top:25px!important;padding-left:0px!important;padding-right:0px!important;">
+  <div  class="faqSearch" style="background:none!important;">
+    <form id="faq_search_form" novalidate="" sytle="background:none!important;">
+      <input class="faq-section" id="faq_search_input" name="faq_input" placeholder="Search for a topic... " type="text">
+    </form>
+          </div></div>
+  {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="page-center">
+    <div class="row">
+      <div class="col-6 column">
+<div class="faq-section">
+  {% if module.faq_items %}
+  <div class="faq-items">
+    {% for item in module.faq_items %}
+    <div class="faq_section">
+      {% if item.title %}
+      <h2 >{{ item.title }}</h2>
+      {% endif %}
+      {{ item.content }}
+    </div>
+    {% endfor %}    
+  </div>
+  {% endif %}
+</div>
+      </div></div></div>

@@ -1,0 +1,115 @@
+[ {
+  "id" : "ac2182e9-ce6e-e319-6710-50c782835cce",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "About Skopenow"
+}, {
+  "id" : "c6dd031c-ee17-9d07-c78a-cf1680222aa3",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : " We're building an amazing intelligence company and we are looking for great people to help make it even better."
+}, {
+  "id" : "c7165374-bb39-911b-f249-39708d1ef15c",
+  "name" : "member_items",
+  "display_width" : null,
+  "label" : "Member Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "94d978ce-1188-41ae-5503-897c73efa9ba",
+    "name" : "member_image",
+    "display_width" : null,
+    "label" : "Member Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "c45eae0b-7372-9d1b-1ff7-96ec0800095e",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext"
+  }, {
+    "id" : "d015112d-c6e1-61ff-5f89-b92e8efe17ac",
+    "name" : "zoom",
+    "display_width" : null,
+    "label" : "Zoom",
+    "inline_help_text" : "Value must be greater than 0",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : 1
+  }, {
+    "id" : "93c1c94e-4948-34df-d3e1-c56f40031728",
+    "name" : "position_from_top",
+    "display_width" : null,
+    "label" : "Position From Top",
+    "inline_help_text" : "Negative and Positive both values are accepted.",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  }, {
+    "id" : "a52e6d7a-47d3-369a-0a4f-8e6c58af6917",
+    "name" : "position_from_left",
+    "display_width" : null,
+    "label" : "Position From Left",
+    "inline_help_text" : "Negative and Positive both values are accepted.",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "step" : 1,
+    "type" : "number",
+    "default" : 0
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "member_image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "zoom" : 1,
+    "position_from_top" : 0,
+    "position_from_left" : 0
+  }
+} ]

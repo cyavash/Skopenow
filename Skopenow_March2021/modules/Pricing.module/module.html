@@ -1,0 +1,46 @@
+{% if module.pricing_item  %}
+<section class="pay_section">
+  <div class="row">
+    {% for item in module.pricing_item %}
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pay column">
+      {% if item.heading %}
+      <h3 class="text-capitalize">{{ item.heading }}</h3>
+      {% endif %}
+      <div class="price_info">
+        <ul>
+          {% for item2 in item.feature_items %}
+          <li>
+            <i class="circle_icon {% if item2.select_icon %}{{ item2.select_icon }}{% else %}opacity_hidden{% endif %}"></i>
+            <span>{{ item2.title }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="price_action">
+        {% if item.button.button_type == "std" %}
+        {% set href = item.button.link_field.url.href %}
+        {% if item.button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if item.button.link_field.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if item.button.link_field.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a class="pricing-button" href="{{ href }}"
+           {% if item.button.link_field.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+          {{ item.button.text_field }}
+        </a>
+        {% else if item.button.button_type == "cta" %}
+        {% cta guid="{{ item.button.cta_field }}" %}
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}    
+  </div>
+</section>
+{% endif %}

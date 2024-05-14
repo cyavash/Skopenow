@@ -1,0 +1,65 @@
+{% if module.heading or module.sub_heading or module.button.button_type or module.button_2.button_type %}
+<div class="banner-wrapper {% if module.banner_image %}banner_bg_paid"{% endif %} style="{% if !module.banner_image %}background: linear-gradient({{ module.gradient_direction }},rgba({{ module.background_gradient_start_color.color|convert_rgb }},{{ module.background_gradient_start_color.opacity * 0.01 }}) 0,rgba({{ module.background_gradient_end_color.color|convert_rgb }},{{ module.background_gradient_end_color.opacity * 0.01 }}));{% endif %} background-image:url('{{ module.banner_image.src }}')">
+  <div class="page-center">
+    <div class="row">
+      <div class="col-6 column">
+        {% if module.heading %}
+        <h1>{{ module.heading }}</h1>
+        {% endif %}
+        {% if module.sub_heading %}
+        <p>{{ module.sub_heading }}</p>
+        {% endif %}
+        {% if module.button.button_type == "std" %}
+        {% if module.button.link_field.url.href and module.button.text_field %}
+        {% set href = module.button.link_field.url.href %}
+        {% if module.button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.button.link_field.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.button.link_field.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a class="banner_button" href="{{ href }}"
+           {% if module.button.link_field.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+          {{ module.button.text_field }}
+        </a>
+        {% endif %}
+        {% else if module.button.button_type == "cta" %}
+        {% cta guid="{{ module.button.cta_field }}" %}
+        {% endif %}
+
+        {% if module.button_2.button_type == "std" %}
+        {% if module.button_2.link_field.url.href and module.button_2.text_field %}
+        {% set href = module.button_2.link_field.url.href %}
+        {% if module.button_2.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+        {% set href = "mailto:" + href %}
+        {% endif %}
+        {% set rel = [] %}
+        {% if module.button_2.link_field.no_follow %}
+        {% do rel.append("nofollow") %}
+        {% endif %}
+        {% if module.button_2.link_field.open_in_new_tab %}
+        {% do rel.append("noopener") %}
+        {% endif %}
+        <a class="try_free" href="{{ href }}"
+           {% if module.button_2.link_field.open_in_new_tab %}target="_blank"{% endif %}
+           {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+           >
+          {{ module.button_2.text_field }}
+        </a>
+        {% endif %}
+        {% endif %}
+        {% if module.button_2.button_type == "cta" %}
+        {% cta guid="{{ module.button_2.cta_field }}" %}
+        {% endif %}
+      </div>
+      <div class="col-6 column"></div>
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,57 @@
+[ {
+  "id" : "803f909b-6072-abf5-8d0e-ca15d72f70d2",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Event intro heading will go here"
+}, {
+  "id" : "2496888b-cbb3-9c96-8ee4-7e5741ab672d",
+  "name" : "content_wrapper",
+  "display_width" : null,
+  "label" : "Content Wrapper",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : 6,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "a4613616-689a-6c33-41e7-7f63b00ba3c2",
+    "name" : "sub_heading",
+    "display_width" : null,
+    "label" : "Sub heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et"
+  }, {
+    "id" : "6a2cc9be-bfc9-9ad0-158a-482290cf6671",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "inline_help_text" : "Use source code view and do not use <p> tags",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit."
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "content" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+    "sub_heading" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et"
+  } ]
+} ]

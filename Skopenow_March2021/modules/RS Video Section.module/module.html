@@ -1,0 +1,21 @@
+<div class="video_wrapper" style="background: transparent linear-gradient(90deg, #293893 0%, #20164B 100%) 0% 0% no-repeat padding-box;">
+  <div class="skew_skopenow_help top_left_right"></div>
+  <div class="page-center video_inner">
+    <div class="heading_subheading">
+      <h2>
+        {{ module.heading }}
+      </h2>
+      <h3>
+        {{ module.subheading }}
+      </h3>
+    </div>
+    <div class="video_block">
+      <!-- Find out what type of Video -->
+      {{ module.video_yt_embed }}
+    </div>
+    <div class="cta_wrapper">
+      {% cta guid="{{ module.book_a_demo_cta }}" %}
+    </div>
+  </div>
+  <div class="skew_skopenow_help bottom_left_right"></div>
+</div>

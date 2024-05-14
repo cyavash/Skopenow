@@ -1,0 +1,1897 @@
+.search_web {
+  background-color: #3d424d;
+  padding-bottom: 10px;
+  height: 800px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (max-width:1200px) {
+  .search_web {
+    height: auto;
+    min-height: 910px;
+    padding-bottom: 110px;
+  }
+}
+
+@media (max-width:425px) {
+  .search_web {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width:1440px) {
+  .search_web {
+    height: 870px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width:3000px) {
+  .search_web {
+    height: 1014px;
+    overflow: hidden;
+  }
+}
+
+@media(min-width:768px){
+  .search_web .search_web_taps_con .tab-content{
+    position:absolute;
+    width:100%;
+  }
+  .search_web .search_web_taps_con .fixed_component {
+    position: relative;
+    left: -11px;
+  }
+}
+.search_web .search_web_bg {
+  width: 100%;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 99;
+}
+
+@media (max-width:767px) {
+  .search_web .search_web_bg {
+    padding-bottom: 0;
+        overflow: hidden;
+  }
+}
+
+.search_web .search_web_bg .skew_div_search_web {
+  width: 100%;
+  position: absolute;
+      overflow: hidden;
+}
+
+@media (max-width:767px) {
+  .search_web .search_web_bg .skew_div_search_web {
+        overflow: hidden;
+  }
+  .fixed_component {
+    display:none;
+  }
+}
+
+@media (max-width:448px) {
+  .search_web .search_web_bg .skew_div_search_web {
+  }
+}
+
+.search_web .skey_back {
+  padding-top: 110px;
+  padding-left: 0;
+}
+
+.search_web .skey_back h3 {
+  font-size: 27px;
+  margin-bottom: .5rem;
+  font-family:'DM Sans';
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  color: #fff;
+}
+@media (max-width:425px) {
+  .search_web .skey_back {
+    padding-right: 0;
+  }
+}
+
+.search_web .search_web_title {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+    font-family: DM Sans!important;
+    font-size: 1.75em!important;
+font-weight:700!important;
+    font-style: normal;
+}
+
+@media (max-width:555px) {
+  .search_web .search_web_title h3 {
+    font-size: 22px;
+    
+  }
+}
+
+.search_web .search_web_taps {
+  position: relative;
+  z-index: 1;
+  margin: 30px 0 0;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps {
+    display: -ms-flexbox;
+  }
+}
+
+.search_web .search_web_taps a {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 55px;
+  border-radius: 20px;
+  height: 39px;
+  line-height: 22px;
+  margin-bottom: 10px;
+  transition: all .3s ease!important;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps a {
+    margin: 20px;
+  }
+}
+
+@media (max-width:992px) {
+  .search_web .search_web_taps a {
+    padding: 8px 40px;
+    font-size: 12px;
+  }
+  .search_web .search_web_taps_con .tab-content:last-child .search_web_data {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width:425px) {
+  .search_web .search_web_taps a {
+    line-height: 21px;
+  }
+}
+
+.search_web .search_web_taps a:hover {
+  transition: all .5s ease!important;
+  text-decoration: none!important;
+  background-color: hsla(0,0%,100%,.3);
+  color: #fff;
+  text-decoration: none;
+}
+
+.search_web .search_web_taps a.active {
+  background-color: #0680FB;
+  color: #fff;
+  border-color: #0680FB;
+}
+
+.search_web .search_web_taps_con .search_web_data p:not(:last-child) {
+  margin-bottom: 50px;
+}
+@media (max-width:767px) {
+  .search_web .search_web_taps a {
+    padding: 10px 15px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width:767px) {
+  .search_web .search_web_taps {
+    flex-direction: column!important;
+  }
+}
+
+@media (max-width:576px) {
+  .search_web .search_web_taps {
+    flex-direction: column!important;
+  }
+}
+
+.search_web .search_web_taps_con {
+  padding-top: 40px;
+  position: relative;
+  z-index: 99;
+}
+
+@media (max-width:767px) {
+  .search_web .search_web_taps_con {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width:425px) {
+  .search_web .search_web_taps_con .respon_identity {
+    margin-bottom: 100px!important;
+  }
+}
+.search_web .search_web_taps_con .tab-content {
+  display: none;
+}
+.search_web .search_web_taps_con .row {
+  display: flex!important;
+}
+
+.search_web .search_web_taps_con .row .col-lg-6 {
+  order: 1;
+}
+
+.search_web .search_web_taps_con .row .col-lg-6.order-2 {
+  order: 2;
+}
+
+.search_web .search_web_taps_con .search_web_data {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.search_web .search_web_taps_con .search_web_data h3 {
+  color: #9fa1a6;
+  font-weight: 100;
+  font-size: 27px;
+  margin-bottom: .5rem;
+  line-height: 1.2;
+  margin-top: 0;
+  font-family:'DM Sans'
+}
+
+.search_web .search_web_taps_con .search_web_data p {
+  color: #fff;
+}
+
+@media (max-width:767px) {
+  .search_web .search_web_taps_con .respo_map {
+    height: 300px!important;
+    margin-bottom: 0!important;
+  }
+}
+
+@media (max-width:425px) {
+  .search_web .search_web_taps_con .respo_map {
+    transform: scale(.7) translate(0)!important;
+    position: relative;
+    right: auto;
+    margin-bottom: 0!important;
+    height: 250px!important;
+    left: 15px!important;
+  }
+}
+
+@media (max-width:320px) {
+  .search_web .search_web_taps_con .respo_map {
+    transform: scale(.7) translate(-16%)!important;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component {
+  position: relative;
+  height: 335px;
+  width: 330px;
+  margin: 0 auto 35px;
+  text-transform: capitalize;
+}
+
+@media (max-width:425px) {
+  .search_web .search_web_taps_con .fixed_component {
+    transform: scale(.9);
+    transform-origin: center;
+    margin-bottom: 105px;
+    left: 0;
+  }
+}
+
+@media (max-width:320px) {
+  .search_web .search_web_taps_con .fixed_component {
+    transform: scale(.8) translate(-16%);
+    left: 0;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .arrow1_con {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 110px;
+  height: 8px;
+  top: 87px;
+  left: 110px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .arrow1_con {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .arrow2_con {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 78px;
+  height: 8px;
+  top: 151px;
+  left: 20px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .arrow2_con {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .arrow2_con_vir {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 108px;
+  height: 8px;
+  top: 190px;
+  left: 58px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .arrow2_con_vir {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .arrow3_con {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 78px;
+  height: 8px;
+  top: 151px;
+  left: 226px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .arrow3_con {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .arrow3_con_vir {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 88px;
+  height: 8px;
+  top: 190px;
+  left: 177px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .arrow3_con_vir {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .arrowgreen_con {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  top: 261px;
+  left: 130px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .arrowgreen_con {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.social {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.public {
+  top: 80px;
+  left: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.open {
+  top: 80px;
+  right: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.name1 {
+  left: 0;
+  top: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.name2 {
+  right: 0;
+  top: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.Person_img1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 23px;
+  top: 65px;
+  background-position: center 11px;
+  background-size: 82px;
+  background-repeat: no-repeat;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.Person_img2 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  right: 23px;
+  top: 65px;
+  background-position: center 14px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.Person_img2_running {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  right: 23px;
+  top: 65px;
+  background-position: center -10px;
+  background-size: 110px;
+  background-repeat: no-repeat;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.Subject1 {
+  background-color: #4ed08c;
+  top: 185px;
+  left: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.Subject2 {
+  background-color: #4ed08c;
+  top: 185px;
+  right: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.public_link {
+  top: 260px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.connection_made {
+  background-color: #4ed08c;
+  left: 50%;
+  transform: translate(-50%);
+  top: 330px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.worrning {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%);
+  top: 240px;
+  background-position: -5px 0;
+  background-size: 97px;
+  background-repeat: no-repeat;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.name_center {
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.img_center {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%);
+  top: 65px;
+  background-position: center 11px;
+  background-size: 82px;
+  background-repeat: no-repeat;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.num_right {
+  background-color: transparent;
+  border: 2px solid #fff;
+  top: 95px;
+  right: 0;
+  width: 100px;
+  line-height: 32px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.left_side_name {
+  width: 100px;
+  top: 95px;
+  left: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.face_match {
+  left: 50%;
+  transform: translate(-50%);
+  top: 186px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.face_match_img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 50%;
+  transform: translate(-50%);
+  top: 255px;
+  background-position: center 11px;
+  background-size: 82px;
+  background-repeat: no-repeat;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.num_right_match {
+  background-color: transparent;
+  border: 2px solid #fff;
+  top: 283px;
+  right: 0;
+  width: 100px;
+  line-height: 32px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.left_side_name_match {
+  width: 100px;
+  top: 283px;
+  left: 0;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.matched {
+  background-color: #4ed08c;
+  left: 50%;
+  transform: translate(-50%);
+  top: 380px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.city_center {
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+  background-color: #ec8288;
+  width: 150px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.recent {
+  background-color: transparent;
+  border: 2px solid #fff;
+  top: 0;
+  right: -15px;
+  width: 80px;
+  line-height: 32px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.social0 {
+  top: 0;
+  left: -67px;
+  transform: none;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.city_center2 {
+  left: 50%;
+  transform: translate(-50%);
+  top: 100px;
+  background-color: #b073ac;
+  width: 150px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.recent2 {
+  background-color: transparent;
+  border: 2px solid #fff;
+  top: 100px;
+  right: -15px;
+  width: 80px;
+  line-height: 32px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.social2 {
+  top: 100px;
+  left: -67px;
+  transform: none;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.city_center3 {
+  left: 50%;
+  transform: translate(-50%);
+  top: 200px;
+  background-color: #6d75e1;
+  width: 150px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.recent3 {
+  background-color: transparent;
+  border: 2px solid #fff;
+  top: 200px;
+  right: -15px;
+  width: 80px;
+  line-height: 32px;
+}
+
+.search_web .search_web_taps_con .fixed_component .top_comp.social3 {
+  top: 200px;
+  left: -67px;
+  transform: none;
+}
+
+.search_web .search_web_taps_con .fixed_component .name1_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 46px;
+  left: 53px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .name1_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .name2_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 46px;
+  left: 245px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .name2_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .img1_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 166px;
+  left: 53px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .img1_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .img2_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 166px;
+  left: 245px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .img2_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .public_line1 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 201px;
+  left: 133px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .public_line1 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .public_line2 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 201px;
+  left: 168px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .public_line2 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+    background: linear-gradient(100grad,#969696,#969696);
+    position: absolute;
+    width: 30px;
+    height: 8px;
+    top: 195px;
+    left: 168px;
+    transform: rotate(180deg);
+    transition-property: opacity,transform;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+    transition-delay: .3s;
+    will-change: opacity,transform;
+    transition-duration: .1s;
+    transition-delay: 0s;
+    -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+    mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+    -webkit-animation: play_arrows .5s linear infinite;
+    animation: play_arrows .5s linear infinite;
+  }
+}
+
+@media (-ms-high-contrast:none) and (-ms-high-contrast:none),screen and (-ms-high-contrast:active) and (-ms-high-contrast:active),screen and (-ms-high-contrast:active) and (-ms-high-contrast:none),screen and (-ms-high-contrast:none) and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .public_line2 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .public_line3 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 55px;
+  height: 8px;
+  top: 228px;
+  left: 138px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .public_line3 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .public_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 308px;
+  left: 150px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .public_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .name_center_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 46px;
+  left: 149px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .name_center_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .num_right_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  top: 110px;
+  left: 209px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .num_right_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .left_side_name_line {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  top: 110px;
+  left: 100px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .left_side_name_line {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .name_center_line2 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 166px;
+  left: 149px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .name_center_line2 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .num_right_line2 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  top: 110px;
+  left: 100px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .num_right_line2 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .name_center_line3 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 235px;
+  left: 149px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .name_center_line3 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .num_right_line_match {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  top: 299px;
+  left: 209px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .num_right_line_match {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .num_right_line2_match {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 18px;
+  height: 8px;
+  top: 299px;
+  left: 100px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .num_right_line2_match {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .name_center_line3_thisMatched {
+  background: linear-gradient(100grad,#fff,#6dd79f);
+  position: absolute;
+  width: 30px;
+  height: 8px;
+  top: 360px;
+  left: 149px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .name_center_line3_thisMatched {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin1 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 27px;
+  height: 8px;
+  top: 14px;
+  left: 63px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin1 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin2 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 27px;
+  height: 8px;
+  top: 115px;
+  left: 63px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin2 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin3 {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 27px;
+  height: 8px;
+  top: 215px;
+  left: 63px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin3 {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin1_right {
+  background: linear-gradient(100grad,#fff,#fff);
+  position: absolute;
+  width: 27px;
+  height: 8px;
+  top: 14px;
+  left: 240px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin1_right {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin2_right {
+  background: linear-gradient(100grad,#fff,#fff);
+  position: absolute;
+  width: 27px;
+  height: 8px;
+  top: 115px;
+  left: 240px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin2_right {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin3_right {
+  background: linear-gradient(100grad,#fff,#fff);
+  position: absolute;
+  width: 27px;
+  height: 8px;
+  top: 215px;
+  left: 240px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin3_right {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin1_center {
+  background: linear-gradient(100grad,#ed8187,#b073ac);
+  position: absolute;
+  width: 64px;
+  height: 8px;
+  top: 63px;
+  left: 131px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin1_center {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .heatmap_lin2_center {
+  background: linear-gradient(100grad,#b073ac,#6d75e1);
+  position: absolute;
+  width: 64px;
+  height: 8px;
+  top: 163px;
+  left: 131px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .heatmap_lin2_center {
+    border-top: 2px dotted #888;
+    background: transparent;
+    -webkit-mask: initial;
+    mask: initial;
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .circle_icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%);
+  background-position: 0 5px;
+}
+
+@media (-ms-high-contrast:none),screen and (-ms-high-contrast:active) {
+  .search_web .search_web_taps_con .fixed_component .circle_icon.circle_icon {
+    background-image: url(https://contentstc.skopenow.com/skope-icons/filter.svg);
+  }
+}
+
+.search_web .search_web_taps_con .fixed_component .filtered {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #6dd79f;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 300px;
+  left: 50%;
+  transform: translate(-50%);
+}
+@-webkit-keyframes play_arrows {
+  to {
+    -webkit-mask-position: 11px 0;
+    mask-position: 11px 0;
+  }
+}
+
+@keyframes play_arrows {
+  to {
+    -webkit-mask-position: 11px 0;
+    mask-position: 11px 0;
+  }
+}
+
+@-webkit-keyframes play_arrows-delayed {
+  to {
+    -webkit-mask-position: 330px 0;
+    mask-position: 330px 0;
+  }
+}
+
+@keyframes play_arrows-delayed {
+  to {
+    -webkit-mask-position: 330px 0;
+    mask-position: 330px 0;
+  }
+}
+@media(max-width:370px){
+  .search_web .search_web_taps_con .fixed_component {
+    transform: scale(.8) translate(-10%);
+    left: 0;
+  }
+}
+@media(max-width:320px){
+  .search_web .search_web_taps_con .fixed_component {
+    transform: scale(.8) translate(-16%);
+    left: 0;
+  }
+}
+.pc_box{
+margin-left:-65px;
+}
+.pc_open_web {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 0;
+  left: 0;
+}
+.pc_social_media {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 0;
+  left: 145px;
+}
+.pc_dark_web {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 0;
+  left: 290px;
+}
+.pc_public_records {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 55px;
+  left: 0;
+}
+.pc_court_records {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 55px;
+  left: 145px;
+}
+.pc_vehicle_records {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #585e69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 55px;
+  left: 290px;
+}
+.pc_precheck {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+   position: absolute;
+  left: 205px;
+  transform: translate(-50%);
+  top: 110px;
+  background-position: center 15px;
+  background-size: 98px;
+  background-repeat: no-repeat;
+  background-image: url(https://f.hubspotusercontent30.net/hubfs/8104331/pc_funnel.svg);
+  
+}
+.pc_investigate {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #b70b06;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 255px;
+  left: 70px;
+}
+.pc_pass {
+  width: 130px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #157a69;
+  position: absolute;
+  color: #fff;
+  line-height: 35px;
+  text-align: center;
+  top: 255px;
+  left: 215px;
+}
+
+.pc_sm_line_down_l {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  top: 40px;
+  left: 55px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+
+.pc_sm_line_down_m {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  top: 40px;
+  left: 195px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_sm_line_down_r {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 20px;
+  height: 8px;
+  top: 40px;
+  left: 345px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_lg_line_down_l {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  top: 120px;
+  left: 30px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_lg_line_down_r {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  top: 120px;
+  left: 320px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_lg_line_down_m {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  top: 120px;
+  left: 170px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_line_left {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 110px;
+  height: 8px;
+  top: 155px;
+  left: 65px;
+  transform: rotate(0deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_line_right {
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 110px;
+  height: 8px;
+  top: 155px;
+  left: 245px;
+  transform: rotate(180deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_line_invest_down1{
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 75px;
+  height: 8px;
+  top: 220px;
+  left: 135px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}
+.pc_line_pass_down1{
+  background: linear-gradient(100grad,#969696,#969696);
+  position: absolute;
+  width: 75px;
+  height: 8px;
+  top: 220px;
+  left: 200px;
+  transform: rotate(90deg);
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(.25,.46,.45,.94);
+  transition-delay: .3s;
+  will-change: opacity,transform;
+  transition-duration: .1s;
+  transition-delay: 0s;
+  -webkit-mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  mask: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 16.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_87' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='10.542px' height='8px' viewBox='0.25 0 10.542 8' enable-background='new 0.25 0 10.542 8' xml:space='preserve'%3E%3Cdiv xmlns='' style='display: none' id='divScriptsUsed'%3E%3C/div%3E%3Cscript src='moz-extension://66ac85d4-4789-4d97-a965-5971a336d992/js/wrs_env.js' xmlns='' id='globalVarsDetection'%3E%3C/script%3E%3Crect x='7.089' y='3.344' width='2.219' height='1.313'/%3E%3Crect x='2.047' y='3.344' width='2.219' height='1.312'/%3E%3C/svg%3E");
+  -webkit-animation: play_arrows .5s linear infinite;
+  animation: play_arrows .5s linear infinite;
+}

@@ -1,0 +1,63 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Paid Search
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="hs-services-page page_search">
+
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    {% module "module_16225785049914" path="/Skopenow_March2021/modules/RS Banner Paid Search", label="RS Banner Paid Search" %}
+    <main class="body-container-wrapper">
+      {% dnd_area "Section One" class='hs-services-page-content hs-services', label='Section One' %}
+      {% end_dnd_area %}
+      
+      {% dnd_area "Section Two" class='hs-services-page-content hs-features', label='Section Two' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "Section Three" class='hs-services-page-content', label='Section Three' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "Section Four" class='hs-services-page-content hs-book-demo', label='Section Four' %}
+      {% end_dnd_area %}
+      
+      {% dnd_area "Section Five" class='hs-services-page-content hs-book-demo', label='Section Five' %}
+      {% end_dnd_area %}
+      
+      {% dnd_area "Section Six" class='hs-services-page-content hs-book-demo', label='Section Six' %}
+      {% end_dnd_area %}
+      
+      {% dnd_area "Section Seven" class='hs-services-page-content hs-book-demo', label='Section Seven' %}
+      {% end_dnd_area %}      
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

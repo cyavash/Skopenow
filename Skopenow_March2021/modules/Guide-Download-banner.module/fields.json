@@ -1,0 +1,84 @@
+[ {
+  "id" : "5f980508-645f-ec3a-91f0-ff76676d94fb",
+  "name" : "cover",
+  "display_width" : null,
+  "label" : "Cover",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/OPSEC-Tradecraft-Guide-Image-Cover.png",
+    "alt" : "OPSEC-Tradecraft-Guide-Image-Cover",
+    "loading" : "lazy",
+    "width" : 1697,
+    "height" : 2400,
+    "max_width" : 1697,
+    "max_height" : 2400
+  }
+}, {
+  "id" : "dbef4c48-09b8-61ec-53f6-b44e2b728f1f",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Vehicle-Based OSINT Investigations"
+}, {
+  "id" : "1aef8327-7074-a2a8-9828-63531c8f14cb",
+  "name" : "form",
+  "display_width" : null,
+  "label" : "FORM",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "response_type" : "inline",
+    "message" : "Thanks for submitting the form."
+  }
+}, {
+  "id" : "f82480e7-9450-ab08-fde4-0f9a24da46d4",
+  "name" : "form_sub_title",
+  "display_width" : null,
+  "label" : "Form sub title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "<strong>Don’t miss this.</strong> <br> Register for our Vehicle-Based OSINT Investigations informational webinar"
+}, {
+  "id" : "f65d7767-a2b5-e1f3-96c2-5b71f8fb7bbb",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>Vehicles are intrinsically linked to our way of life and are rarely found far from their owners, with infrastructure designed around their heavy use. Therefore, identifying the vehicle that the subject of an investigation owns, has access to, or is in possession of, can provide valuable insight into their current location.</p>\n<p><strong>By attending this session you will learn:</strong></p>\n<ul>\n<li>Vehicle records can be a useful part of OSINT investigations for law enforcement.</li>\n<li>Global security teams, insurance fraud investigators, journalists, and more.</li>\n<li>In this webinar, we'll show you how to conduct OSINT investigations using vehicle data.</li>\n</ul>\n<p><strong>All attendees will receive a digital copy of our white paper:  The Definitive Guide to Vehicle-Based OSINT Investigations.</strong></p>"
+}, {
+  "id" : "d889d61e-37f4-2187-f17e-ef312e2053c0",
+  "name" : "homeimage",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+} ]

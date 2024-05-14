@@ -1,0 +1,13 @@
+<div class="pp_book_demo {% if module.reveal == true %}reveal{% endif %}" style="background-image: url({{ module.background.src }});background-color:{{ module.background_color }}!important;">
+  <div class="container">
+    <div class="content">
+      <h2>
+        {{ module.title }}
+      </h2>
+      <p>
+        {{ module.content }}
+      </p>
+      <a href="{{ module.url.href }}">{{ module.button_text }}</a>
+    </div>
+  </div>
+</div>

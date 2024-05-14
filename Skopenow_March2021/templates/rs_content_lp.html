@@ -1,0 +1,64 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Content LP
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="content_lp content-lp">
+
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    <main class="body-container-wrapper">
+      {% dnd_area "banner_area" class='content_lp-section banner-area', label='Banner Area' %}
+      {% end_dnd_area %}
+      {% dnd_area "section_one" class='content_lp-section content-section', label='Section One' %}
+      {% end_dnd_area %}
+      {% dnd_area "section_two" class='content_lpe-section logos', label='Section Two' %}
+      {% end_dnd_area %}
+      {% dnd_area "section_three" class='content_lp-section content-section', label='Section Three' %}
+      {% end_dnd_area %}
+      {% dnd_area "section_four" class='content_lpe-section logos', label='Section Four' %}
+      {% end_dnd_area %}
+      {% dnd_area "section_five" class='content_lp-section content-section', label='Section Five' %}
+      {% end_dnd_area %}
+      {% dnd_area "section_six" class='content_lpe-section logos', label='Section Six' %}
+      {% end_dnd_area %}      
+    </main>
+  </div>
+  {% endblock body %}
+  
+  {% block footer %}
+  {% global_partial path="./partials/rs_footer_lp.html" %}
+  <script>
+    window.onload = function() {
+      hljs.initHighlighting();
+      var aCodes = document.getElementsByTagName('pre');
+      for (var i=0; i < aCodes.length; i++) {
+        hljs.highlightBlock(aCodes[i]);
+      }
+      hljs.initLineNumbersOnLoad();
+
+    }
+  </script>
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

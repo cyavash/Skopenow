@@ -1,0 +1,71 @@
+
+.services-box h3 {
+  font-family: Oswald,serif;
+  color: #444;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.services-box .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  font-family: Avenir,sans-serif;
+  margin-bottom: 40px;
+  height: calc(100% - 85px);
+  color: #555;
+}
+
+.services-box .card .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 10px;
+}
+
+.services-box .card .i-image {
+  background-position: 0px;
+  height: 30px;
+  background-repeat: no-repeat;
+  margin-bottom: .75rem;
+}
+
+.services-box .card .card-title {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: .75rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: Avenir, sans-serif;
+  margin-top: 0;
+}
+
+.services-box .card .card-text {
+  font-size: 12px;
+}
+.services-box .card .card-text p {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 12px;
+}
+.services-box .card .card-text ul {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.services-box .card .card-text ul li {
+  list-style: none;
+  font-size: 12px;
+  margin-bottom: 4px;
+}

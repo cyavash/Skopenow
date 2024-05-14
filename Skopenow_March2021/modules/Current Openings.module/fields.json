@@ -1,0 +1,154 @@
+[ {
+  "id" : "a0329e28-ecf0-e221-cd12-347a4fbd113e",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Current Openings"
+}, {
+  "id" : "d9e6c381-5121-81dd-8462-ef20a23fdc61",
+  "name" : "sub_heading",
+  "display_width" : null,
+  "label" : "Sub heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "We're hiring for several different positions at Skopenow."
+}, {
+  "id" : "afff2d41-8083-e72e-dc01-4a7e4ce5e7ea",
+  "name" : "content_wrap_items",
+  "display_width" : null,
+  "label" : "Tabber Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "f5970dff-b1cc-0e1d-26e2-b26f45d71b32",
+    "name" : "nav_title",
+    "display_width" : null,
+    "label" : "Nav Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "9b1ebab3-c991-8a27-14c4-5387e3330f47",
+    "name" : "content_items",
+    "display_width" : null,
+    "label" : "Content Items",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : null
+    },
+    "children" : [ {
+      "id" : "21a4eaf2-02d4-ef2d-818c-d13e5d756376",
+      "name" : "title",
+      "display_width" : null,
+      "label" : "Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    }, {
+      "id" : "589808d1-ca00-6636-c81a-83aa209bd4eb",
+      "name" : "sub_title",
+      "display_width" : null,
+      "label" : "Sub Title",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Remote "
+    }, {
+      "id" : "2f0f9454-8638-1268-f23c-c4b1b534cb15",
+      "name" : "button_text",
+      "display_width" : null,
+      "label" : "Button text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Read More"
+    }, {
+      "id" : "91009cc6-531b-0c5c-61bc-b30862c58094",
+      "name" : "button_link",
+      "display_width" : null,
+      "label" : "Button Link",
+      "required" : false,
+      "locked" : false,
+      "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+      "show_advanced_rel_options" : false,
+      "type" : "link",
+      "default" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : {
+      "sub_title" : "Remote ",
+      "button_text" : "Read More",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "content_items" : {
+      "sub_title" : "Remote ",
+      "button_text" : "Read More",
+      "button_link" : {
+        "url" : {
+          "content_id" : null,
+          "type" : "EXTERNAL",
+          "href" : ""
+        },
+        "open_in_new_tab" : false,
+        "no_follow" : false
+      }
+    }
+  }
+} ]

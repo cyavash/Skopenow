@@ -1,0 +1,134 @@
+<!--
+templateType: blog_listing
+isAvailableForNewContent: true
+label: Blog Listing
+-->
+{% extends "./layouts/base.html" %}
+
+{{ require_js(get_asset_url("../js/infinite-scroll.js")) }}
+{% block header %}
+<div class="hs-blog-page">
+
+  {% global_partial path="./partials/Header_New_Dark.html" %}
+  {% endblock header %}
+
+  {% block body %}
+
+  <div class="hs_blog_wrapper" style="padding-top:85px;">
+    <div class="page-center">
+      <div class="blog-row">
+        <div class="blog-content">
+          <div class="hs-blog-header">
+            <h2 style="font-family:'dm sans';">{{ group.public_title }}</h2>
+          </div>
+
+          <div class="blog-listing-wrapper">
+            <div class="post-listing clearfix">
+              {% for content in contents %}
+              <div class="post-item clearfix {% if not content.post_list_summary_featured_image %}no-feature-image{% endif %}">
+
+                {% if content.post_list_summary_featured_image %}
+                <div class="list-feature-img">
+                  <a href="{{ content.absolute_url }}" title="{{ content.name }}">
+                    <img src="{{ resize_image_url( content.post_list_summary_featured_image,750 ) }}" alt="{{ content.name }}">
+                  </a>
+                </div>
+                {% endif %}
+
+                <div class="article_date_more">
+                  <span>{{ content.blog_post_author.display_name }}</span>
+                  <span style="font-family:'poppins'; font-weight:300;"> . {{ content.publish_date_local_time|datetimeformat('%b %e, %Y') }}</span>
+                </div>
+
+                <div class="minus-row post-item-content">
+                  <div class="post-item-inner-content">
+                    <h1 style="font-family:'dm sans';"><a href="{{ content.absolute_url }}">{{ content.name }}</a></h1>
+                    <p style="font-family:'poppins'; font-weight:300;">
+                      {{ content.post_list_content|safe|striptags|truncatehtml(355, '…' , false) }}
+                    </p>
+                    <a class="list_read_more" href="{{ content.absolute_url }}">
+                      <span style="font-family:'poppins'; font-weight:300;">Continue Reading</span>
+                      <i class="icon-right-arrow1"></i>
+                    </a>
+                  </div>
+
+                  <div class="postitem-social-share">
+                    <div class="rec_social">
+                      <ul>
+                        <li class="sb-button">
+                          <a class="share_twitter" href="javascript:;" title="twitter" onclick="window.open('http://twitter.com/share?text={{ post.name|striptags }}%3F&amp;url={{ post.absolute_url }}','Twitter Share','width=600,height=600')"><i></i></a>
+                        </li>
+                        <li class="sb-button">
+                          <a class="share_facebook" href="javascript:;" title="facebook" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u={{ post.absolute_url }}','Facebook Share','width=600,height=600')"><i></i></a>
+                        </li>
+                        <li class="sb-button">
+                          <a class="share_linkedin" href="javascript:;" title="linkedin" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&url={{ post.absolute_url }}','LinkedIn Share','width=600,height=600')"><i></i></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+              {% endfor %}
+              {% if contents.total_page_count > 1 %}
+              <div class="blog-pagination">
+                {% if next_page_num %}
+                <a class="next-posts-link nav-previous load-more" href="{{ blog_page_link(next_page_num) }}" data-total-page-count="{{ contents.total_page_count }}">Load More</a>
+                {% endif %}
+              </div>
+              {% endif %}
+            </div>
+          </div>
+
+
+        </div>
+        <div class="blog-sidebar">
+          <div class="widget_sidebar blog-sidebar-popular-post-filter">
+            <h3>Popular</h3>
+            {% set pop_posts = blog_popular_posts('group.id', 5) %}
+            <ul>
+              {% for pop_post in pop_posts %}
+              <li><a href="{{ pop_post.absolute_url }}">{{ pop_post.name }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="widget_sidebar blog-sidebar-categories-filter">
+            <h3>
+              Popular Tags
+            </h3>
+            {% module "post_filter" path="@hubspot/post_filter", select_blog="group.id", expand_link_text="see all", overrideable=False, list_title="", max_links=5, filter_type="topic", label="Posts by Categories" %}
+          </div>
+          <div class="widget_sidebar blog-sidebar-follow-us">
+            <h3> Follow Us </h3>
+            <ul>
+              <li><a class="facebook" href="https://www.facebook.com/skopenow" target="_blank"><i class="icon-facebook"></i></a></li>
+              <li><a class="linkedin" href="https://twitter.com/skopenow" target="_blank"><i class="icon-twitter"></i></a></li>
+              <li><a class="twitter" href="https://www.linkedin.com/company/skopenow" target="_blank"><i class="icon-linkedin"></i></a></li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function () {
+      var $container = $('.post-listing');
+      $container.infiniteScroll({
+        path: '.next-posts-link',
+        hideNav: '.blog-pagination',
+        append: '.post-item',
+        history: false
+      });
+    });
+  </script>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer.html" %}
+</div>
+{% endblock footer%}

@@ -1,0 +1,77 @@
+[ {
+  "id" : "1d81e7eb-9487-b8c7-10fd-7688fe07d697",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Respond to threat actors and risks with a single click"
+}, {
+  "id" : "8f9f416e-c578-447e-f5ac-5efbaba381a0",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Skopenow’s Workbench solution replaces disparate OSINT tools and manual techniques by automatically surfacing public data on people and businesses. Unlike other OSINT products, Workbench is fully automated, delivering faster, more accurate results compared to legacy methods. With Workbench, your team can scale their decisioning processes, freeing up time to focus on other mission-critical objectives."
+}, {
+  "id" : "324a6f98-d016-32cf-42c2-5a584d97c132",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Group%20150.svg",
+    "alt" : "Group 150",
+    "loading" : "lazy",
+    "width" : 473,
+    "height" : 285,
+    "max_width" : 473,
+    "max_height" : 285
+  }
+}, {
+  "id" : "b58386ca-306a-b418-9417-0c1c91bebd65",
+  "name" : "position",
+  "display_width" : null,
+  "label" : "Switch content position ",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : false
+}, {
+  "id" : "7f0abd4d-271f-f598-56ac-e0f45c905568",
+  "name" : "animation",
+  "display_width" : null,
+  "label" : "Animation",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "02d807cb-830e-4dd7-a870-1a80ca35e6e4",
+  "name" : "reveal",
+  "display_width" : null,
+  "label" : "Boolean",
+  "required" : false,
+  "locked" : false,
+  "display" : "checkbox",
+  "type" : "boolean",
+  "default" : true
+} ]

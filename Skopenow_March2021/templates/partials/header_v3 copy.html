@@ -1,0 +1,25 @@
+<!--
+templateType: global_partial
+label: Page Header
+-->
+
+<div class="sidebar-custom-header">
+  
+  <div class="minus-row">
+    <div class="sidebar-header-inner">
+      <div class="sidebar-custom-logo">
+        {% module "header_logo" path="@hubspot/logo", label="Header Logo", link="/", img={src= "{{ get_asset_url('../../images/logosvg.svg') }}", width="609" override_inherited_src= true, alt= {{ site_settings.company_name }}}, %}
+      </div>
+      <div class="sidebar_v3_menu">
+        {% module "navigation-primary" path="../../modules/menu-section", label="Primary Menu" primary_menu_field="42956862039" %}
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="custom-headerv3">
+  <div class="header_v3_menu">
+    {% module "navigation-primary" path="../../modules/menu-section", label="Primary Menu" primary_menu_field="42956939350" %}
+  </div>
+</div>

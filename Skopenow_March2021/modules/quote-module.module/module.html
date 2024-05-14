@@ -1,0 +1,10 @@
+<div class="quote-module" style="background-color: {{ module.background_color }};">
+  <div class="container">
+    <div class="quote-box">
+      {% inline_rich_text field="quote" value="{{ module.quote }}" %}
+      <p class="quote-description">
+        {{ module.quote_description }}
+      </p>
+    </div><!-- end quote-box -->
+  </div><!-- end container -->
+</div><!-- end quote-module -->

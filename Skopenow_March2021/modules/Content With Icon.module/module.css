@@ -1,0 +1,32 @@
+.content-with-icon {
+  display: flex;
+  align-items:top;
+}
+
+.content-with-icon i[class*="icon"] {
+  flex: 0 0 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 38px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 30px;
+  color: #3ab47d;
+  margin-top: 2px;
+}
+
+.content-with-icon .ques_data h4 {
+  color: #2e3234;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: Avenir,serif;
+}
+
+.content-with-icon .ques_data p {
+  margin: 0 0 10px;
+  color: #000000;
+  font-size: 14px;
+}

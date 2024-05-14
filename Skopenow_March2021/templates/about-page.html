@@ -1,0 +1,74 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: About Page
+-->
+
+{% extends "./layouts/base.html" %}
+{% block header %}
+<div class="hs-career-page has-footer-only hs-v2-page about-page">
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+  {% block body %}
+
+
+  <div class="hs-career-page-inner">
+    <div class="main-content-wrapper">
+      <main class="body-container-wrapper">
+
+
+
+        <div class="hs-about-page-row1-wrap">
+          <div class="content-wrapper">
+            <div class="row">
+              <div class="row-pad">
+                <div class="about-skopenow-row1">
+                  {% dnd_area "About_Skopenow-row" class='', label='Row 1 - About Skopenow' %}
+                  {% end_dnd_area %}
+                </div>
+                <div class="whoweare-row1">
+                  {% dnd_area "who_we_ar" class='', label='Row 1 - Who We Are' %}
+                  {% end_dnd_area %}
+                </div>
+                <div class="about_page_action-btn-row1">
+                  {% dnd_area "about_page_action" class='', label='Row 1 - Button' %}
+                  {% end_dnd_area %}
+                  <div class="Explore-Skopenow-outer">
+                    {% module "Explore Skopenow" path="./../modules/Explore Skopenow.module", label="Explore Skopenow" %}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="hs-career-page-row2-wrap">
+          <div class="row">
+            <div class="column column-1">
+              {% dnd_area "bg-image_row" class='', label='Row 2' %}
+              {% end_dnd_area %}
+            </div>
+          </div>
+        </div>
+
+
+        <div class="hs-career-page-row3-wrap content-wrapper">
+          {% dnd_area "col3" class='', label='Row 3' %}
+          {% end_dnd_area %}
+        </div>
+
+
+
+      </main>
+    </div>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+</div>
+{% endblock footer%}

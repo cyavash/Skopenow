@@ -1,0 +1,32 @@
+<section class="live_demo_section">
+  <div class="live_demo">
+    {% if module.content %}
+    <div class="bquote">
+      {{ module.content }}
+    </div>
+    {% endif %}
+    <div class="bquote-btn">
+      {% if module.button.button_type == "std" %}
+      {% set href = module.button.link_field.url.href %}
+      {% if module.button.link_field.url.type is equalto "EMAIL_ADDRESS" %}
+      {% set href = "mailto:" + href %}
+      {% endif %}
+      {% set rel = [] %}
+      {% if module.button.link_field.no_follow %}
+      {% do rel.append("nofollow") %}
+      {% endif %}
+      {% if module.button.link_field.open_in_new_tab %}
+      {% do rel.append("noopener") %}
+      {% endif %}
+      <a class="demo-btn" href="{{ href }}"
+         {% if module.button.link_field.open_in_new_tab %}target="_blank"{% endif %}
+         {% if rel %}rel="{{ rel|join(" ") }}"{% endif %}
+         >
+        {{ module.button.text_field }}
+      </a>
+      {% else if module.button.button_type == "cta" %}
+      {% cta guid="{{ module.button.cta_field }}" %}
+      {% endif %}
+    </div>
+  </div>
+</section>

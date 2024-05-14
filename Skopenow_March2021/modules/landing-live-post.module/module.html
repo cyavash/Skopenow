@@ -1,0 +1,86 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@latest"></script>
+  
+<div class="thankyou_banner banner"> 
+  <lottie-player class="top-left" src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/OSINT-Upper%20Left-2.json" background="#21262b" speed="0.25" style="" direction="1" mode="bounce" loop autoplay></lottie-player>
+  <lottie-player class="bottom-right" src="https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/OSINT-Lower%20Right-1.json" background="#21262b" speed="0.25" style="" direction="1" mode="bounce" loop autoplay></lottie-player>
+  <div class="container">
+    <div class="content">
+      <p class="date">
+        {{ module.banner.date }}
+      </p>
+      <h1 style="padding-bottom:15px;"><span>{{ module.banner.heading }}</span></h1>
+
+    
+
+    </div><!-- end content -->  
+  </div><!-- end container -->
+</div><!-- end banner -->
+<div class="form-section" id="register-form">
+  <div class="container">
+    <div class="row-fluid">
+      <div class="span6">
+        <h2>
+          {{ module.form_section.heading }}
+        </h2>
+        {% inline_rich_text field="form_section.content" value="{{ module.form_section.content }}" %}
+      </div>
+      <div class="span6">
+        <div class="form-container">
+          <h3>
+            {{ module.form_section.form_title }}
+          </h3>
+          {% form
+            form_to_use="{{ module.form_section.form_field.form_id }}"
+            response_response_type="{{ module.form_section.form_field.response_type }}"
+            response_message="{{ module.form_section.form_field.message }}"
+            response_redirect_id="{{ module.form_section.form_field.redirect_id }}"
+            response_redirect_url="{{module.form_section.form_field.redirect_url}}"
+            gotowebinar_webinar_key="{{ module.form_section.form_field.gotowebinar_webinar_key }}"
+          %}
+        </div><!-- end form-container -->
+      </div>
+    </div><!-- end row-fluid -->    
+  </div><!-- end container -->
+</div><!-- end form-section -->
+
+
+
+<div class="speakers-section">
+  <div class="container">
+    <h2>
+      {{ module.speakers_section.heading }}
+    </h2>
+    
+    <div class="row-fluid" style="align-items: center;">
+      {% for item in module.speakers_section.speaker %}
+      <div class="span4">
+        <div class="speaker">
+          {% if item.image_field.src %}
+            {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}"' %}
+            {% if item.image_field.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.image_field.width }}" height="{{ item.image_field.height }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.image_field.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.image_field.max_width }}" height="{{ item.image_field.max_height }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = item.image_field.loading != 'disabled' ? 'loading="{{ item.image_field.loading }}"' : '' %}
+            <img src="{{ item.image_field.src }}" alt="{{ item.image_field.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
+          <h3>
+            {{ item.heading }}
+          </h3>
+          <p>
+            <i>{{ item.company }}</i><br>
+            {{ item.title }}<br>
+            {{ item.presentation_name }}
+          </p>
+        </div><!-- end speaker -->
+       </div>
+      {% endfor %}
+    </div><!-- end row-fluid -->
+  </div><!-- end container -->
+</div><!-- end speakers-section -->
+
+

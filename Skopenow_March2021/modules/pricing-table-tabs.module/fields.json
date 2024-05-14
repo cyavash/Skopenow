@@ -1,0 +1,170 @@
+[ {
+  "id" : "79e383ad-22f4-9389-90b8-ee10ff17e2e8",
+  "name" : "table_headings",
+  "display_width" : null,
+  "label" : "Table Headings",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : [ "Plans by Product", "Plans by Product", "Plans by Product", "Plans by Product" ]
+}, {
+  "id" : "792c10e5-80fc-3dcf-442f-954d6594e650",
+  "name" : "table_content",
+  "display_width" : null,
+  "label" : "Table Content",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 4
+  },
+  "children" : [ {
+    "id" : "11e0fc29-bc06-7380-8f99-4c537adfcd20",
+    "name" : "data_heading",
+    "display_width" : null,
+    "label" : "Data heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Workbench"
+  }, {
+    "id" : "46f7caaa-b793-0abc-9401-0a1fd5768b67",
+    "name" : "table_body",
+    "display_width" : null,
+    "label" : "Table Body",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 7
+    },
+    "children" : [ {
+      "id" : "ceb8530a-a4df-d6ff-d5d5-fd1f1644ff19",
+      "name" : "table_data",
+      "display_width" : null,
+      "label" : "Table Data",
+      "help_text" : "If you want to show checkmark here simply write \"check\" without the quotations",
+      "required" : false,
+      "locked" : false,
+      "occurrence" : {
+        "min" : null,
+        "max" : null,
+        "sorting_label_field" : null,
+        "default" : 4
+      },
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : [ "check", "check", "check", "check" ]
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "data_heading" : "Workbench",
+    "table_body" : [ {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    } ]
+  }, {
+    "data_heading" : "Workbench",
+    "table_body" : [ {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    } ]
+  }, {
+    "data_heading" : "Workbench",
+    "table_body" : [ {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    } ]
+  }, {
+    "data_heading" : "Workbench",
+    "table_body" : [ {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    }, {
+      "table_data" : [ "check", "check", "check", "check" ]
+    } ]
+  } ]
+} ]

@@ -1,0 +1,70 @@
+[ {
+  "id" : "fa0fdfe9-a451-3fe2-81a4-e26642f698ca",
+  "name" : "background_gradient",
+  "display_width" : null,
+  "label" : "Background Gradient",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "linear-gradient(to right, #2a3b60 0%, #2a3b61 25%, #2a3b62 70%, #2b3c62 100%);"
+}, {
+  "id" : "892a1cd0-6284-fc2a-6836-af8498b17010",
+  "name" : "padding",
+  "display_width" : null,
+  "label" : "Padding",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "110px 0 110px 0;"
+}, {
+  "id" : "7a48b2d2-5135-a3eb-087e-ff5f7440afef",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "OSINT Insi<span>g</span>hts"
+}, {
+  "id" : "9073854c-7ba4-9349-10ee-e398bbfced50",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Learn about best practices for streamlined investigations, integrating new data sources, and more."
+}, {
+  "id" : "10a711ac-4871-ef13-fa12-5f05f8adf502",
+  "name" : "banner_image",
+  "display_width" : null,
+  "label" : "Banner Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/Group%2093-1.svg",
+    "alt" : "Group 93-1",
+    "loading" : "lazy",
+    "width" : 380,
+    "height" : 332,
+    "max_width" : 380,
+    "max_height" : 332
+  }
+} ]

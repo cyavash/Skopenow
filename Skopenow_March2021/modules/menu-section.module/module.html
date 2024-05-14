@@ -1,0 +1,104 @@
+{% macro defaultItemClasses() %}
+{{
+ {
+   "class": "no-submenu menu-item"
+ }|xmlattr
+ }}
+{% endmacro %}
+
+{% macro childClasses() %}
+{{
+ {
+   "class": "has-submenu menu-item"
+ }|xmlattr
+ }}
+{% endmacro %}
+
+{% macro activeNode() %}
+{{
+ {"class": "menu-link active-item",
+ "aria-current": "page"}|xmlattr
+
+ }}
+{% endmacro %}
+{% macro activeBranch() %}
+{{
+ {"class": "menu-link active-branch"}|xmlattr
+
+ }}
+{% endmacro %}
+
+{% macro linkTarget() %}
+{{
+{"target": "_blank"}|xmlattr
+}}
+{% endmacro %}
+{% macro link(node) %}
+<li {{ childClasses() if node.children else defaultItemClasses() }}>
+  <a class="menu-link" href="{{ node.url }}" {{ activeNode() if node.activeNode }} {{ activeBranch()if node.activeBranch }} {{ linkTarget() if node.linkTarget }}>{{ node.label }}</a>
+  {% if node.children %}
+  <div class="child-trigger"></div>
+  {% endif %}
+  {% if node.children %}
+  {{ renderNavigation(node) }}
+  {% endif %}
+</li>
+{% endmacro %}
+
+{% macro renderNavigation(menuTree) %}
+
+{% set level = level + 1 %}
+
+<ul class="submenu level-{{ level }}" aria-hidden="{{ level != 1 }}">
+  <div class="triangle-container level-{{ level }}"><div class="triangle level-{{ level }}"></div></div>
+  {% for node in menuTree.children %}
+  {{ link(node) }}
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+<nav aria-label="Main menu" class="navigation-primary">
+  {{ renderNavigation(menu(module.primary_menu_field)) }}
+</nav>
+
+<style>  
+  {% for item in module.new_tag %}
+   /* This one is for Desktop version */
+  .dropdownContainer ul.level-2.submenu-{{ item.parent_position }} li:nth-child({{ item.item_position }}) .menu-text-wrapper {
+    position: relative;
+  }
+  .dropdownContainer ul.level-2.submenu-{{ item.parent_position }} li:nth-child({{ item.item_position }}) .menu-text-wrapper:after {
+    padding: 0 5px;
+    border-radius: 8px; 
+    margin-right: 10px;
+    display: inline-block;
+    height: 21px; 
+    line-height: 23px;
+    color: #FFF;
+    font-size: 10px;
+    margin-left: 15px;
+    background: {{ item.background_color }};
+    content: "{{ item.tag_text }}";
+  }
+  /* This one is for mobile version */
+  .navigation li:nth-child({{ item.parent_position }}) .sub_item:nth-child({{ item.item_position }}) a{
+    position: relative; 
+  }
+  .navigation li:nth-child({{ item.parent_position }}) .sub_item:nth-child({{ item.item_position }}) a:after {
+    padding: 0 5px;
+    border-radius: 8px;
+    margin-right: 10px;
+    display: inline-block;
+    height: 21px;
+    line-height: 23px;
+    color: #FFF;
+    font-size: 10px;
+    margin-left: 0px;
+    position: absolute;
+    top: 9px;
+    left: 110px;
+    background: {{ item.background_color }};  
+    content: "{{ item.tag_text }}";
+  }
+  {% endfor %}
+</style>

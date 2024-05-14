@@ -1,0 +1,161 @@
+[ {
+  "id" : "343f4593-486e-3ddc-78d8-06e497049b6e",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "A Plan for Ever<span>y</span> Team"
+}, {
+  "id" : "0b0f241c-56e6-18a2-0821-951431e31dd6",
+  "name" : "feature_box",
+  "display_width" : null,
+  "label" : "Feature Box",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 3
+  },
+  "children" : [ {
+    "id" : "34da8ec2-0307-e9f0-e328-edbdce764157",
+    "name" : "feature_heading",
+    "display_width" : null,
+    "label" : "Feature Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Basic"
+  }, {
+    "id" : "06f40ae6-48af-eebf-122f-c90818562f4d",
+    "name" : "box_color",
+    "display_width" : null,
+    "label" : "Box Color",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#7DC7D7"
+  }, {
+    "id" : "9a708a0d-0b31-1898-f20b-28abc4bb3536",
+    "name" : "subtitle",
+    "display_width" : null,
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Essentials to get started"
+  }, {
+    "id" : "dfe4533f-2dd4-447e-76e6-b629532ded7d",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "1 user, 1,200 searches, 5 active queries, 3,000 API calls per year"
+  }, {
+    "id" : "bc3189b3-9080-53b7-f47d-00f87c0c70e6",
+    "name" : "cta_text",
+    "display_width" : null,
+    "label" : "CTA Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Talk to Sales"
+  }, {
+    "id" : "0e4b7f8a-6354-a932-d998-42bb715e0bc8",
+    "name" : "cta_link",
+    "display_width" : null,
+    "label" : "CTA Link",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "#"
+  }, {
+    "id" : "92a786de-d869-b864-b780-62f2927b3b28",
+    "name" : "content",
+    "display_width" : null,
+    "label" : "Content",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<h3>Access to:</h3>\n<ul>\n<li>All core data sources</li>\n<li>Proprietary AI-driven models</li>\n<li>Court-ready reports</li>\n<li>Unlimited network visualizations</li>\n</ul>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : [ {
+    "feature_heading" : "Basic",
+    "box_color" : "#7DC7D7",
+    "subtitle" : "Essentials to get started",
+    "description" : "1 user, 1,200 searches, 5 active queries, 3,000 API calls per year",
+    "cta_text" : "Talk to Sales",
+    "cta_link" : "#",
+    "content" : "<h3>Access to:</h3>\n<ul>\n<li>All core data sources</li>\n<li>Proprietary AI-driven models</li>\n<li>Court-ready reports</li>\n<li>Unlimited network visualizations</li>\n</ul>"
+  }, {
+    "feature_heading" : "Basic",
+    "box_color" : "#7DC7D7",
+    "subtitle" : "Essentials to get started",
+    "description" : "1 user, 1,200 searches, 5 active queries, 3,000 API calls per year",
+    "cta_text" : "Talk to Sales",
+    "cta_link" : "#",
+    "content" : "<h3>Access to:</h3>\n<ul>\n<li>All core data sources</li>\n<li>Proprietary AI-driven models</li>\n<li>Court-ready reports</li>\n<li>Unlimited network visualizations</li>\n</ul>"
+  }, {
+    "feature_heading" : "Basic",
+    "box_color" : "#7DC7D7",
+    "subtitle" : "Essentials to get started",
+    "description" : "1 user, 1,200 searches, 5 active queries, 3,000 API calls per year",
+    "cta_text" : "Talk to Sales",
+    "cta_link" : "#",
+    "content" : "<h3>Access to:</h3>\n<ul>\n<li>All core data sources</li>\n<li>Proprietary AI-driven models</li>\n<li>Court-ready reports</li>\n<li>Unlimited network visualizations</li>\n</ul>"
+  } ]
+}, {
+  "id" : "e148a38d-f4e1-5f5e-b0da-3aaab7db3054",
+  "name" : "cta_text",
+  "display_width" : null,
+  "label" : "CTA Text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "View all Features"
+}, {
+  "id" : "db39be70-7dec-f835-5b32-e7ee8db4742b",
+  "name" : "cta_link",
+  "display_width" : null,
+  "label" : "CTA Link",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "#"
+} ]

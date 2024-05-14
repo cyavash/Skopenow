@@ -1,0 +1,16 @@
+<div class="hp_img_text_banner {% if module.position %}shift{% endif %}">
+  <div class="container">
+    <div class="img_part">
+      {{ module.animation }}
+      <img src="{{ module.image.src }}">
+    </div>
+    <div class="text_part">
+      <h2>
+        {{ module.title }}
+      </h2>
+      <p>
+        {{ module.content }}
+      </p>
+    </div>
+  </div>
+</div>

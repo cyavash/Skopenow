@@ -1,0 +1,39 @@
+{% if module.service_items %}
+<div class="services-box solution_wrapper">
+  <div class="page-center">
+    <div class="heading_subheading">
+      <h3>
+        {{ module.heading }}
+      </h3>
+      <p>
+        {{ module.subheading }}
+      </p>
+    </div>
+    {% for item in module.service_items %}
+    <div class="column col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <div class="card">
+        <div class="card-body">
+          {% if item.icon.src %}
+          <div class="i-image" style="background-image:url('{{ item.icon.src }}'); background-size:{{ item.icon_size }}px"></div>
+          {% endif %}
+          {% if item.title %}
+          <h5 class="card-title">
+            {{ item.title }}
+          </h5>
+          {% endif %}
+          {% if item.description %}
+          <div class="card-text">
+            {{ item.description }}
+            <a href="{{ item.link_url.url.href }}">{{ item.link_text }}</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="cta_wrapper">
+      {% cta guid="{{ module.book_a_demo_cta }}" %}
+    </div>
+  </div>
+</div>
+{% endif %}

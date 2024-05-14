@@ -1,0 +1,37 @@
+/* ******************************************************************************
+*********************************************************************************
+Use this file to override any of the CSS styles preset in the themed
+stylesheets or you can add your own custom styles.
+*********************************************************************************
+****************************************************************************** */
+
+{## Table of contents
+
+  1. _dnd_areas
+  2. _typography
+  3. _forms
+  4. _tabels
+  5. _header
+  6. _footer
+  7. _blog
+  8. _system_pages
+  9. _modules
+
+##}
+
+{% if theme.typography.body_font.body_text_select == "google" %}
+{% set body_size = theme.typography.body_font.body_font.size.value %}
+{% set body_color = theme.typography.body_font.body_font.color %}
+{% set body_variation = theme.typography.body_font.body_font.variation %}
+{% set body_font = theme.typography.body_font.body_font.font %}
+{% else %}
+{% set body_size = theme.typography.body_font.body_text_font_size %}
+{% set body_color = theme.typography.body_font.body_text_font_color %}
+{% set body_font = theme.typography.body_font.body_text_font %}
+{% endif %}
+{% if theme.typography.h1_font.h1_select == "google" %}
+{% set h1_size = theme.typography.h1_font.heading_one.size.value %}
+{% set h1_color = theme.typography.h1_font.heading_one.color %}
+{% set h1_variation = theme.typography.h1_font.heading_one.variation %}
+{% set h1_font = theme.typography.h1_font.heading_one.font %}
+{% els

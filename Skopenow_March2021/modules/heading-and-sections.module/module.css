@@ -1,0 +1,77 @@
+.section1 {
+  background: #122435;
+  color: #FFF;
+  padding: 90px 0 61px 0;
+  margin-bottom: -1px;
+}
+.section1 h2 {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 27px;
+  font-weight: 600;
+  color: #FFF;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.row-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.col {
+  width: calc(33.33% - 30px);
+  margin-bottom: 50px;
+}
+.col:last-child {
+  margin-right: 0; /* Remove right margin for the last item in each row */
+}
+.col a {
+  display: block;
+  color: #FFF;
+  text-decoration: none;
+  border-bottom: 1px solid #3F4E5C;
+  padding-bottom: 14px;
+transition: all .5s ease!important;
+}
+.col a:hover {
+  opacity: 0.55; 
+  transform: translateY(2px);
+}
+.col img {
+  max-width: 100%;
+  height: auto;
+}
+.col h3 {
+  color: #FFF;
+  font-weight: 400;
+  font-family:'Poppins';
+  font-size: 16px;
+  margin: 14px 0 0 0;
+}
+.col h3::after {
+  content: "";
+  display: inline-block;
+  background-image: url("https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/arrow.svg");
+  background-repeat: no-repeat;
+  width: 20px; 
+  height: 20px; 
+  margin-left: 10px;
+  position: relative;
+  top: 4px;
+  float: right;
+}
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .col {
+    width: calc(50% - 30px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .col {
+    width: 100%; 
+    margin-right: 0;
+  }
+}
+

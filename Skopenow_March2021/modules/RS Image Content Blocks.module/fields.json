@@ -1,0 +1,61 @@
+[ {
+  "id" : "72d34e21-e372-76c4-874a-fe284a7e9ac7",
+  "name" : "image_field",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent30.net/hubfs/8104331/rs_landing_pages/news_1619013379_60802f0301179.png",
+    "alt" : "news_1619013379_60802f0301179",
+    "loading" : "lazy",
+    "width" : 1210,
+    "height" : 565,
+    "max_width" : 1210,
+    "max_height" : 565
+  }
+}, {
+  "id" : "55e9b63f-51dc-eb19-08eb-90cd534727e3",
+  "name" : "heading",
+  "display_width" : null,
+  "label" : "Heading",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Pain Point Heading"
+}, {
+  "id" : "7104effd-7ae3-a9ef-0754-a9d303252475",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit."
+}, {
+  "id" : "ee0b6cea-1a5e-c572-a4b5-7f671e97b170",
+  "name" : "direction",
+  "display_width" : null,
+  "label" : "Direction",
+  "inline_help_text" : "Choose which side the image should be",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "left", "Left" ], [ "right", "Right" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "preset" : null,
+  "type" : "choice",
+  "default" : "left"
+} ]

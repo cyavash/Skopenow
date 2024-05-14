@@ -1,0 +1,92 @@
+[ {
+  "id" : "7f0d9904-bbfc-d242-27fe-03c7fda15421",
+  "name" : "service_items",
+  "display_width" : null,
+  "label" : "Service Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : "36604fd3-044c-96dc-338b-999917c8e64c",
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "36604fd3-044c-96dc-338b-999917c8e64c",
+    "name" : "heading",
+    "display_width" : null,
+    "label" : "Heading",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Heading"
+  }, {
+    "id" : "a73e4604-5eee-3ac7-1841-1c7b2fb02167",
+    "name" : "icon",
+    "display_width" : null,
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }, {
+    "id" : "828ab26d-887b-3664-2d99-ab6a8718e503",
+    "name" : "icon_size",
+    "display_width" : null,
+    "label" : "Icon size",
+    "inline_help_text" : "",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "36"
+  }, {
+    "id" : "b8ac272e-4bb4-09e9-4e35-b3bd1fe20d08",
+    "name" : "title",
+    "display_width" : null,
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "8ba0b71a-5239-dda1-5a0a-22392eee9e0e",
+    "name" : "description",
+    "display_width" : null,
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p>Sample discrption</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "heading" : "Heading",
+    "icon" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    },
+    "icon_size" : "36",
+    "description" : "<p>Sample discrption</p>"
+  }
+} ]

@@ -1,0 +1,56 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+label: Analyst Page
+-->
+{% extends "./layouts/base.html" %}
+
+{% block header %}
+<div class="hs-pricing-page hs-analyst-layout has-footer-only">
+
+  {% global_partial path="./partials/header.html" %}
+  {% endblock header %}
+
+  {% block body %}
+  <div class="main-content-wrapper">
+    <main class="body-container-wrapper">
+      {% dnd_area "banner_area" class='hs-pricing-page-content hs-banner-area', label='Banner Area' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "submit_request" class='hs-pricing-page-content hs-submit-request', label='Submit Request' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "workflow" class='hs-pricing-page-content hs-workflow', label='Workflow' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "questions" class='hs-pricing-page-content hs-questions', label='FAQs' %}
+      {% end_dnd_area %}
+
+      {% dnd_area "book_demo" class='hs-pricing-page-content hs-book-demo', label='Book a Demo' %}
+      {% end_dnd_area %}
+    </main>
+  </div>
+  {% endblock body %}
+
+  {% block footer %}
+  {% global_partial path="./partials/footer_v2.html" %}
+
+</div>
+{% endblock footer%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<section class="skopenow_help">
+  <div class="container-fluid" style="overflow: hidden;">
+    <div class="skew_skopenow_help"></div>
+    <div class="container page-center" style="position: relative;">
+      <h3>{{ module.section_heading }}</h3>
+      <div class="new_section_separator"></div>
+      <div class="skopenow_help_options">
+        <div class="row">
+          {% for item in module.help_card_items %}
+          <div class="column col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+            <div class="{{ item.border_color }} help_section">
+              <h5 >{{ item.title }}</h5>
+              <p >{{ item.description }}</p>
+              <div class="sub_help">
+                <div class="d-flex">
+                  {% for item2 in item.help_button_items %}
+                  <span>
+                    {{ item2.button_title }}
+                    <div class="sub_help_hover">{{ item2.tooltip_text }}</div>
+                  </span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}            
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

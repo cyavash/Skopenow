@@ -1,0 +1,44 @@
+.pt-custom-1 {
+  padding-top: 70px;
+}
+.pt-custom-2 {
+  padding-top: 70px;
+}
+@media (min-width: 1199.98px) {
+  .pt-custom-1 {
+    padding-top: 200px;
+  }
+  .pt-custom-2 {
+    padding-top: 100px;
+  }
+}
+
+#svg-background {
+  z-index: -10;
+  height: 900px;
+}
+body {
+  overflow-x: hidden;
+}
+.fade {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  padding: auto;
+  animation-name: fade-in;
+}
+
+.fade-delay-15 {
+  animation-delay: 0.15s;
+}
+
+.fade-delay-30 {
+  animation-delay: 0.30s;
+}
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

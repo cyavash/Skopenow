@@ -1,0 +1,24 @@
+<div class="faq-section">
+  {% if module.section_heading %}
+  <h1>{{ module.section_heading }}</h1>
+  {% endif %}
+  {% if module.faq_items %}
+  <div  class="faqSearch">
+    <form id="faq_search_form" novalidate="" class="ng-pristine ng-valid ng-touched">
+      <input class="form-control ng-pristine ng-valid ng-touched" id="faq_search_input" name="faq_input" placeholder="Search for a topic... " type="text">
+    </form>
+  </div>
+  {% endif %}
+  {% if module.faq_items %}
+  <div class="faq-items">
+    {% for item in module.faq_items %}
+    <div class="faq_section">
+      {% if item.title %}
+      <h2 >{{ item.title }}</h2>
+      {% endif %}
+      {{ item.content }}
+    </div>
+    {% endfor %}    
+  </div>
+  {% endif %}
+</div>

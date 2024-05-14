@@ -1,0 +1,219 @@
+[ {
+  "id" : "34188fe1-9c81-862f-bbbc-3036c94c602c",
+  "name" : "title",
+  "display_width" : null,
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Meet Your Presenter"
+}, {
+  "id" : "e59548cd-904b-716d-be4c-ff5461b066e4",
+  "name" : "photo",
+  "display_width" : null,
+  "label" : "Photo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/steve-adams-olcircle.png",
+    "alt" : "steve-adams-olcircle",
+    "loading" : "lazy",
+    "width" : 114,
+    "height" : 160,
+    "max_width" : 114,
+    "max_height" : 160
+  }
+}, {
+  "id" : "67a12f97-6096-aa43-1853-63480a0e4d7b",
+  "name" : "presenter_info",
+  "display_width" : null,
+  "label" : "Presenter info",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Steve Adams, Product Marketing Manager at Skopenow"
+}, {
+  "id" : "a5e53850-b771-3a9c-2311-7808436c5ecd",
+  "name" : "presenter_description",
+  "display_width" : null,
+  "label" : "Presenter description",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p><u>Steve Adams</u> is a criminal intelligence specialist who works with a focus on internet investigations. As a Product Marketing Manager at Skopenow, he communicates the features and benefits of Skopenow’s products and demonstrates techniques for internet investigations (OSINT) through webinars and written communications. He previously worked in UK law enforcement and has extensive experience providing training and education in criminal and security intelligence.</p>"
+}, {
+  "id" : "bb756c89-7214-455b-d1fa-d7b5e19cdb3c",
+  "name" : "content_title",
+  "display_width" : null,
+  "label" : "Content title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Format"
+}, {
+  "id" : "d0e756f2-22a4-2423-ecc4-251f7cc4dfbc",
+  "name" : "content",
+  "display_width" : null,
+  "label" : "Content",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "<p>We will be using Zoom Webinar to host this event. Should any technical issues arise, please email support@skopenow.com. We will also be recording this presentation for those who can not attend or ran into technical issues.</p>\n<br>\n<p>Zoom Webinar System Requirements</p>\n<ul>\n<li>An internet connection – broadband wired or wireless (3G or 4G/LTE)</li>\n<li>Speakers and a microphone – built-in, USB plug-in, or wireless Bluetooth</li>\n<li>A webcam or HD webcam - built-in, USB plug-in, or:</li>\n<li>An HD cam or HD camcorder with a video-capture card</li>\n<li>macOS X with macOS 10.9 or later, Windows 10*, Windows 8 or 8.1, Windows 7, Ubuntu 12.04 or higher</li>\n<li>Mint 17.1</li>\n<li>Supported tablet and mobile devices</li>\n<li>Surface PRO 2 or higher and running Win 8.1 or higher</li>\n<li>Note: Tablets running Windows 10 must run Windows 10 Home, Pro, or Enterprise. S Mode is not supported.</li>\n<li>iOS and Android devices</li>\n</ul>"
+}, {
+  "id" : "02353f57-01cc-676e-9ce9-651ac0e24487",
+  "name" : "multiple_presenters",
+  "display_width" : null,
+  "label" : "Multiple Presenters?",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "dc8fd4f4-76ca-e0f2-2f80-0fc14ae4def0",
+    "name" : "add_more_presenters",
+    "display_width" : null,
+    "label" : "Add More Presenters",
+    "required" : false,
+    "locked" : false,
+    "display" : "select",
+    "choices" : [ [ "more-presenters", "Yes" ], [ "no", "No" ] ],
+    "multiple" : false,
+    "reordering_enabled" : true,
+    "preset" : null,
+    "type" : "choice",
+    "default" : "no"
+  }, {
+    "id" : "47ee4096-6786-a6da-998f-163f4021fa2c",
+    "name" : "presenter_item",
+    "display_width" : null,
+    "label" : "Presenter Item",
+    "required" : false,
+    "locked" : false,
+    "occurrence" : {
+      "min" : null,
+      "max" : null,
+      "sorting_label_field" : null,
+      "default" : 2
+    },
+    "children" : [ {
+      "id" : "08e95d84-f28e-0ae5-0c94-82e7fadacd2b",
+      "name" : "image_field",
+      "display_width" : null,
+      "label" : "Image",
+      "required" : false,
+      "locked" : false,
+      "responsive" : true,
+      "resizable" : true,
+      "show_loading" : false,
+      "type" : "image",
+      "default" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/steve-author-2.png",
+        "alt" : "steve-author-2",
+        "loading" : "lazy",
+        "width" : 2550,
+        "height" : 3300,
+        "max_width" : 1545.4545454545455,
+        "max_height" : 2000
+      }
+    }, {
+      "id" : "06cb7218-7d68-d612-e608-b3285629753e",
+      "name" : "heading",
+      "display_width" : null,
+      "label" : "Heading",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text",
+      "default" : "Steve Adams, Product Marketing Manager "
+    }, {
+      "id" : "b9a8b5ca-c62d-70e0-e81b-be54c031210a",
+      "name" : "content",
+      "display_width" : null,
+      "label" : "Content",
+      "required" : false,
+      "locked" : false,
+      "type" : "richtext",
+      "default" : "<p>Steve Adams is a criminal intelligence specialist and subject matter expert in internet investigations. As the Product Marketing Manager at Skopenow, Steve leverages his background in investigations to promote the value of the company's solutions, showing how they can streamline internet investigations. Leading OSINT training webinars and speaking at conferences in the US and UK, Steve frequently dives deep on how to unlock the power of OSINT to live audiences. He holds a Law &amp; Sociology degree from Warwick University.</p>"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "group_occurrence_meta" : null,
+    "type" : "group",
+    "default" : [ {
+      "image_field" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/steve-author-2.png",
+        "alt" : "steve-author-2",
+        "loading" : "lazy",
+        "width" : 2550,
+        "height" : 3300,
+        "max_width" : 1545.4545454545455,
+        "max_height" : 2000
+      },
+      "heading" : "Steve Adams, Product Marketing Manager ",
+      "content" : "<p>Steve Adams is a criminal intelligence specialist and subject matter expert in internet investigations. As the Product Marketing Manager at Skopenow, Steve leverages his background in investigations to promote the value of the company's solutions, showing how they can streamline internet investigations. Leading OSINT training webinars and speaking at conferences in the US and UK, Steve frequently dives deep on how to unlock the power of OSINT to live audiences. He holds a Law &amp; Sociology degree from Warwick University.</p>"
+    }, {
+      "image_field" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/steve-author-2.png",
+        "alt" : "steve-author-2",
+        "loading" : "lazy",
+        "width" : 2550,
+        "height" : 3300,
+        "max_width" : 1545.4545454545455,
+        "max_height" : 2000
+      },
+      "heading" : "Steve Adams, Product Marketing Manager ",
+      "content" : "<p>Steve Adams is a criminal intelligence specialist and subject matter expert in internet investigations. As the Product Marketing Manager at Skopenow, Steve leverages his background in investigations to promote the value of the company's solutions, showing how they can streamline internet investigations. Leading OSINT training webinars and speaking at conferences in the US and UK, Steve frequently dives deep on how to unlock the power of OSINT to live audiences. He holds a Law &amp; Sociology degree from Warwick University.</p>"
+    } ]
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "type" : "group",
+  "default" : {
+    "add_more_presenters" : "no",
+    "presenter_item" : [ {
+      "image_field" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/steve-author-2.png",
+        "alt" : "steve-author-2",
+        "loading" : "lazy",
+        "width" : 2550,
+        "height" : 3300,
+        "max_width" : 1545.4545454545455,
+        "max_height" : 2000
+      },
+      "heading" : "Steve Adams, Product Marketing Manager ",
+      "content" : "<p>Steve Adams is a criminal intelligence specialist and subject matter expert in internet investigations. As the Product Marketing Manager at Skopenow, Steve leverages his background in investigations to promote the value of the company's solutions, showing how they can streamline internet investigations. Leading OSINT training webinars and speaking at conferences in the US and UK, Steve frequently dives deep on how to unlock the power of OSINT to live audiences. He holds a Law &amp; Sociology degree from Warwick University.</p>"
+    }, {
+      "image_field" : {
+        "size_type" : "auto_custom_max",
+        "src" : "https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/steve-author-2.png",
+        "alt" : "steve-author-2",
+        "loading" : "lazy",
+        "width" : 2550,
+        "height" : 3300,
+        "max_width" : 1545.4545454545455,
+        "max_height" : 2000
+      },
+      "heading" : "Steve Adams, Product Marketing Manager ",
+      "content" : "<p>Steve Adams is a criminal intelligence specialist and subject matter expert in internet investigations. As the Product Marketing Manager at Skopenow, Steve leverages his background in investigations to promote the value of the company's solutions, showing how they can streamline internet investigations. Leading OSINT training webinars and speaking at conferences in the US and UK, Steve frequently dives deep on how to unlock the power of OSINT to live audiences. He holds a Law &amp; Sociology degree from Warwick University.</p>"
+    } ]
+  }
+} ]

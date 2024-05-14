@@ -1,0 +1,50 @@
+.quote-module {
+  padding: 100px 0; 
+}
+.quote-box {
+  text-align: center;
+  width: 811px;
+  max-width: 100%;
+  margin: auto;
+  position: relative;
+}
+.quote-box:before {
+  content: " ";
+  position: absolute; 
+  width: 38px;
+  height: 38px;
+  background: url('https://8104331.fs1.hubspotusercontent-na1.net/hubfs/8104331/quotes.svg') top center no-repeat;
+  top: -17px;
+  left: -22px;
+}
+.quote-box blockquote {
+  color: #212529;
+  font-family: "DM Sans";
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+  border: 0;
+}
+p.quote-description {
+  font-size: 16px;
+  line-height: 26px;
+  color: #1966B3;
+  font-family: Poppins;
+  margin-top: 22px;
+}
+
+@media screen and (max-width: 860px) {
+  .quote-module {
+    padding-left: 40px; 
+  }
+  .quote-box:before { 
+    left: -10px; 
+    top: -25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .quote-module {
+    padding: 60px 0; 
+  }
+}

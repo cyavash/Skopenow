@@ -1,0 +1,20 @@
+<div class="pp_module reveal">
+  <div class="container">
+    <h2>
+      {{ module.title }}
+    </h2>
+    <div class="content {% if module.center_alignment %}center{% endif %}">
+      {% for item in module.block %}
+      <div class="block"> 
+        <img src="{{ item.icon.src }}">
+        <h3>
+          {{ item.sub_title }} 
+        </h3>
+        <p>
+          {{ item.sub_text }}
+        </p> 
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

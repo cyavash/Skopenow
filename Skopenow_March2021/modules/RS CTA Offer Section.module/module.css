@@ -1,0 +1,45 @@
+.cta_offer_wrapper h2{
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: Avenir;
+}
+
+.cta_offer_wrapper p{
+    margin: 0;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 15px;
+    margin-bottom: 15px;
+   font-family: Avenir;
+}
+.cta_offer_wrapper ul{
+    margin: 0;
+    padding-bottom: 5px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 15px;
+    margin-bottom: 15px;
+   font-family: Avenir;
+}
+@media(min-width:768px){
+  .vertical_middle_wrapper{
+    display:table;
+  }
+
+  .vertical_middle_wrapper_inner{
+    display:table-row;
+  }
+
+  .vertical_middle{
+    vertical-align: middle;
+    display: table-cell;
+    float: none;
+  }
+}
