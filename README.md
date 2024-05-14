@@ -1,3 +1,13 @@
-# Hello-World
-A test repository to play around and experiment 
-This readme has been written in the developer branch. This is to test things out before we merge it with the main branch for the public view.
+# SkopeNow
+
+About the project:<br><br>
+SkopeNow Open Source Website:
+<br><br>
+Build with:<br>
+» Hubspot / HuBL<br>
+» HTML / CSS / JavaScript
+<br><br>
+<a href="https://skopenow.com/">Live Demo:</a>
+
+<br><br>
+<img src="https://siavash.tech/img/portfolio2.png" alt="">
